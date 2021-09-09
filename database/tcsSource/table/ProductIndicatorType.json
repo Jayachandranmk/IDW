@@ -1,0 +1,110 @@
+{
+	"name": "ProductIndicatorType",
+	"properties": {
+		"Namespace": {
+			"DatabaseName": "tcsSource"
+		},
+		"Name": "ProductIndicatorType",
+		"Description": "A means of categorizing Product Indicators by functions performed, characteristics or similar common characteristics.\n\nEx:\n- Base unit level of the trade item hierarchy\n- Item is intended for ultimate consumption\n- Information provider considers trade item to be at a hierarchy level where orders will be accepted from customers\n- Information provider considers trade item as a dispatch / shipping unit\n- Information provider will include this trade item on an invoice\n- The article is not a fixed quantity, quantity is variable and may be based on weight, length or volume\n- Can be used as a display unit\n- Trade Item is packed as a non-rectilinear pattern\n- Package can be used as returnable package\n- Trade Item is a service\n- Trade Item is only offered during certain parts of the year\n- Trade Item has price printed on the pack",
+		"EntityType": "TABLE",
+		"TableType": "EXTERNAL",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"StorageDescriptor": {
+			"Columns": [
+				{
+					"Name": "ProductIndicatorTypeId",
+					"Description": "The unique identifier of a Product Indicator Type.",
+					"BaseAttributeReference": {
+						"Entity": "ProductIndicatorType.cdm.json/ProductIndicatorType",
+						"Name": "ProductIndicatorTypeId"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "ProductIndicatorTypeName",
+					"Description": "The name of a Product Indicator Type.",
+					"BaseAttributeReference": {
+						"Entity": "ProductIndicatorType.cdm.json/ProductIndicatorType",
+						"Name": "ProductIndicatorTypeName"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 128,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductIndicatorTypeDescription",
+					"Description": "The description of a Product Indicator Type.",
+					"BaseAttributeReference": {
+						"Entity": "ProductIndicatorType.cdm.json/ProductIndicatorType",
+						"Name": "ProductIndicatorTypeDescription"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 512,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				}
+			],
+			"Format": {
+				"InputFormat": "org.apache.hadoop.mapred.SequenceFileInputFormat",
+				"OutputFormat": "org.apache.hadoop.hive.ql.io.HiveSequenceFileOutputFormat",
+				"FormatType": "csv",
+				"SerializeLib": "org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe",
+				"Properties": {
+					"path": "abfss://filesystem@aamerriladls.dfs.core.windows.net/tcsSource/ProductIndicatorType",
+					"delimiter": ",",
+					"firstRowAsHeader": "false",
+					"serialization.format": "1",
+					"escape": "\\",
+					"FormatTypeSetToDatabaseDefault": true,
+					"header": "false"
+				}
+			},
+			"Source": {
+				"Provider": "ADLS",
+				"Location": "abfss://filesystem@aamerriladls.dfs.core.windows.net/tcsSource/ProductIndicatorType",
+				"Properties": {
+					"LinkedServiceName": "AzureDataLakeStorage1",
+					"LocationSetToDatabaseDefault": true
+				}
+			},
+			"Properties": {
+				"textinputformat.record.delimiter": ",",
+				"compression": "{\"type\":\"None\",\"level\":\"optimal\"}",
+				"derivedModelAttributeInfo": "{\"attributeReferences\":{\"ProductIndicatorTypeId\":{\"entity\":\"ProductIndicatorType.cdm.json/ProductIndicatorType\",\"name\":\"ProductIndicatorTypeId\"},\"ProductIndicatorTypeName\":{\"entity\":\"ProductIndicatorType.cdm.json/ProductIndicatorType\",\"name\":\"ProductIndicatorTypeName\"},\"ProductIndicatorTypeDescription\":{\"entity\":\"ProductIndicatorType.cdm.json/ProductIndicatorType\",\"name\":\"ProductIndicatorTypeDescription\"}}}"
+			},
+			"Compressed": false,
+			"IsStoredAsSubdirectories": false
+		},
+		"Properties": {
+			"DerivedModelEntityInfo": "{\"entityDirectives\":{\"baseEntityReference\":{\"name\":\"ProductIndicatorType\",\"path\":\"ProductIndicatorType.cdm.json/ProductIndicatorType\"},\"description\":\"A means of categorizing Product Indicators by functions performed, characteristics or similar common characteristics.\\n\\nEx:\\n- Base unit level of the trade item hierarchy\\n- Item is intended for ultimate consumption\\n- Information provider considers trade item to be at a hierarchy level where orders will be accepted from customers\\n- Information provider considers trade item as a dispatch / shipping unit\\n- Information provider will include this trade item on an invoice\\n- The article is not a fixed quantity, quantity is variable and may be based on weight, length or volume\\n- Can be used as a display unit\\n- Trade Item is packed as a non-rectilinear pattern\\n- Package can be used as returnable package\\n- Trade Item is a service\\n- Trade Item is only offered during certain parts of the year\\n- Trade Item has price printed on the pack\",\"primaryKey\":[\"ProductIndicatorTypeId\"],\"projectionInfo\":{\"attributes\":[{\"type\":\"Existing\",\"name\":\"ProductIndicatorTypeId\",\"attributeReference\":{\"entity\":\"ProductIndicatorType.cdm.json/ProductIndicatorType\",\"name\":\"ProductIndicatorTypeId\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"ProductIndicatorTypeName\",\"attributeReference\":{\"entity\":\"ProductIndicatorType.cdm.json/ProductIndicatorType\",\"name\":\"ProductIndicatorTypeName\"},\"dataType\":\"string\",\"dataTypeLength\":128},{\"type\":\"Existing\",\"name\":\"ProductIndicatorTypeDescription\",\"attributeReference\":{\"entity\":\"ProductIndicatorType.cdm.json/ProductIndicatorType\",\"name\":\"ProductIndicatorTypeDescription\"},\"dataType\":\"string\",\"dataTypeLength\":512}]}}}",
+			"Description": "A means of categorizing Product Indicators by functions performed, characteristics or similar common characteristics.\n\nEx:\n- Base unit level of the trade item hierarchy\n- Item is intended for ultimate consumption\n- Information provider considers trade item to be at a hierarchy level where orders will be accepted from customers\n- Information provider considers trade item as a dispatch / shipping unit\n- Information provider will include this trade item on an invoice\n- The article is not a fixed quantity, quantity is variable and may be based on weight, length or volume\n- Can be used as a display unit\n- Trade Item is packed as a non-rectilinear pattern\n- Package can be used as returnable package\n- Trade Item is a service\n- Trade Item is only offered during certain parts of the year\n- Trade Item has price printed on the pack",
+			"DisplayFolderInfo": "{\"name\":\"Product\",\"colorCode\":\"#003C96\"}",
+			"PrimaryKeys": "ProductIndicatorTypeId",
+			"spark.sql.sources.provider": "csv"
+		},
+		"Retention": 0,
+		"Temporary": false,
+		"IsRewriteEnabled": false
+	},
+	"type": "TABLE"
+}

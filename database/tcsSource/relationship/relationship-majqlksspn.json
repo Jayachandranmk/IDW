@@ -1,0 +1,26 @@
+{
+	"name": "relationship-majqlksspn",
+	"properties": {
+		"Namespace": {
+			"DatabaseName": "tcsSource"
+		},
+		"Name": "relationship-majqlksspn",
+		"EntityType": "RELATIONSHIP",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"FromTableName": "Promotion",
+		"ToTableName": "TransactionLineItem",
+		"ColumnRelationshipInformations": [
+			{
+				"FromColumnName": "PromotionId",
+				"ToColumnName": "PromotionId"
+			}
+		],
+		"RelationshipType": 0,
+		"Properties": {
+			"DerivedModelRelationshipInfo": "{\"baseRelationship\":{\"fromEntity\":\"Promotion.cdm.json/Promotion\",\"toEntity\":\"TransactionLineItem.cdm.json/TransactionLineItem\",\"joinPairs\":[{\"fromAttribute\":\"PromotionId\",\"toAttribute\":\"PromotionId\"}]}}"
+		}
+	},
+	"type": "RELATIONSHIP"
+}

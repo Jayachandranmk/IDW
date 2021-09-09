@@ -1,0 +1,142 @@
+{
+	"name": "Territory",
+	"properties": {
+		"Namespace": {
+			"DatabaseName": "tcsSource"
+		},
+		"Name": "Territory",
+		"Description": "A geographic area for which a person or department is responsible for a particular activity such as marketing, sales, or support.",
+		"EntityType": "TABLE",
+		"TableType": "EXTERNAL",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"StorageDescriptor": {
+			"Columns": [
+				{
+					"Name": "TerritoryId",
+					"Description": "The unique identifier of a Territory.",
+					"BaseAttributeReference": {
+						"Entity": "Territory.cdm.json/Territory",
+						"Name": "TerritoryId"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "TerritoryName",
+					"Description": "The name of the Territory.",
+					"BaseAttributeReference": {
+						"Entity": "Territory.cdm.json/Territory",
+						"Name": "TerritoryName"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 128,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "TerritoryDescription",
+					"Description": "The description of the Territory.",
+					"BaseAttributeReference": {
+						"Entity": "Territory.cdm.json/Territory",
+						"Name": "TerritoryDescription"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 512,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "TerritoryTypeId",
+					"Description": "The unique identifier of a Territory type.",
+					"BaseAttributeReference": {
+						"Entity": "Territory.cdm.json/Territory",
+						"Name": "TerritoryTypeId"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "GeographicAreaId",
+					"Description": "The unique identifier of a Geographic Area.",
+					"BaseAttributeReference": {
+						"Entity": "Territory.cdm.json/Territory",
+						"Name": "GeographicAreaId"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				}
+			],
+			"Format": {
+				"InputFormat": "org.apache.hadoop.mapred.SequenceFileInputFormat",
+				"OutputFormat": "org.apache.hadoop.hive.ql.io.HiveSequenceFileOutputFormat",
+				"FormatType": "csv",
+				"SerializeLib": "org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe",
+				"Properties": {
+					"path": "abfss://filesystem@aamerriladls.dfs.core.windows.net/tcsSource/Territory",
+					"delimiter": ",",
+					"firstRowAsHeader": "false",
+					"serialization.format": "1",
+					"escape": "\\",
+					"FormatTypeSetToDatabaseDefault": true,
+					"header": "false"
+				}
+			},
+			"Source": {
+				"Provider": "ADLS",
+				"Location": "abfss://filesystem@aamerriladls.dfs.core.windows.net/tcsSource/Territory",
+				"Properties": {
+					"LinkedServiceName": "AzureDataLakeStorage1",
+					"LocationSetToDatabaseDefault": true
+				}
+			},
+			"Properties": {
+				"textinputformat.record.delimiter": ",",
+				"compression": "{\"type\":\"None\",\"level\":\"optimal\"}",
+				"derivedModelAttributeInfo": "{\"attributeReferences\":{\"TerritoryId\":{\"entity\":\"Territory.cdm.json/Territory\",\"name\":\"TerritoryId\"},\"TerritoryName\":{\"entity\":\"Territory.cdm.json/Territory\",\"name\":\"TerritoryName\"},\"TerritoryDescription\":{\"entity\":\"Territory.cdm.json/Territory\",\"name\":\"TerritoryDescription\"},\"TerritoryTypeId\":{\"entity\":\"Territory.cdm.json/Territory\",\"name\":\"TerritoryTypeId\"},\"GeographicAreaId\":{\"entity\":\"Territory.cdm.json/Territory\",\"name\":\"GeographicAreaId\"}}}"
+			},
+			"Compressed": false,
+			"IsStoredAsSubdirectories": false
+		},
+		"Properties": {
+			"DerivedModelEntityInfo": "{\"entityDirectives\":{\"baseEntityReference\":{\"name\":\"Territory\",\"path\":\"Territory.cdm.json/Territory\"},\"description\":\"A geographic area for which a person or department is responsible for a particular activity such as marketing, sales, or support.\",\"primaryKey\":[\"TerritoryId\"],\"projectionInfo\":{\"attributes\":[{\"type\":\"Existing\",\"name\":\"TerritoryId\",\"attributeReference\":{\"entity\":\"Territory.cdm.json/Territory\",\"name\":\"TerritoryId\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"TerritoryName\",\"attributeReference\":{\"entity\":\"Territory.cdm.json/Territory\",\"name\":\"TerritoryName\"},\"dataType\":\"string\",\"dataTypeLength\":128},{\"type\":\"Existing\",\"name\":\"TerritoryDescription\",\"attributeReference\":{\"entity\":\"Territory.cdm.json/Territory\",\"name\":\"TerritoryDescription\"},\"dataType\":\"string\",\"dataTypeLength\":512},{\"type\":\"Existing\",\"name\":\"TerritoryTypeId\",\"attributeReference\":{\"entity\":\"Territory.cdm.json/Territory\",\"name\":\"TerritoryTypeId\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"GeographicAreaId\",\"attributeReference\":{\"entity\":\"Territory.cdm.json/Territory\",\"name\":\"GeographicAreaId\"},\"dataType\":\"integer\"}]}}}",
+			"Description": "A geographic area for which a person or department is responsible for a particular activity such as marketing, sales, or support.",
+			"DisplayFolderInfo": "{\"name\":\"Geography\",\"colorCode\":\"#8170C2\"}",
+			"PrimaryKeys": "TerritoryId",
+			"spark.sql.sources.provider": "csv"
+		},
+		"Retention": 0,
+		"Temporary": false,
+		"IsRewriteEnabled": false
+	},
+	"type": "TABLE"
+}

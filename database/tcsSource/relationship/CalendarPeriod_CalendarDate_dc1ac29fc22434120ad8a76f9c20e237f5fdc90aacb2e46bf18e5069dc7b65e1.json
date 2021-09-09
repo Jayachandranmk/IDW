@@ -1,0 +1,30 @@
+{
+	"name": "CalendarPeriod_CalendarDate_dc1ac29fc22434120ad8a76f9c20e237f5fdc90aacb2e46bf18e5069dc7b65e1",
+	"properties": {
+		"Namespace": {
+			"DatabaseName": "tcsSource"
+		},
+		"Name": "CalendarPeriod_CalendarDate_dc1ac29fc22434120ad8a76f9c20e237f5fdc90aacb2e46bf18e5069dc7b65e1",
+		"EntityType": "RELATIONSHIP",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"FromTableName": "CalendarPeriod",
+		"ToTableName": "CalendarDate",
+		"ColumnRelationshipInformations": [
+			{
+				"FromColumnName": "CalendarId",
+				"ToColumnName": "CalendarId"
+			},
+			{
+				"FromColumnName": "CalendarPeriodId",
+				"ToColumnName": "CalendarPeriodId"
+			}
+		],
+		"RelationshipType": 0,
+		"Properties": {
+			"DerivedModelRelationshipInfo": "{\"baseRelationship\":{\"fromEntity\":\"CalendarPeriod.cdm.json/CalendarPeriod\",\"toEntity\":\"CalendarDate.cdm.json/CalendarDate\",\"joinPairs\":[{\"fromAttribute\":\"CalendarId\",\"toAttribute\":\"CalendarId\"},{\"fromAttribute\":\"CalendarPeriodId\",\"toAttribute\":\"CalendarPeriodId\"}]}}"
+		}
+	},
+	"type": "RELATIONSHIP"
+}

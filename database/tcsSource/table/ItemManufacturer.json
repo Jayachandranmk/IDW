@@ -1,0 +1,127 @@
+{
+	"name": "ItemManufacturer",
+	"properties": {
+		"Namespace": {
+			"DatabaseName": "tcsSource"
+		},
+		"Name": "ItemManufacturer",
+		"Description": "The manufacturer of a particular item. \n\nNote that a company may choose to use products from more than one manufacturer to include as a single ITEM or SKU. For example a company may have a single SKU for bolts that are manufactured by three different companies each of which have their own unique UPC etc. for the product that they produce.",
+		"EntityType": "TABLE",
+		"TableType": "EXTERNAL",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"StorageDescriptor": {
+			"Columns": [
+				{
+					"Name": "ManufacturerId",
+					"Description": "The unique identifier of a Manufacturer.",
+					"BaseAttributeReference": {
+						"Entity": "ItemManufacturer.cdm.json/ItemManufacturer",
+						"Name": "ManufacturerId"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "ItemSku",
+					"Description": "The Stock Keeping Unit identifier, which is typically used for inventory-related activities.",
+					"BaseAttributeReference": {
+						"Entity": "ItemManufacturer.cdm.json/ItemManufacturer",
+						"Name": "ItemSku"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 20,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ManufacturerItemSku",
+					"Description": "The Stock Keeping Unit identifier specified by the Manufacturer.",
+					"BaseAttributeReference": {
+						"Entity": "ItemManufacturer.cdm.json/ItemManufacturer",
+						"Name": "ManufacturerItemSku"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 20,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ItemManufacturerNote",
+					"Description": "A note, comment or additional information regarding the Item Manufacturer.",
+					"BaseAttributeReference": {
+						"Entity": "ItemManufacturer.cdm.json/ItemManufacturer",
+						"Name": "ItemManufacturerNote"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 1024,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				}
+			],
+			"Format": {
+				"InputFormat": "org.apache.hadoop.mapred.SequenceFileInputFormat",
+				"OutputFormat": "org.apache.hadoop.hive.ql.io.HiveSequenceFileOutputFormat",
+				"FormatType": "csv",
+				"SerializeLib": "org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe",
+				"Properties": {
+					"path": "abfss://filesystem@aamerriladls.dfs.core.windows.net/tcsSource/ItemManufacturer",
+					"delimiter": ",",
+					"firstRowAsHeader": "false",
+					"serialization.format": "1",
+					"escape": "\\",
+					"FormatTypeSetToDatabaseDefault": true,
+					"header": "false"
+				}
+			},
+			"Source": {
+				"Provider": "ADLS",
+				"Location": "abfss://filesystem@aamerriladls.dfs.core.windows.net/tcsSource/ItemManufacturer",
+				"Properties": {
+					"LinkedServiceName": "AzureDataLakeStorage1",
+					"LocationSetToDatabaseDefault": true
+				}
+			},
+			"Properties": {
+				"textinputformat.record.delimiter": ",",
+				"compression": "{\"type\":\"None\",\"level\":\"optimal\"}",
+				"derivedModelAttributeInfo": "{\"attributeReferences\":{\"ManufacturerId\":{\"entity\":\"ItemManufacturer.cdm.json/ItemManufacturer\",\"name\":\"ManufacturerId\"},\"ItemSku\":{\"entity\":\"ItemManufacturer.cdm.json/ItemManufacturer\",\"name\":\"ItemSku\"},\"ManufacturerItemSku\":{\"entity\":\"ItemManufacturer.cdm.json/ItemManufacturer\",\"name\":\"ManufacturerItemSku\"},\"ItemManufacturerNote\":{\"entity\":\"ItemManufacturer.cdm.json/ItemManufacturer\",\"name\":\"ItemManufacturerNote\"}}}"
+			},
+			"Compressed": false,
+			"IsStoredAsSubdirectories": false
+		},
+		"Properties": {
+			"DerivedModelEntityInfo": "{\"entityDirectives\":{\"baseEntityReference\":{\"name\":\"ItemManufacturer\",\"path\":\"ItemManufacturer.cdm.json/ItemManufacturer\"},\"description\":\"The manufacturer of a particular item. \\n\\nNote that a company may choose to use products from more than one manufacturer to include as a single ITEM or SKU. For example a company may have a single SKU for bolts that are manufactured by three different companies each of which have their own unique UPC etc. for the product that they produce.\",\"primaryKey\":[\"ManufacturerId\",\"ItemSku\"],\"projectionInfo\":{\"attributes\":[{\"type\":\"Existing\",\"name\":\"ManufacturerId\",\"attributeReference\":{\"entity\":\"ItemManufacturer.cdm.json/ItemManufacturer\",\"name\":\"ManufacturerId\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"ItemSku\",\"attributeReference\":{\"entity\":\"ItemManufacturer.cdm.json/ItemManufacturer\",\"name\":\"ItemSku\"},\"dataType\":\"string\",\"dataTypeLength\":20},{\"type\":\"Existing\",\"name\":\"ManufacturerItemSku\",\"attributeReference\":{\"entity\":\"ItemManufacturer.cdm.json/ItemManufacturer\",\"name\":\"ManufacturerItemSku\"},\"dataType\":\"string\",\"dataTypeLength\":20},{\"type\":\"Existing\",\"name\":\"ItemManufacturerNote\",\"attributeReference\":{\"entity\":\"ItemManufacturer.cdm.json/ItemManufacturer\",\"name\":\"ItemManufacturerNote\"},\"dataType\":\"string\",\"dataTypeLength\":1024}]}}}",
+			"Description": "The manufacturer of a particular item. \n\nNote that a company may choose to use products from more than one manufacturer to include as a single ITEM or SKU. For example a company may have a single SKU for bolts that are manufactured by three different companies each of which have their own unique UPC etc. for the product that they produce.",
+			"DisplayFolderInfo": "{\"name\":\"Inventory\",\"colorCode\":\"#0E3D73\"}",
+			"PrimaryKeys": "ManufacturerId,ItemSku",
+			"spark.sql.sources.provider": "csv"
+		},
+		"Retention": 0,
+		"Temporary": false,
+		"IsRewriteEnabled": false
+	},
+	"type": "TABLE"
+}
