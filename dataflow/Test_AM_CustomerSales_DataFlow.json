@@ -1,0 +1,109 @@
+{
+	"name": "Test_AM_CustomerSales_DataFlow",
+	"properties": {
+		"folder": {
+			"name": "Test_AM"
+		},
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"linkedService": {
+						"referenceName": "Test_Linked_service",
+						"type": "LinkedServiceReference"
+					},
+					"schemaLinkedService": {
+						"referenceName": "Test_Linked_service",
+						"type": "LinkedServiceReference"
+					},
+					"name": "TransactionDeltaSource"
+				},
+				{
+					"linkedService": {
+						"referenceName": "Test_Linked_service",
+						"type": "LinkedServiceReference"
+					},
+					"schemaLinkedService": {
+						"referenceName": "Test_Linked_service",
+						"type": "LinkedServiceReference"
+					},
+					"name": "TransactionLineItemSource"
+				},
+				{
+					"linkedService": {
+						"referenceName": "Test_Linked_service",
+						"type": "LinkedServiceReference"
+					},
+					"schemaLinkedService": {
+						"referenceName": "Test_Linked_service",
+						"type": "LinkedServiceReference"
+					},
+					"name": "ItemSource"
+				},
+				{
+					"linkedService": {
+						"referenceName": "Test_Linked_service",
+						"type": "LinkedServiceReference"
+					},
+					"schemaLinkedService": {
+						"referenceName": "Test_Linked_service",
+						"type": "LinkedServiceReference"
+					},
+					"name": "IndividualCustomerSource"
+				}
+			],
+			"sinks": [
+				{
+					"linkedService": {
+						"referenceName": "Test_Linked_service",
+						"type": "LinkedServiceReference"
+					},
+					"schemaLinkedService": {
+						"referenceName": "Test_Linked_service",
+						"type": "LinkedServiceReference"
+					},
+					"name": "CustomerSalesSink"
+				}
+			],
+			"transformations": [
+				{
+					"name": "Deduplicated1TransactionDeltaSource"
+				},
+				{
+					"name": "Transaction"
+				},
+				{
+					"name": "Deduplicated1TransactionLineItemSource"
+				},
+				{
+					"name": "TransactionLineItem"
+				},
+				{
+					"name": "JoinTransactionLineItem"
+				},
+				{
+					"name": "Deduplicated1ItemSource"
+				},
+				{
+					"name": "Item"
+				},
+				{
+					"name": "JoinItem"
+				},
+				{
+					"name": "Deduplicated1IndividualCustomerSource"
+				},
+				{
+					"name": "IndividualCustomer"
+				},
+				{
+					"name": "JoinIndividualCustomer"
+				},
+				{
+					"name": "CustomerSales"
+				}
+			],
+			"script": "parameters{\n\tmodifiedAfter as timestamp,\n\tmodifiedBefore as timestamp\n}\nsource(output(\n\t\tTransactionId as integer,\n\t\tCustomerId as integer\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: true,\n\tmodifiedAfter: ($modifiedAfter),\n\tmodifiedBefore: ($modifiedBefore),\n\tentity: 'Transaction.cdm.json/Transaction',\n\tformat: 'cdm',\n\tmanifestType: 'manifest',\n\tmanifestName: 'Transaction',\n\tcorpusPath: 'Test_logical/stdm-corpus',\n\tcorpusStore: 'adlsgen2',\n\tadlsgen2_fileSystem: 'idwsource',\n\tfolderPath: 'Test_Physical/stdm-exported/Transaction',\n\tfileSystem: 'idwsource',\n\tdateFormats: ['MM/dd/yyyy','MM-dd-yyyy','MM.dd.yyyy','yyyy/MM/dd','yyyy-MM-dd','yyyy.MM.dd'],\n\ttimestampFormats: ['yyyy/MM/dd hh:mm:ss a','yyyy-MM-dd hh:mm:ss a','yyyy.MM.dd hh:mm:ss a','yyyy/MM/dd HH:mm:ss','yyyy-MM-dd HH:mm:ss','yyyy.MM.dd HH:mm:ss','MM-dd-yyyy hh:mm:ss a','MM/dd/yyyy hh:mm:ss a','MM.dd.yyyy hh:mm:ss a','MM/dd/yyyy HH:mm:ss','MM-dd-yyyy HH:mm:ss','MM.dd.yyyy HH:mm:ss','MM/dd/yyyy','MM-dd-yyyy','MM.dd.yyyy','yyyy/MM/dd','yyyy-MM-dd','yyyy.MM.dd']) ~> TransactionDeltaSource\nsource(output(\n\t\tTransactionId as integer,\n\t\tTransactionLineItemId as integer,\n\t\tTransactionLineItemStartTimestamp as timestamp,\n\t\tItemSku as string,\n\t\tQuantity as decimal(13,2),\n\t\tTotalTransactionLineItemAmount as decimal(13,2),\n\t\tTotalTransactionSalesPriceAmount as decimal(13,2),\n\t\tProductPriceAdjustmentPercentage as decimal(13,8),\n\t\tTotalLineItemAdjustmentAmount as decimal(13,2)\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: true,\n\tentity: 'TransactionLineItem.cdm.json/TransactionLineItem',\n\tformat: 'cdm',\n\tmanifestType: 'manifest',\n\tmanifestName: 'TransactionLineItem',\n\tcorpusPath: 'Test_logical/stdm-corpus',\n\tcorpusStore: 'adlsgen2',\n\tadlsgen2_fileSystem: 'idwsource',\n\tfolderPath: 'Test_Physical/stdm-exported/TransactionLineItem',\n\tfileSystem: 'idwsource',\n\tdateFormats: ['MM/dd/yyyy','MM-dd-yyyy','MM.dd.yyyy','yyyy/MM/dd','yyyy-MM-dd','yyyy.MM.dd'],\n\ttimestampFormats: ['yyyy/MM/dd hh:mm:ss a','yyyy-MM-dd hh:mm:ss a','yyyy.MM.dd hh:mm:ss a','yyyy/MM/dd HH:mm:ss','yyyy-MM-dd HH:mm:ss','yyyy.MM.dd HH:mm:ss','MM-dd-yyyy hh:mm:ss a','MM/dd/yyyy hh:mm:ss a','MM.dd.yyyy hh:mm:ss a','MM/dd/yyyy HH:mm:ss','MM-dd-yyyy HH:mm:ss','MM.dd.yyyy HH:mm:ss','MM/dd/yyyy','MM-dd-yyyy','MM.dd.yyyy','yyyy/MM/dd','yyyy-MM-dd','yyyy.MM.dd']) ~> TransactionLineItemSource\nsource(output(\n\t\tItemSku as string,\n\t\tItemName as string,\n\t\tListPrice as decimal(13,2),\n\t\tItemId as integer\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: true,\n\tentity: 'Item.cdm.json/Item',\n\tformat: 'cdm',\n\tmanifestType: 'manifest',\n\tmanifestName: 'Item',\n\tcorpusPath: 'Test_logical/stdm-corpus',\n\tcorpusStore: 'adlsgen2',\n\tadlsgen2_fileSystem: 'idwsource',\n\tfolderPath: 'Test_Physical/stdm-exported/Item',\n\tfileSystem: 'idwsource',\n\tdateFormats: ['MM/dd/yyyy','MM-dd-yyyy','MM.dd.yyyy','yyyy/MM/dd','yyyy-MM-dd','yyyy.MM.dd'],\n\ttimestampFormats: ['yyyy/MM/dd hh:mm:ss a','yyyy-MM-dd hh:mm:ss a','yyyy.MM.dd hh:mm:ss a','yyyy/MM/dd HH:mm:ss','yyyy-MM-dd HH:mm:ss','yyyy.MM.dd HH:mm:ss','MM-dd-yyyy hh:mm:ss a','MM/dd/yyyy hh:mm:ss a','MM.dd.yyyy hh:mm:ss a','MM/dd/yyyy HH:mm:ss','MM-dd-yyyy HH:mm:ss','MM.dd.yyyy HH:mm:ss','MM/dd/yyyy','MM-dd-yyyy','MM.dd.yyyy','yyyy/MM/dd','yyyy-MM-dd','yyyy.MM.dd']) ~> ItemSource\nsource(output(\n\t\tCustomerId as integer,\n\t\tIndividualCustomerName as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: true,\n\tentity: 'IndividualCustomer.cdm.json/IndividualCustomer',\n\tformat: 'cdm',\n\tmanifestType: 'manifest',\n\tmanifestName: 'IndividualCustomer',\n\tcorpusPath: 'Test_logical/stdm-corpus',\n\tcorpusStore: 'adlsgen2',\n\tadlsgen2_fileSystem: 'idwsource',\n\tfolderPath: 'Test_Physical/stdm-exported/IndividualCustomer',\n\tfileSystem: 'idwsource',\n\tdateFormats: ['MM/dd/yyyy','MM-dd-yyyy','MM.dd.yyyy','yyyy/MM/dd','yyyy-MM-dd','yyyy.MM.dd'],\n\ttimestampFormats: ['yyyy/MM/dd hh:mm:ss a','yyyy-MM-dd hh:mm:ss a','yyyy.MM.dd hh:mm:ss a','yyyy/MM/dd HH:mm:ss','yyyy-MM-dd HH:mm:ss','yyyy.MM.dd HH:mm:ss','MM-dd-yyyy hh:mm:ss a','MM/dd/yyyy hh:mm:ss a','MM.dd.yyyy hh:mm:ss a','MM/dd/yyyy HH:mm:ss','MM-dd-yyyy HH:mm:ss','MM.dd.yyyy HH:mm:ss','MM/dd/yyyy','MM-dd-yyyy','MM.dd.yyyy','yyyy/MM/dd','yyyy-MM-dd','yyyy.MM.dd']) ~> IndividualCustomerSource\nTransactionDeltaSource aggregate(groupBy(TransactionId),\n\tCustomerId = last(CustomerId)) ~> Deduplicated1TransactionDeltaSource\nDeduplicated1TransactionDeltaSource select(mapColumn(\n\t\tTransactionId,\n\t\tCustomerId\n\t),\n\tskipDuplicateMapInputs: false,\n\tskipDuplicateMapOutputs: false) ~> Transaction\nTransactionLineItemSource aggregate(groupBy(TransactionId,\n\t\tTransactionLineItemId),\n\tTransactionLineItemStartTimestamp = last(TransactionLineItemStartTimestamp),\n\t\tItemSku = last(ItemSku),\n\t\tQuantity = last(Quantity),\n\t\tTotalTransactionLineItemAmount = last(TotalTransactionLineItemAmount),\n\t\tTotalTransactionSalesPriceAmount = last(TotalTransactionSalesPriceAmount),\n\t\tProductPriceAdjustmentPercentage = last(ProductPriceAdjustmentPercentage),\n\t\tTotalLineItemAdjustmentAmount = last(TotalLineItemAdjustmentAmount)) ~> Deduplicated1TransactionLineItemSource\nDeduplicated1TransactionLineItemSource select(mapColumn(\n\t\tTransactionId,\n\t\tTransactionLineItemId,\n\t\tTransactionLineItemStartTimestamp,\n\t\tItemSku,\n\t\tTotalTransactionSalesPriceAmount,\n\t\tTotalLineItemAdjustmentAmount\n\t),\n\tskipDuplicateMapInputs: false,\n\tskipDuplicateMapOutputs: false) ~> TransactionLineItem\nTransaction, TransactionLineItem join(Transaction@TransactionId === TransactionLineItem@TransactionId,\n\tjoinType:'left',\n\tbroadcast: 'auto')~> JoinTransactionLineItem\nItemSource aggregate(groupBy(ItemSku),\n\tItemName = last(ItemName),\n\t\tListPrice = last(ListPrice),\n\t\tItemId = last(ItemId)) ~> Deduplicated1ItemSource\nDeduplicated1ItemSource select(mapColumn(\n\t\tItemSku,\n\t\tItemName\n\t),\n\tskipDuplicateMapInputs: false,\n\tskipDuplicateMapOutputs: false) ~> Item\nJoinTransactionLineItem, Item join(TransactionLineItem@ItemSku === Item@ItemSku,\n\tjoinType:'left',\n\tbroadcast: 'auto')~> JoinItem\nIndividualCustomerSource aggregate(groupBy(CustomerId),\n\tIndividualCustomerName = last(IndividualCustomerName)) ~> Deduplicated1IndividualCustomerSource\nDeduplicated1IndividualCustomerSource select(mapColumn(\n\t\tCustomerId,\n\t\tIndividualCustomerName\n\t),\n\tskipDuplicateMapInputs: false,\n\tskipDuplicateMapOutputs: false) ~> IndividualCustomer\nJoinItem, IndividualCustomer join(Transaction@CustomerId === IndividualCustomer@CustomerId,\n\tjoinType:'left',\n\tbroadcast: 'auto')~> JoinIndividualCustomer\nJoinIndividualCustomer select(mapColumn(\n\t\tTransactionLineItemId,\n\t\tDate = TransactionLineItemStartTimestamp,\n\t\tProduct = ItemName,\n\t\tDiscount = TotalLineItemAdjustmentAmount,\n\t\tSales = TotalTransactionSalesPriceAmount,\n\t\tCustomer = IndividualCustomerName\n\t),\n\tskipDuplicateMapInputs: false,\n\tskipDuplicateMapOutputs: false) ~> CustomerSales\nCustomerSales sink(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tentity: 'CustomerSales.cdm.json/CustomerSales',\n\tformat: 'cdm',\n\tmanifestType: 'manifest',\n\tmanifestName: 'CustomerSales',\n\tfolderPath: 'Test_physical/am-exported/CustomerSales',\n\tfileSystem: 'idwsource',\n\tcolumnNamesAsHeader: true,\n\tcolumnDelimiter: ',',\n\tquoteChar: '\\\"',\n\tescapeChar: '\\\\',\n\tcorpusPath: 'Test_Logical/am-corpus',\n\tcorpusStore: 'adlsgen2',\n\tadlsgen2_fileSystem: 'idwsource',\n\ttruncate: false,\n\tumask: 0022,\n\tpartitionBy('hash', 1)) ~> CustomerSalesSink"
+		}
+	}
+}

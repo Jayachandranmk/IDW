@@ -1,0 +1,225 @@
+{
+	"name": "L0_StdMv2_Item_IndividualCustomer",
+	"properties": {
+		"activities": [
+			{
+				"name": "ReadWatermark_Item",
+				"type": "WebActivity",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "1.00:00:00",
+					"retry": 3,
+					"retryIntervalInSeconds": 60
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"url": "https://management.azure.com/subscriptions/768c4a33-7806-43d4-a3fe-147006e6d214/resourceGroups/IDW_Opt_PoC/providers/Microsoft.IndustryDataLifecycle/pipelineSets/25e80c7d-6fc5-4f4e-9e9d-1692c05477c9/watermarks/25e80c7d-6fc5-4f4e-9e9d-1692c05477c9_Item/compute?api-version=2021-01-01-preview",
+					"connectVia": {
+						"referenceName": "AutoResolveIntegrationRuntime",
+						"type": "IntegrationRuntimeReference"
+					},
+					"method": "POST",
+					"headers": {
+						"content-Type": "application/json"
+					},
+					"body": {
+						"value": "{\r\n  \"PipelineName\": \"@{pipeline().Pipeline}\",\r\n  \"EntityName\": \"Item\",\r\n  \"PipelineRunId\": \"@{pipeline().RunId}\"\r\n}",
+						"type": "Expression"
+					},
+					"authentication": {
+						"type": "MSI",
+						"resource": "https://management.azure.com/"
+					}
+				}
+			},
+			{
+				"name": "StdMv2_ItemTransform",
+				"type": "ExecuteDataFlow",
+				"dependsOn": [
+					{
+						"activity": "ReadWatermark_Item",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "1.00:00:00",
+					"retry": 3,
+					"retryIntervalInSeconds": 60
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataflow": {
+						"referenceName": "StdMv2_Item_DataFlow",
+						"type": "DataFlowReference",
+						"parameters": {
+							"modifiedAfter": {
+								"value": "toTimestamp(\"@{activity('ReadWatermark_Item').output.properties.watermarkValue}\", \"yyyy-MM-dd HH:mm:ss.SSS\")",
+								"type": "Expression"
+							},
+							"modifiedBefore": {
+								"value": "toTimestamp(\"@{activity('ReadWatermark_Item').output.properties.intendedWatermarkValue}\", \"yyyy-MM-dd HH:mm:ss.SSS\")",
+								"type": "Expression"
+							}
+						}
+					},
+					"compute": {
+						"coreCount": 8,
+						"computeType": "General"
+					},
+					"traceLevel": "Fine"
+				}
+			},
+			{
+				"name": "UpdateWatermark_Item",
+				"type": "WebActivity",
+				"dependsOn": [
+					{
+						"activity": "StdMv2_ItemTransform",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "1.00:00:00",
+					"retry": 3,
+					"retryIntervalInSeconds": 60
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"url": "https://management.azure.com/subscriptions/768c4a33-7806-43d4-a3fe-147006e6d214/resourceGroups/IDW_Opt_PoC/providers/Microsoft.IndustryDataLifecycle/pipelineSets/25e80c7d-6fc5-4f4e-9e9d-1692c05477c9/watermarks/25e80c7d-6fc5-4f4e-9e9d-1692c05477c9_Item/sync?api-version=2021-01-01-preview",
+					"connectVia": {
+						"referenceName": "AutoResolveIntegrationRuntime",
+						"type": "IntegrationRuntimeReference"
+					},
+					"method": "POST",
+					"headers": {
+						"content-Type": "application/json"
+					},
+					"body": {
+						"value": "{\r\n  \"PipelineName\": \"@{pipeline().Pipeline}\",\r\n  \"EntityName\": \"Item\",\r\n  \"PipelineRunId\": \"@{pipeline().RunId}\"\r\n}",
+						"type": "Expression"
+					},
+					"authentication": {
+						"type": "MSI",
+						"resource": "https://management.azure.com/"
+					}
+				}
+			},
+			{
+				"name": "ReadWatermark_IndividualCustomer",
+				"type": "WebActivity",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "1.00:00:00",
+					"retry": 3,
+					"retryIntervalInSeconds": 60
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"url": "https://management.azure.com/subscriptions/768c4a33-7806-43d4-a3fe-147006e6d214/resourceGroups/IDW_Opt_PoC/providers/Microsoft.IndustryDataLifecycle/pipelineSets/25e80c7d-6fc5-4f4e-9e9d-1692c05477c9/watermarks/25e80c7d-6fc5-4f4e-9e9d-1692c05477c9_IndividualCustomer/compute?api-version=2021-01-01-preview",
+					"connectVia": {
+						"referenceName": "AutoResolveIntegrationRuntime",
+						"type": "IntegrationRuntimeReference"
+					},
+					"method": "POST",
+					"headers": {
+						"content-Type": "application/json"
+					},
+					"body": {
+						"value": "{\r\n  \"PipelineName\": \"@{pipeline().Pipeline}\",\r\n  \"EntityName\": \"IndividualCustomer\",\r\n  \"PipelineRunId\": \"@{pipeline().RunId}\"\r\n}",
+						"type": "Expression"
+					},
+					"authentication": {
+						"type": "MSI",
+						"resource": "https://management.azure.com/"
+					}
+				}
+			},
+			{
+				"name": "StdMv2_IndividualCustomerTransform",
+				"type": "ExecuteDataFlow",
+				"dependsOn": [
+					{
+						"activity": "ReadWatermark_IndividualCustomer",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "1.00:00:00",
+					"retry": 3,
+					"retryIntervalInSeconds": 60
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataflow": {
+						"referenceName": "StdMv2_IndividualCustomer_DataFlow",
+						"type": "DataFlowReference",
+						"parameters": {
+							"modifiedAfter": {
+								"value": "toTimestamp(\"@{activity('ReadWatermark_IndividualCustomer').output.properties.watermarkValue}\", \"yyyy-MM-dd HH:mm:ss.SSS\")",
+								"type": "Expression"
+							},
+							"modifiedBefore": {
+								"value": "toTimestamp(\"@{activity('ReadWatermark_IndividualCustomer').output.properties.intendedWatermarkValue}\", \"yyyy-MM-dd HH:mm:ss.SSS\")",
+								"type": "Expression"
+							}
+						}
+					},
+					"compute": {
+						"coreCount": 8,
+						"computeType": "General"
+					},
+					"traceLevel": "Fine"
+				}
+			},
+			{
+				"name": "UpdateWatermark_IndividualCustomer",
+				"type": "WebActivity",
+				"dependsOn": [
+					{
+						"activity": "StdMv2_IndividualCustomerTransform",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "1.00:00:00",
+					"retry": 3,
+					"retryIntervalInSeconds": 60
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"url": "https://management.azure.com/subscriptions/768c4a33-7806-43d4-a3fe-147006e6d214/resourceGroups/IDW_Opt_PoC/providers/Microsoft.IndustryDataLifecycle/pipelineSets/25e80c7d-6fc5-4f4e-9e9d-1692c05477c9/watermarks/25e80c7d-6fc5-4f4e-9e9d-1692c05477c9_IndividualCustomer/sync?api-version=2021-01-01-preview",
+					"connectVia": {
+						"referenceName": "AutoResolveIntegrationRuntime",
+						"type": "IntegrationRuntimeReference"
+					},
+					"method": "POST",
+					"headers": {
+						"content-Type": "application/json"
+					},
+					"body": {
+						"value": "{\r\n  \"PipelineName\": \"@{pipeline().Pipeline}\",\r\n  \"EntityName\": \"IndividualCustomer\",\r\n  \"PipelineRunId\": \"@{pipeline().RunId}\"\r\n}",
+						"type": "Expression"
+					},
+					"authentication": {
+						"type": "MSI",
+						"resource": "https://management.azure.com/"
+					}
+				}
+			}
+		],
+		"folder": {
+			"name": "StdMv2"
+		},
+		"annotations": [],
+		"lastPublishTime": "2021-08-31T08:11:28Z"
+	},
+	"type": "Microsoft.Synapse/workspaces/pipelines"
+}

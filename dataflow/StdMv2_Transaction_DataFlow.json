@@ -1,0 +1,46 @@
+{
+	"name": "StdMv2_Transaction_DataFlow",
+	"properties": {
+		"folder": {
+			"name": "StdMv2"
+		},
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"linkedService": {
+						"referenceName": "Test_Linked_service",
+						"type": "LinkedServiceReference"
+					},
+					"schemaLinkedService": {
+						"referenceName": "Test_Linked_service",
+						"type": "LinkedServiceReference"
+					},
+					"name": "SalesDeltaSource"
+				}
+			],
+			"sinks": [
+				{
+					"linkedService": {
+						"referenceName": "Test_Linked_service",
+						"type": "LinkedServiceReference"
+					},
+					"schemaLinkedService": {
+						"referenceName": "Test_Linked_service",
+						"type": "LinkedServiceReference"
+					},
+					"name": "TransactionSink"
+				}
+			],
+			"transformations": [
+				{
+					"name": "Deduplicated1SalesDeltaSource"
+				},
+				{
+					"name": "Transaction"
+				}
+			],
+			"script": "parameters{\n\tmodifiedAfter as timestamp,\n\tmodifiedBefore as timestamp\n}\nsource(output(\n\t\tSalesId as integer,\n\t\tSalesPersonId as integer,\n\t\tCustomerId as integer,\n\t\tProductName as string,\n\t\tSku as string,\n\t\tPrice as decimal(18,2),\n\t\tOrderDate as timestamp,\n\t\tQuantity as integer,\n\t\tDiscountPct as decimal(18,2)\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: true,\n\tmodifiedAfter: ($modifiedAfter),\n\tmodifiedBefore: ($modifiedBefore),\n\tentity: 'Sales.cdm.json/Sales',\n\tformat: 'cdm',\n\tmanifestType: 'manifest',\n\tmanifestName: 'Sales',\n\tcorpusPath: 'logical/sm2-corpus',\n\tcorpusStore: 'adlsgen2',\n\tadlsgen2_fileSystem: 'idwsource',\n\tfolderPath: 'physical/sm2-exported/Sales',\n\tfileSystem: 'idwsource',\n\tdateFormats: ['MM/dd/yyyy','MM-dd-yyyy','MM.dd.yyyy','yyyy/MM/dd','yyyy-MM-dd','yyyy.MM.dd'],\n\ttimestampFormats: ['yyyy/MM/dd hh:mm:ss a','yyyy-MM-dd hh:mm:ss a','yyyy.MM.dd hh:mm:ss a','yyyy/MM/dd HH:mm:ss','yyyy-MM-dd HH:mm:ss','yyyy.MM.dd HH:mm:ss','MM-dd-yyyy hh:mm:ss a','MM/dd/yyyy hh:mm:ss a','MM.dd.yyyy hh:mm:ss a','MM/dd/yyyy HH:mm:ss','MM-dd-yyyy HH:mm:ss','MM.dd.yyyy HH:mm:ss','MM/dd/yyyy','MM-dd-yyyy','MM.dd.yyyy','yyyy/MM/dd','yyyy-MM-dd','yyyy.MM.dd']) ~> SalesDeltaSource\nSalesDeltaSource aggregate(groupBy(SalesId),\n\tSalesPersonId = last(SalesPersonId),\n\t\tCustomerId = last(CustomerId),\n\t\tProductName = last(ProductName),\n\t\tSku = last(Sku),\n\t\tPrice = last(Price),\n\t\tOrderDate = last(OrderDate),\n\t\tQuantity = last(Quantity),\n\t\tDiscountPct = last(DiscountPct)) ~> Deduplicated1SalesDeltaSource\nDeduplicated1SalesDeltaSource select(mapColumn(\n\t\tTransactionId = SalesId,\n\t\tCustomerId\n\t),\n\tskipDuplicateMapInputs: false,\n\tskipDuplicateMapOutputs: false) ~> Transaction\nTransaction sink(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tentity: 'Transaction.cdm.json/Transaction',\n\tformat: 'cdm',\n\tmanifestType: 'manifest',\n\tmanifestName: 'Transaction',\n\tfolderPath: 'physical/stdmv2-exported/Transaction',\n\tfileSystem: 'idwsource',\n\tcolumnNamesAsHeader: true,\n\tcolumnDelimiter: ',',\n\tquoteChar: '\\\"',\n\tescapeChar: '\\\\',\n\tcorpusPath: 'logical/stdmv2-corpus',\n\tcorpusStore: 'adlsgen2',\n\tadlsgen2_fileSystem: 'idwsource',\n\ttruncate: false,\n\tumask: 0022,\n\tpartitionBy('hash', 1)) ~> TransactionSink"
+		}
+	}
+}

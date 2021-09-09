@@ -1,0 +1,26 @@
+{
+	"name": "Test_STM_StartingPipeline",
+	"properties": {
+		"activities": [
+			{
+				"name": "F0_Test_STM_IndividualCustomer_Item_Transaction_Transac",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "F0_Test_STM_IndividualCustomer_Item_Transaction_TransactionLineItem",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true
+				}
+			}
+		],
+		"folder": {
+			"name": "Test_STM"
+		},
+		"annotations": [],
+		"lastPublishTime": "2021-07-27T07:08:05Z"
+	},
+	"type": "Microsoft.Synapse/workspaces/pipelines"
+}

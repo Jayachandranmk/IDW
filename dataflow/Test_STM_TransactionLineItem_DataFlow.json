@@ -1,0 +1,52 @@
+{
+	"name": "Test_STM_TransactionLineItem_DataFlow",
+	"properties": {
+		"folder": {
+			"name": "Test_STM"
+		},
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"linkedService": {
+						"referenceName": "Test_Linked_service",
+						"type": "LinkedServiceReference"
+					},
+					"schemaLinkedService": {
+						"referenceName": "Test_Linked_service",
+						"type": "LinkedServiceReference"
+					},
+					"name": "SalesDeltaSource"
+				}
+			],
+			"sinks": [
+				{
+					"linkedService": {
+						"referenceName": "Test_Linked_service",
+						"type": "LinkedServiceReference"
+					},
+					"schemaLinkedService": {
+						"referenceName": "Test_Linked_service",
+						"type": "LinkedServiceReference"
+					},
+					"name": "TransactionLineItemSink"
+				}
+			],
+			"transformations": [
+				{
+					"name": "Deduplicated1SalesDeltaSource"
+				},
+				{
+					"name": "SelectSales"
+				},
+				{
+					"name": "DerivedSelectSales"
+				},
+				{
+					"name": "TransactionLineItem"
+				}
+			],
+			"script": "parameters{\n\tmodifiedAfter as timestamp,\n\tmodifiedBefore as timestamp\n}\nsource(output(\n\t\tSalesId as integer,\n\t\tSalesPersonId as integer,\n\t\tCustomerId as integer,\n\t\tProductName as string,\n\t\tSku as string,\n\t\tPrice as decimal(18,2),\n\t\tOrderDate as timestamp,\n\t\tQuantity as integer,\n\t\tDiscountPct as decimal(18,2)\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: true,\n\tmodifiedAfter: ($modifiedAfter),\n\tmodifiedBefore: ($modifiedBefore),\n\tentity: 'Sales.cdm.json/Sales',\n\tformat: 'cdm',\n\tmanifestType: 'manifest',\n\tmanifestName: 'Sales',\n\tcorpusPath: 'Test_Logical/sm-corpus',\n\tcorpusStore: 'adlsgen2',\n\tadlsgen2_fileSystem: 'idwsource',\n\tfolderPath: 'Test_Physical/sm-exported/Sales',\n\tfileSystem: 'idwsource',\n\tdateFormats: ['MM/dd/yyyy','MM-dd-yyyy','MM.dd.yyyy','yyyy/MM/dd','yyyy-MM-dd','yyyy.MM.dd'],\n\ttimestampFormats: ['yyyy/MM/dd hh:mm:ss a','yyyy-MM-dd hh:mm:ss a','yyyy.MM.dd hh:mm:ss a','yyyy/MM/dd HH:mm:ss','yyyy-MM-dd HH:mm:ss','yyyy.MM.dd HH:mm:ss','MM-dd-yyyy hh:mm:ss a','MM/dd/yyyy hh:mm:ss a','MM.dd.yyyy hh:mm:ss a','MM/dd/yyyy HH:mm:ss','MM-dd-yyyy HH:mm:ss','MM.dd.yyyy HH:mm:ss','MM/dd/yyyy','MM-dd-yyyy','MM.dd.yyyy','yyyy/MM/dd','yyyy-MM-dd','yyyy.MM.dd']) ~> SalesDeltaSource\nSalesDeltaSource aggregate(groupBy(SalesId),\n\tSalesPersonId = last(SalesPersonId),\n\t\tCustomerId = last(CustomerId),\n\t\tProductName = last(ProductName),\n\t\tSku = last(Sku),\n\t\tPrice = last(Price),\n\t\tOrderDate = last(OrderDate),\n\t\tQuantity = last(Quantity),\n\t\tDiscountPct = last(DiscountPct)) ~> Deduplicated1SalesDeltaSource\nDeduplicated1SalesDeltaSource select(mapColumn(\n\t\tPrice,\n\t\tSalesQuantity = Quantity,\n\t\tDiscountPct,\n\t\tSalesId,\n\t\tOrderDate,\n\t\tSku,\n\t\tQuantity\n\t),\n\tskipDuplicateMapInputs: false,\n\tskipDuplicateMapOutputs: false) ~> SelectSales\nSelectSales derive(TotalTransactionLineItemAmount = Price * SalesQuantity,\n\t\tTotalTransactionSalesPriceAmount = (1-DiscountPct/100) * Price * SalesQuantity,\n\t\tTotalLineItemAdjustmentAmount = (DiscountPct/100) * Price * SalesQuantity) ~> DerivedSelectSales\nDerivedSelectSales select(mapColumn(\n\t\tTransactionId = SalesId,\n\t\tTransactionLineItemId = SalesId,\n\t\tTransactionLineItemStartTimestamp = OrderDate,\n\t\tItemSku = Sku,\n\t\tQuantity = SalesQuantity,\n\t\tTotalTransactionLineItemAmount,\n\t\tTotalTransactionSalesPriceAmount,\n\t\tProductPriceAdjustmentPercentage = DiscountPct,\n\t\tTotalLineItemAdjustmentAmount\n\t),\n\tskipDuplicateMapInputs: false,\n\tskipDuplicateMapOutputs: false) ~> TransactionLineItem\nTransactionLineItem sink(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tentity: 'TransactionLineItem.cdm.json/TransactionLineItem',\n\tformat: 'cdm',\n\tmanifestType: 'manifest',\n\tmanifestName: 'TransactionLineItem',\n\tfolderPath: 'Test_Physical/stdm-exported/TransactionLineItem',\n\tfileSystem: 'idwsource',\n\tcolumnNamesAsHeader: true,\n\tcolumnDelimiter: ',',\n\tquoteChar: '\\\"',\n\tescapeChar: '\\\\',\n\tcorpusPath: 'Test_Logical/stdm-corpus',\n\tcorpusStore: 'adlsgen2',\n\tadlsgen2_fileSystem: 'idwsource',\n\ttruncate: false,\n\tumask: 0022,\n\tpartitionBy('hash', 1)) ~> TransactionLineItemSink"
+		}
+	}
+}

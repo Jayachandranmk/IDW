@@ -1,0 +1,119 @@
+{
+	"name": "L0_AM2_CustomerSales",
+	"properties": {
+		"activities": [
+			{
+				"name": "ReadWatermark_CustomerSales",
+				"type": "WebActivity",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "1.00:00:00",
+					"retry": 3,
+					"retryIntervalInSeconds": 60
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"url": "https://management.azure.com/subscriptions/768c4a33-7806-43d4-a3fe-147006e6d214/resourceGroups/IDW_Opt_PoC/providers/Microsoft.IndustryDataLifecycle/pipelineSets/20bf0401-d568-4c1e-bcd3-cd649a22e7d0/watermarks/20bf0401-d568-4c1e-bcd3-cd649a22e7d0_CustomerSales/compute?api-version=2021-01-01-preview",
+					"connectVia": {
+						"referenceName": "AutoResolveIntegrationRuntime",
+						"type": "IntegrationRuntimeReference"
+					},
+					"method": "POST",
+					"headers": {
+						"content-Type": "application/json"
+					},
+					"body": {
+						"value": "{\r\n  \"PipelineName\": \"@{pipeline().Pipeline}\",\r\n  \"EntityName\": \"CustomerSales\",\r\n  \"PipelineRunId\": \"@{pipeline().RunId}\"\r\n}",
+						"type": "Expression"
+					},
+					"authentication": {
+						"type": "MSI",
+						"resource": "https://management.azure.com/"
+					}
+				}
+			},
+			{
+				"name": "AM2_CustomerSalesTransform",
+				"type": "ExecuteDataFlow",
+				"dependsOn": [
+					{
+						"activity": "ReadWatermark_CustomerSales",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "1.00:00:00",
+					"retry": 3,
+					"retryIntervalInSeconds": 60
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataflow": {
+						"referenceName": "AM2_CustomerSales_DataFlow",
+						"type": "DataFlowReference",
+						"parameters": {
+							"modifiedAfter": {
+								"value": "toTimestamp(\"@{activity('ReadWatermark_CustomerSales').output.properties.watermarkValue}\", \"yyyy-MM-dd HH:mm:ss.SSS\")",
+								"type": "Expression"
+							},
+							"modifiedBefore": {
+								"value": "toTimestamp(\"@{activity('ReadWatermark_CustomerSales').output.properties.intendedWatermarkValue}\", \"yyyy-MM-dd HH:mm:ss.SSS\")",
+								"type": "Expression"
+							}
+						}
+					},
+					"compute": {
+						"coreCount": 8,
+						"computeType": "General"
+					},
+					"traceLevel": "Fine"
+				}
+			},
+			{
+				"name": "UpdateWatermark_CustomerSales",
+				"type": "WebActivity",
+				"dependsOn": [
+					{
+						"activity": "AM2_CustomerSalesTransform",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "1.00:00:00",
+					"retry": 3,
+					"retryIntervalInSeconds": 60
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"url": "https://management.azure.com/subscriptions/768c4a33-7806-43d4-a3fe-147006e6d214/resourceGroups/IDW_Opt_PoC/providers/Microsoft.IndustryDataLifecycle/pipelineSets/20bf0401-d568-4c1e-bcd3-cd649a22e7d0/watermarks/20bf0401-d568-4c1e-bcd3-cd649a22e7d0_CustomerSales/sync?api-version=2021-01-01-preview",
+					"connectVia": {
+						"referenceName": "AutoResolveIntegrationRuntime",
+						"type": "IntegrationRuntimeReference"
+					},
+					"method": "POST",
+					"headers": {
+						"content-Type": "application/json"
+					},
+					"body": {
+						"value": "{\r\n  \"PipelineName\": \"@{pipeline().Pipeline}\",\r\n  \"EntityName\": \"CustomerSales\",\r\n  \"PipelineRunId\": \"@{pipeline().RunId}\"\r\n}",
+						"type": "Expression"
+					},
+					"authentication": {
+						"type": "MSI",
+						"resource": "https://management.azure.com/"
+					}
+				}
+			}
+		],
+		"folder": {
+			"name": "AM2"
+		},
+		"annotations": [],
+		"lastPublishTime": "2021-07-22T14:34:56Z"
+	},
+	"type": "Microsoft.Synapse/workspaces/pipelines"
+}

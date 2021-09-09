@@ -1,0 +1,26 @@
+{
+	"name": "Test_AM_StartingPipeline",
+	"properties": {
+		"activities": [
+			{
+				"name": "L0_Test_AM_CustomerSales",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "L0_Test_AM_CustomerSales",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true
+				}
+			}
+		],
+		"folder": {
+			"name": "Test_AM"
+		},
+		"annotations": [],
+		"lastPublishTime": "2021-08-03T13:31:11Z"
+	},
+	"type": "Microsoft.Synapse/workspaces/pipelines"
+}
