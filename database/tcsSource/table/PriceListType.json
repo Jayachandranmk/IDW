@@ -78,6 +78,18 @@
 							"HIVE_TYPE_STRING": "long"
 						}
 					}
+				},
+				{
+					"Name": "PriceListTypeFactor",
+					"Description": "Sale Multiple - Indicates whether the given Unit price is for 1 or Multiple Items ",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsNullable": true,
+						"IsComplexType": false,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
 				}
 			],
 			"Format": {
@@ -113,7 +125,7 @@
 			"IsStoredAsSubdirectories": false
 		},
 		"Properties": {
-			"DerivedModelEntityInfo": "{\"entityDirectives\":{\"baseEntityReference\":{\"name\":\"PriceListType\",\"path\":\"PriceListType.cdm.json/PriceListType\"},\"description\":\"A classification of Price Schedules based upon common characteristics, attributes, functions or marketing objectives.\\n\\nEx:\\n-  Consumer Price Schedule\\n-  Government Price Schedule\\n-  Corporate Price Schedule\\n-  Introductory Price Schedule\\n-  Standard Price Schedule\\n-  Channel Price Schedule\\n-  Wholesale Price Schedule\\n-  Employee Price Schedule\\n-  Promotional Price Schedule\\n-  Seasonal Price Schedule\\n-  Geographic Price Schedule\\n-  Domestic Price Schedule\\n-  International Price Schedule\",\"primaryKey\":[\"PriceListTypeId\"],\"projectionInfo\":{\"attributes\":[{\"type\":\"Existing\",\"name\":\"PriceListTypeId\",\"attributeReference\":{\"entity\":\"PriceListType.cdm.json/PriceListType\",\"name\":\"PriceListTypeId\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"PriceListTypeName\",\"attributeReference\":{\"entity\":\"PriceListType.cdm.json/PriceListType\",\"name\":\"PriceListTypeName\"},\"dataType\":\"string\",\"dataTypeLength\":128},{\"type\":\"Existing\",\"name\":\"PriceListTypeDescription\",\"attributeReference\":{\"entity\":\"PriceListType.cdm.json/PriceListType\",\"name\":\"PriceListTypeDescription\"},\"dataType\":\"string\",\"dataTypeLength\":512},{\"type\":\"Existing\",\"name\":\"PriceListForPartyId\",\"attributeReference\":{\"entity\":\"PriceListType.cdm.json/PriceListType\",\"name\":\"PriceListForPartyId\"},\"dataType\":\"long\"}]}}}",
+			"DerivedModelEntityInfo": "{\"entityDirectives\":{\"name\":\"PriceListType\",\"description\":\"A classification of Price Schedules based upon common characteristics, attributes, functions or marketing objectives.\\n\\nEx:\\n-  Consumer Price Schedule\\n-  Government Price Schedule\\n-  Corporate Price Schedule\\n-  Introductory Price Schedule\\n-  Standard Price Schedule\\n-  Channel Price Schedule\\n-  Wholesale Price Schedule\\n-  Employee Price Schedule\\n-  Promotional Price Schedule\\n-  Seasonal Price Schedule\\n-  Geographic Price Schedule\\n-  Domestic Price Schedule\\n-  International Price Schedule\",\"baseEntityReference\":{\"name\":\"PriceListType\",\"path\":\"PriceListType.cdm.json/PriceListType\"},\"primaryKey\":[\"PriceListTypeId\"],\"projectionInfo\":{\"attributes\":[{\"name\":\"PriceListTypeId\",\"type\":\"Existing\",\"description\":\"The unique identifier of a Price List Type.\",\"dataType\":\"integer\",\"isNullable\":false,\"attributeReference\":{\"name\":\"PriceListTypeId\",\"entity\":\"PriceListType.cdm.json/PriceListType\"}},{\"name\":\"PriceListTypeName\",\"type\":\"Existing\",\"description\":\"The name of a Price List Type.\",\"dataType\":\"string\",\"isNullable\":true,\"dataTypeLength\":128,\"attributeReference\":{\"name\":\"PriceListTypeName\",\"entity\":\"PriceListType.cdm.json/PriceListType\"}},{\"name\":\"PriceListTypeDescription\",\"type\":\"Existing\",\"description\":\"The description of a Price List Type.\",\"dataType\":\"string\",\"isNullable\":true,\"dataTypeLength\":512,\"attributeReference\":{\"name\":\"PriceListTypeDescription\",\"entity\":\"PriceListType.cdm.json/PriceListType\"}},{\"name\":\"PriceListForPartyId\",\"type\":\"Existing\",\"description\":\"The unique identifier of a Party.\",\"dataType\":\"long\",\"isNullable\":true,\"attributeReference\":{\"name\":\"PriceListForPartyId\",\"entity\":\"PriceListType.cdm.json/PriceListType\"}},{\"name\":\"PriceListTypeFactor\",\"type\":\"New\",\"description\":\"Sale Multiple - Indicates whether the given Unit price is for 1 or Multiple Items \",\"dataType\":\"integer\",\"isNullable\":true}]}}}",
 			"Description": "A classification of Price Schedules based upon common characteristics, attributes, functions or marketing objectives.\n\nEx:\n-  Consumer Price Schedule\n-  Government Price Schedule\n-  Corporate Price Schedule\n-  Introductory Price Schedule\n-  Standard Price Schedule\n-  Channel Price Schedule\n-  Wholesale Price Schedule\n-  Employee Price Schedule\n-  Promotional Price Schedule\n-  Seasonal Price Schedule\n-  Geographic Price Schedule\n-  Domestic Price Schedule\n-  International Price Schedule",
 			"DisplayFolderInfo": "{\"name\":\"Product\",\"colorCode\":\"#003C96\"}",
 			"PrimaryKeys": "PriceListTypeId",
