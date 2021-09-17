@@ -251,6 +251,7 @@
 				"Properties": {
 					"path": "abfss://filesystem@aamerriladls.dfs.core.windows.net/tcsSource/CalendarDate",
 					"delimiter": ",",
+					"multiLine": "false",
 					"firstRowAsHeader": "false",
 					"serialization.format": "1",
 					"escape": "\\",

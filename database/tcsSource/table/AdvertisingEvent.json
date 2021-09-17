@@ -351,6 +351,7 @@
 				"Properties": {
 					"path": "abfss://filesystem@aamerriladls.dfs.core.windows.net/tcsSource/AdvertisingEvent",
 					"delimiter": ",",
+					"multiLine": "false",
 					"firstRowAsHeader": "false",
 					"serialization.format": "1",
 					"escape": "\\",

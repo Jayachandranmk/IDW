@@ -1,0 +1,164 @@
+{
+	"name": "DemographicCriteria",
+	"properties": {
+		"Namespace": {
+			"DatabaseName": "tcsSource"
+		},
+		"Name": "DemographicCriteria",
+		"Description": "Demographics is the study of population composition based on socioeconomic variables including age, income, education, type of occupation, household size and so on.\n\nDemographic information is used to analyze consumer behavior because the products purchased, where, when, by, whom tend to be strongly correlated to similar demographic characteristics of the purchasing party.\n\nDemographic Criteria are the specific demographic measurements used to identify individuals and market segments.\n\nDemographic Segmentation is a marketing segmentation strategy based upon groups divided in demographic categories such as sex, age, occupation, religion, education level, race, nationality, income, family size etc.   \n\nDemographic segmentation is the most widely-used and popular segmentation method because of the availability and depth of available data from a wide variety of sources.\n\nExamples:\n\nDemographic Criteria:   Ages 20-25\nDemographic Criteria Type:  Age\n\nDemographic Criteria:   Male, Female\nDemographic Criteria Type:  Sex\n\nDemographic Criteria:   2-4\nDemographic Criteria Type:  Family Size\n\nDemographic Criteria:   $15,000-$25,000\nDemographic Criteria Type:  Income\n\nDemographic Criteria:  Manager\nDemographic Criteria Type:  Occupation\n\nDemographic Criteria:   College graduate\nDemographic Criteria Type:  Education  \n\nDemographic Criteria:  Protestant\nDemographic Criteria Type:  Religion\n\nDemographic Criteria:    Asian\nDemographic Criteria Type:  Race\n\nDemographic Criteria:    German\nDemographic Criteria Type:  Nationality\n\nA Market Segment consists of one or more demographic criteria that are combined to create that market segment.\n\nEx: \n\nA Market Segment \"Affluent Professional German Managers\" could select the following Demographic Criteria for its composition:\n\nDemographic Criteria:    German\nDemographic Criteria Type:  Nationality\n\nDemographic Criteria:    $75,000+\nDemographic Criteria Type:  Income\n\nDemographic Criteria:    Manager\nDemographic Criteria Type:  Occupation",
+		"EntityType": "TABLE",
+		"TableType": "EXTERNAL",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"StorageDescriptor": {
+			"Columns": [
+				{
+					"Name": "DemographicCriteriaId",
+					"Description": "The unique identifier of a Demographic Criteria.",
+					"BaseAttributeReference": {
+						"Entity": "DemographicCriteria.cdm.json/DemographicCriteria",
+						"Name": "DemographicCriteriaId"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "DemographicCriteriaName",
+					"Description": "The name of the Demographic Criteria.",
+					"BaseAttributeReference": {
+						"Entity": "DemographicCriteria.cdm.json/DemographicCriteria",
+						"Name": "DemographicCriteriaName"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 128,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "DemographicCriteriaDescription",
+					"Description": "The description of the Demographic Criteria.",
+					"BaseAttributeReference": {
+						"Entity": "DemographicCriteria.cdm.json/DemographicCriteria",
+						"Name": "DemographicCriteriaDescription"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 512,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "DemographicCriteriaTypeId",
+					"Description": "The unique identifier of a Demographic Criteria Type.",
+					"BaseAttributeReference": {
+						"Entity": "DemographicCriteria.cdm.json/DemographicCriteria",
+						"Name": "DemographicCriteriaTypeId"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "StoreId",
+					"Description": "The store/catchment the criteria applies to",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsNullable": false,
+						"IsComplexType": false,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "DemographicCriteriaValue",
+					"Description": "The value of the demographic criteria",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsNullable": true,
+						"IsComplexType": false,
+						"Length": 256,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Radius",
+					"Description": "represents the radius for which the demographic data is available. Ex: 1-mile radius, 3-mile radius",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsNullable": true,
+						"IsComplexType": false,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				}
+			],
+			"Format": {
+				"InputFormat": "org.apache.hadoop.mapred.SequenceFileInputFormat",
+				"OutputFormat": "org.apache.hadoop.hive.ql.io.HiveSequenceFileOutputFormat",
+				"FormatType": "csv",
+				"SerializeLib": "org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe",
+				"Properties": {
+					"path": "abfss://filesystem@aamerriladls.dfs.core.windows.net/tcsSource/DemographicCriteria",
+					"delimiter": ",",
+					"multiLine": "false",
+					"firstRowAsHeader": "false",
+					"serialization.format": "1",
+					"escape": "\\",
+					"FormatTypeSetToDatabaseDefault": true,
+					"header": "false"
+				}
+			},
+			"Source": {
+				"Provider": "ADLS",
+				"Location": "abfss://filesystem@aamerriladls.dfs.core.windows.net/tcsSource/DemographicCriteria",
+				"Properties": {
+					"LinkedServiceName": "AzureDataLakeStorage1",
+					"LocationSetToDatabaseDefault": true
+				}
+			},
+			"Properties": {
+				"textinputformat.record.delimiter": ",",
+				"compression": "{\"type\":\"None\",\"level\":\"optimal\"}",
+				"derivedModelAttributeInfo": "{\"attributeReferences\":{\"DemographicCriteriaId\":{\"entity\":\"DemographicCriteria.cdm.json/DemographicCriteria\",\"name\":\"DemographicCriteriaId\"},\"DemographicCriteriaName\":{\"entity\":\"DemographicCriteria.cdm.json/DemographicCriteria\",\"name\":\"DemographicCriteriaName\"},\"DemographicCriteriaDescription\":{\"entity\":\"DemographicCriteria.cdm.json/DemographicCriteria\",\"name\":\"DemographicCriteriaDescription\"},\"DemographicCriteriaTypeId\":{\"entity\":\"DemographicCriteria.cdm.json/DemographicCriteria\",\"name\":\"DemographicCriteriaTypeId\"}}}"
+			},
+			"Compressed": false,
+			"IsStoredAsSubdirectories": false
+		},
+		"Properties": {
+			"DerivedModelEntityInfo": "{\"entityDirectives\":{\"name\":\"DemographicCriteria\",\"description\":\"Demographics is the study of population composition based on socioeconomic variables including age, income, education, type of occupation, household size and so on.\\n\\nDemographic information is used to analyze consumer behavior because the products purchased, where, when, by, whom tend to be strongly correlated to similar demographic characteristics of the purchasing party.\\n\\nDemographic Criteria are the specific demographic measurements used to identify individuals and market segments.\\n\\nDemographic Segmentation is a marketing segmentation strategy based upon groups divided in demographic categories such as sex, age, occupation, religion, education level, race, nationality, income, family size etc.   \\n\\nDemographic segmentation is the most widely-used and popular segmentation method because of the availability and depth of available data from a wide variety of sources.\\n\\nExamples:\\n\\nDemographic Criteria:   Ages 20-25\\nDemographic Criteria Type:  Age\\n\\nDemographic Criteria:   Male, Female\\nDemographic Criteria Type:  Sex\\n\\nDemographic Criteria:   2-4\\nDemographic Criteria Type:  Family Size\\n\\nDemographic Criteria:   $15,000-$25,000\\nDemographic Criteria Type:  Income\\n\\nDemographic Criteria:  Manager\\nDemographic Criteria Type:  Occupation\\n\\nDemographic Criteria:   College graduate\\nDemographic Criteria Type:  Education  \\n\\nDemographic Criteria:  Protestant\\nDemographic Criteria Type:  Religion\\n\\nDemographic Criteria:    Asian\\nDemographic Criteria Type:  Race\\n\\nDemographic Criteria:    German\\nDemographic Criteria Type:  Nationality\\n\\nA Market Segment consists of one or more demographic criteria that are combined to create that market segment.\\n\\nEx: \\n\\nA Market Segment \\\"Affluent Professional German Managers\\\" could select the following Demographic Criteria for its composition:\\n\\nDemographic Criteria:    German\\nDemographic Criteria Type:  Nationality\\n\\nDemographic Criteria:    $75,000+\\nDemographic Criteria Type:  Income\\n\\nDemographic Criteria:    Manager\\nDemographic Criteria Type:  Occupation\",\"baseEntityReference\":{\"name\":\"DemographicCriteria\",\"path\":\"DemographicCriteria.cdm.json/DemographicCriteria\"},\"primaryKey\":[\"DemographicCriteriaId\"],\"projectionInfo\":{\"attributes\":[{\"name\":\"DemographicCriteriaId\",\"type\":\"Existing\",\"description\":\"The unique identifier of a Demographic Criteria.\",\"dataType\":\"integer\",\"isNullable\":false,\"attributeReference\":{\"name\":\"DemographicCriteriaId\",\"entity\":\"DemographicCriteria.cdm.json/DemographicCriteria\"}},{\"name\":\"DemographicCriteriaName\",\"type\":\"Existing\",\"description\":\"The name of the Demographic Criteria.\",\"dataType\":\"string\",\"isNullable\":true,\"dataTypeLength\":128,\"attributeReference\":{\"name\":\"DemographicCriteriaName\",\"entity\":\"DemographicCriteria.cdm.json/DemographicCriteria\"}},{\"name\":\"DemographicCriteriaDescription\",\"type\":\"Existing\",\"description\":\"The description of the Demographic Criteria.\",\"dataType\":\"string\",\"isNullable\":true,\"dataTypeLength\":512,\"attributeReference\":{\"name\":\"DemographicCriteriaDescription\",\"entity\":\"DemographicCriteria.cdm.json/DemographicCriteria\"}},{\"name\":\"DemographicCriteriaTypeId\",\"type\":\"Existing\",\"description\":\"The unique identifier of a Demographic Criteria Type.\",\"dataType\":\"integer\",\"isNullable\":true,\"attributeReference\":{\"name\":\"DemographicCriteriaTypeId\",\"entity\":\"DemographicCriteria.cdm.json/DemographicCriteria\"}},{\"name\":\"StoreId\",\"type\":\"New\",\"description\":\"The store/catchment the criteria applies to\",\"dataType\":\"integer\",\"isNullable\":false},{\"name\":\"DemographicCriteriaValue\",\"type\":\"New\",\"description\":\"The value of the demographic criteria\",\"dataType\":\"string\",\"isNullable\":true,\"dataTypeLength\":256},{\"name\":\"Radius\",\"type\":\"New\",\"description\":\"represents the radius for which the demographic data is available. Ex: 1-mile radius, 3-mile radius\",\"dataType\":\"integer\",\"isNullable\":true}]}}}",
+			"Description": "Demographics is the study of population composition based on socioeconomic variables including age, income, education, type of occupation, household size and so on.\n\nDemographic information is used to analyze consumer behavior because the products purchased, where, when, by, whom tend to be strongly correlated to similar demographic characteristics of the purchasing party.\n\nDemographic Criteria are the specific demographic measurements used to identify individuals and market segments.\n\nDemographic Segmentation is a marketing segmentation strategy based upon groups divided in demographic categories such as sex, age, occupation, religion, education level, race, nationality, income, family size etc.   \n\nDemographic segmentation is the most widely-used and popular segmentation method because of the availability and depth of available data from a wide variety of sources.\n\nExamples:\n\nDemographic Criteria:   Ages 20-25\nDemographic Criteria Type:  Age\n\nDemographic Criteria:   Male, Female\nDemographic Criteria Type:  Sex\n\nDemographic Criteria:   2-4\nDemographic Criteria Type:  Family Size\n\nDemographic Criteria:   $15,000-$25,000\nDemographic Criteria Type:  Income\n\nDemographic Criteria:  Manager\nDemographic Criteria Type:  Occupation\n\nDemographic Criteria:   College graduate\nDemographic Criteria Type:  Education  \n\nDemographic Criteria:  Protestant\nDemographic Criteria Type:  Religion\n\nDemographic Criteria:    Asian\nDemographic Criteria Type:  Race\n\nDemographic Criteria:    German\nDemographic Criteria Type:  Nationality\n\nA Market Segment consists of one or more demographic criteria that are combined to create that market segment.\n\nEx: \n\nA Market Segment \"Affluent Professional German Managers\" could select the following Demographic Criteria for its composition:\n\nDemographic Criteria:    German\nDemographic Criteria Type:  Nationality\n\nDemographic Criteria:    $75,000+\nDemographic Criteria Type:  Income\n\nDemographic Criteria:    Manager\nDemographic Criteria Type:  Occupation",
+			"DisplayFolderInfo": "{\"name\":\"Party\",\"colorCode\":\"#0C614C\"}",
+			"PrimaryKeys": "DemographicCriteriaId",
+			"spark.sql.sources.provider": "csv"
+		},
+		"Retention": 0,
+		"Temporary": false,
+		"IsRewriteEnabled": false
+	},
+	"type": "TABLE"
+}
