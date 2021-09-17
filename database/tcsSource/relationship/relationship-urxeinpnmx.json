@@ -1,0 +1,23 @@
+{
+	"name": "relationship-urxeinpnmx",
+	"properties": {
+		"Namespace": {
+			"DatabaseName": "tcsSource"
+		},
+		"Name": "relationship-urxeinpnmx",
+		"EntityType": "RELATIONSHIP",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"FromTableName": "Store",
+		"ToTableName": "DemographicCriteria",
+		"ColumnRelationshipInformations": [
+			{
+				"FromColumnName": "StoreId",
+				"ToColumnName": "StoreId"
+			}
+		],
+		"RelationshipType": 0
+	},
+	"type": "RELATIONSHIP"
+}
