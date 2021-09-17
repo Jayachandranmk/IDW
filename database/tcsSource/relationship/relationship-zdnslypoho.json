@@ -1,0 +1,30 @@
+{
+	"name": "relationship-zdnslypoho",
+	"properties": {
+		"Namespace": {
+			"DatabaseName": "tcsSource"
+		},
+		"Name": "relationship-zdnslypoho",
+		"EntityType": "RELATIONSHIP",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"FromTableName": "CalendarMonth",
+		"ToTableName": "CalendarWeek",
+		"ColumnRelationshipInformations": [
+			{
+				"FromColumnName": "CalendarId",
+				"ToColumnName": "CalendarId"
+			},
+			{
+				"FromColumnName": "CalendarMonthId",
+				"ToColumnName": "CalendarMonthId"
+			}
+		],
+		"RelationshipType": 0,
+		"Properties": {
+			"DerivedModelRelationshipInfo": "{\"baseRelationship\":{\"fromEntity\":\"CalendarMonth.cdm.json/CalendarMonth\",\"toEntity\":\"CalendarWeek.cdm.json/CalendarWeek\",\"joinPairs\":[{\"fromAttribute\":\"CalendarId\",\"toAttribute\":\"CalendarId\"},{\"fromAttribute\":\"CalendarMonthId\",\"toAttribute\":\"CalendarMonthId\"}]}}"
+		}
+	},
+	"type": "RELATIONSHIP"
+}

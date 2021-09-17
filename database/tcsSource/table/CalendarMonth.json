@@ -1,0 +1,209 @@
+{
+	"name": "CalendarMonth",
+	"properties": {
+		"Namespace": {
+			"DatabaseName": "tcsSource"
+		},
+		"Name": "CalendarMonth",
+		"Description": "A calendar quarter is used to define a set of calendar dates / weeks which belong to the calendar quarter.",
+		"EntityType": "TABLE",
+		"TableType": "EXTERNAL",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"StorageDescriptor": {
+			"Columns": [
+				{
+					"Name": "CalendarId",
+					"Description": "The unique identifier of a Calendar.",
+					"BaseAttributeReference": {
+						"Entity": "CalendarMonth.cdm.json/CalendarMonth",
+						"Name": "CalendarId"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "CalendarMonthId",
+					"Description": "The unique identifier of a calendar month.",
+					"BaseAttributeReference": {
+						"Entity": "CalendarMonth.cdm.json/CalendarMonth",
+						"Name": "CalendarMonthId"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "CalendarMonthName",
+					"Description": "The name of the associated calendar month.",
+					"BaseAttributeReference": {
+						"Entity": "CalendarMonth.cdm.json/CalendarMonth",
+						"Name": "CalendarMonthName"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 128,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "CalendarMonthDescription",
+					"Description": "The description of the calendar month.",
+					"BaseAttributeReference": {
+						"Entity": "CalendarMonth.cdm.json/CalendarMonth",
+						"Name": "CalendarMonthDescription"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 512,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "CalendarMonthStartDate",
+					"Description": "The start date of the calendar month.",
+					"BaseAttributeReference": {
+						"Entity": "CalendarMonth.cdm.json/CalendarMonth",
+						"Name": "CalendarMonthStartDate"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "date",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"DateFormat": "YYYY-MM-DD",
+							"HIVE_TYPE_STRING": "date"
+						}
+					}
+				},
+				{
+					"Name": "CalendarMonthEndDate",
+					"Description": "The end date of the calendar month.",
+					"BaseAttributeReference": {
+						"Entity": "CalendarMonth.cdm.json/CalendarMonth",
+						"Name": "CalendarMonthEndDate"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "date",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"DateFormat": "YYYY-MM-DD",
+							"HIVE_TYPE_STRING": "date"
+						}
+					}
+				},
+				{
+					"Name": "CalendarMonthNumber",
+					"Description": "The quarter number associated with the calendar month.",
+					"BaseAttributeReference": {
+						"Entity": "CalendarMonth.cdm.json/CalendarMonth",
+						"Name": "CalendarMonthNumber"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "CalendarQuarterId",
+					"Description": "The unique identifier of a calendar quarter.",
+					"BaseAttributeReference": {
+						"Entity": "CalendarMonth.cdm.json/CalendarMonth",
+						"Name": "CalendarQuarterId"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "CalendarYearId",
+					"Description": "The unique identifier of a Calendar Year.",
+					"BaseAttributeReference": {
+						"Entity": "CalendarMonth.cdm.json/CalendarMonth",
+						"Name": "CalendarYearId"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				}
+			],
+			"Format": {
+				"InputFormat": "org.apache.hadoop.mapred.SequenceFileInputFormat",
+				"OutputFormat": "org.apache.hadoop.hive.ql.io.HiveSequenceFileOutputFormat",
+				"FormatType": "csv",
+				"SerializeLib": "org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe",
+				"Properties": {
+					"path": "abfss://filesystem@aamerriladls.dfs.core.windows.net/tcsSource/CalendarMonth",
+					"delimiter": ",",
+					"multiLine": "false",
+					"firstRowAsHeader": "false",
+					"serialization.format": "1",
+					"escape": "\\",
+					"FormatTypeSetToDatabaseDefault": true,
+					"header": "false"
+				}
+			},
+			"Source": {
+				"Provider": "ADLS",
+				"Location": "abfss://filesystem@aamerriladls.dfs.core.windows.net/tcsSource/CalendarMonth",
+				"Properties": {
+					"LinkedServiceName": "AzureDataLakeStorage1",
+					"LocationSetToDatabaseDefault": true
+				}
+			},
+			"Properties": {
+				"textinputformat.record.delimiter": ",",
+				"compression": "{\"type\":\"None\",\"level\":\"optimal\"}",
+				"derivedModelAttributeInfo": "{\"attributeReferences\":{\"CalendarId\":{\"entity\":\"CalendarMonth.cdm.json/CalendarMonth\",\"name\":\"CalendarId\"},\"CalendarMonthId\":{\"entity\":\"CalendarMonth.cdm.json/CalendarMonth\",\"name\":\"CalendarMonthId\"},\"CalendarMonthName\":{\"entity\":\"CalendarMonth.cdm.json/CalendarMonth\",\"name\":\"CalendarMonthName\"},\"CalendarMonthDescription\":{\"entity\":\"CalendarMonth.cdm.json/CalendarMonth\",\"name\":\"CalendarMonthDescription\"},\"CalendarMonthStartDate\":{\"entity\":\"CalendarMonth.cdm.json/CalendarMonth\",\"name\":\"CalendarMonthStartDate\"},\"CalendarMonthEndDate\":{\"entity\":\"CalendarMonth.cdm.json/CalendarMonth\",\"name\":\"CalendarMonthEndDate\"},\"CalendarMonthNumber\":{\"entity\":\"CalendarMonth.cdm.json/CalendarMonth\",\"name\":\"CalendarMonthNumber\"},\"CalendarQuarterId\":{\"entity\":\"CalendarMonth.cdm.json/CalendarMonth\",\"name\":\"CalendarQuarterId\"},\"CalendarYearId\":{\"entity\":\"CalendarMonth.cdm.json/CalendarMonth\",\"name\":\"CalendarYearId\"}}}"
+			},
+			"Compressed": false,
+			"IsStoredAsSubdirectories": false
+		},
+		"Properties": {
+			"DerivedModelEntityInfo": "{\"entityDirectives\":{\"baseEntityReference\":{\"name\":\"CalendarMonth\",\"path\":\"CalendarMonth.cdm.json/CalendarMonth\"},\"description\":\"A calendar quarter is used to define a set of calendar dates / weeks which belong to the calendar quarter.\",\"primaryKey\":[\"CalendarId\",\"CalendarMonthId\"],\"projectionInfo\":{\"attributes\":[{\"type\":\"Existing\",\"name\":\"CalendarId\",\"attributeReference\":{\"entity\":\"CalendarMonth.cdm.json/CalendarMonth\",\"name\":\"CalendarId\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"CalendarMonthId\",\"attributeReference\":{\"entity\":\"CalendarMonth.cdm.json/CalendarMonth\",\"name\":\"CalendarMonthId\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"CalendarMonthName\",\"attributeReference\":{\"entity\":\"CalendarMonth.cdm.json/CalendarMonth\",\"name\":\"CalendarMonthName\"},\"dataType\":\"string\",\"dataTypeLength\":128},{\"type\":\"Existing\",\"name\":\"CalendarMonthDescription\",\"attributeReference\":{\"entity\":\"CalendarMonth.cdm.json/CalendarMonth\",\"name\":\"CalendarMonthDescription\"},\"dataType\":\"string\",\"dataTypeLength\":512},{\"type\":\"Existing\",\"name\":\"CalendarMonthStartDate\",\"attributeReference\":{\"entity\":\"CalendarMonth.cdm.json/CalendarMonth\",\"name\":\"CalendarMonthStartDate\"},\"dataType\":\"date\",\"dateFormat\":\"YYYY-MM-DD\"},{\"type\":\"Existing\",\"name\":\"CalendarMonthEndDate\",\"attributeReference\":{\"entity\":\"CalendarMonth.cdm.json/CalendarMonth\",\"name\":\"CalendarMonthEndDate\"},\"dataType\":\"date\",\"dateFormat\":\"YYYY-MM-DD\"},{\"type\":\"Existing\",\"name\":\"CalendarMonthNumber\",\"attributeReference\":{\"entity\":\"CalendarMonth.cdm.json/CalendarMonth\",\"name\":\"CalendarMonthNumber\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"CalendarQuarterId\",\"attributeReference\":{\"entity\":\"CalendarMonth.cdm.json/CalendarMonth\",\"name\":\"CalendarQuarterId\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"CalendarYearId\",\"attributeReference\":{\"entity\":\"CalendarMonth.cdm.json/CalendarMonth\",\"name\":\"CalendarYearId\"},\"dataType\":\"integer\"}]}}}",
+			"Description": "A calendar quarter is used to define a set of calendar dates / weeks which belong to the calendar quarter.",
+			"DisplayFolderInfo": "{\"name\":\"Human Resources & Payroll\",\"colorCode\":\"#00727A\"}",
+			"PrimaryKeys": "CalendarId,CalendarMonthId",
+			"spark.sql.sources.provider": "csv"
+		},
+		"Retention": 0,
+		"Temporary": false,
+		"IsRewriteEnabled": false
+	},
+	"type": "TABLE"
+}

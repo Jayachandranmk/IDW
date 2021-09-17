@@ -1,0 +1,30 @@
+{
+	"name": "relationship-ikccsrgslz",
+	"properties": {
+		"Namespace": {
+			"DatabaseName": "tcsSource"
+		},
+		"Name": "relationship-ikccsrgslz",
+		"EntityType": "RELATIONSHIP",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"FromTableName": "CalendarMonth",
+		"ToTableName": "CalendarDate",
+		"ColumnRelationshipInformations": [
+			{
+				"FromColumnName": "CalendarId",
+				"ToColumnName": "CalendarId"
+			},
+			{
+				"FromColumnName": "CalendarMonthId",
+				"ToColumnName": "CalendarMonthId"
+			}
+		],
+		"RelationshipType": 0,
+		"Properties": {
+			"DerivedModelRelationshipInfo": "{\"baseRelationship\":{\"fromEntity\":\"CalendarMonth.cdm.json/CalendarMonth\",\"toEntity\":\"CalendarDate.cdm.json/CalendarDate\",\"joinPairs\":[{\"fromAttribute\":\"CalendarId\",\"toAttribute\":\"CalendarId\"},{\"fromAttribute\":\"CalendarMonthId\",\"toAttribute\":\"CalendarMonthId\"}]}}"
+		}
+	},
+	"type": "RELATIONSHIP"
+}

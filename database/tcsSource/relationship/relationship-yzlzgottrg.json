@@ -1,0 +1,30 @@
+{
+	"name": "relationship-yzlzgottrg",
+	"properties": {
+		"Namespace": {
+			"DatabaseName": "tcsSource"
+		},
+		"Name": "relationship-yzlzgottrg",
+		"EntityType": "RELATIONSHIP",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"FromTableName": "CalendarQuarter",
+		"ToTableName": "CalendarMonth",
+		"ColumnRelationshipInformations": [
+			{
+				"FromColumnName": "CalendarId",
+				"ToColumnName": "CalendarId"
+			},
+			{
+				"FromColumnName": "CalendarQuarterId",
+				"ToColumnName": "CalendarQuarterId"
+			}
+		],
+		"RelationshipType": 0,
+		"Properties": {
+			"DerivedModelRelationshipInfo": "{\"baseRelationship\":{\"fromEntity\":\"CalendarQuarter.cdm.json/CalendarQuarter\",\"toEntity\":\"CalendarMonth.cdm.json/CalendarMonth\",\"joinPairs\":[{\"fromAttribute\":\"CalendarId\",\"toAttribute\":\"CalendarId\"},{\"fromAttribute\":\"CalendarQuarterId\",\"toAttribute\":\"CalendarQuarterId\"}]}}"
+		}
+	},
+	"type": "RELATIONSHIP"
+}

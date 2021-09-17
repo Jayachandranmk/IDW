@@ -84,8 +84,8 @@
 					"Description": "Sale Multiple - Indicates whether the given Unit price is for 1 or Multiple Items ",
 					"OriginDataTypeName": {
 						"TypeName": "integer",
-						"IsNullable": true,
 						"IsComplexType": false,
+						"IsNullable": true,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
