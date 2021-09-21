@@ -1,0 +1,111 @@
+{
+	"name": "PartyStatusType",
+	"properties": {
+		"Namespace": {
+			"DatabaseName": "tcsSource"
+		},
+		"Name": "PartyStatusType",
+		"Description": "A status that may be applied to a party for a period of time.\n\nEx:\n- Current Customer\n- Prospective Customer\n- Former Customer\n- Customer Representative Party\n- Other",
+		"EntityType": "TABLE",
+		"TableType": "EXTERNAL",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"StorageDescriptor": {
+			"Columns": [
+				{
+					"Name": "PartyStatusTypeId",
+					"Description": "The unique identifier of a Party Status Type.",
+					"BaseAttributeReference": {
+						"Entity": "PartyStatusType.cdm.json/PartyStatusType",
+						"Name": "PartyStatusTypeId"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "PartyStatusTypeName",
+					"Description": "The name of a Party Status Type.",
+					"BaseAttributeReference": {
+						"Entity": "PartyStatusType.cdm.json/PartyStatusType",
+						"Name": "PartyStatusTypeName"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 128,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "PartyStatusTypeDescription",
+					"Description": "The description of a Party Status Type.",
+					"BaseAttributeReference": {
+						"Entity": "PartyStatusType.cdm.json/PartyStatusType",
+						"Name": "PartyStatusTypeDescription"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 512,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				}
+			],
+			"Format": {
+				"InputFormat": "org.apache.hadoop.mapred.SequenceFileInputFormat",
+				"OutputFormat": "org.apache.hadoop.hive.ql.io.HiveSequenceFileOutputFormat",
+				"FormatType": "csv",
+				"SerializeLib": "org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe",
+				"Properties": {
+					"path": "abfss://filesystem@aamerriladls.dfs.core.windows.net/tcsSource/PartyStatusType",
+					"delimiter": ",",
+					"multiLine": "false",
+					"firstRowAsHeader": "false",
+					"serialization.format": "1",
+					"escape": "\\",
+					"FormatTypeSetToDatabaseDefault": true,
+					"header": "false"
+				}
+			},
+			"Source": {
+				"Provider": "ADLS",
+				"Location": "abfss://filesystem@aamerriladls.dfs.core.windows.net/tcsSource/PartyStatusType",
+				"Properties": {
+					"LinkedServiceName": "AzureDataLakeStorage1",
+					"LocationSetToDatabaseDefault": true
+				}
+			},
+			"Properties": {
+				"textinputformat.record.delimiter": ",",
+				"compression": "{\"type\":\"None\",\"level\":\"optimal\"}",
+				"derivedModelAttributeInfo": "{\"attributeReferences\":{\"PartyStatusTypeId\":{\"entity\":\"PartyStatusType.cdm.json/PartyStatusType\",\"name\":\"PartyStatusTypeId\"},\"PartyStatusTypeName\":{\"entity\":\"PartyStatusType.cdm.json/PartyStatusType\",\"name\":\"PartyStatusTypeName\"},\"PartyStatusTypeDescription\":{\"entity\":\"PartyStatusType.cdm.json/PartyStatusType\",\"name\":\"PartyStatusTypeDescription\"}}}"
+			},
+			"Compressed": false,
+			"IsStoredAsSubdirectories": false
+		},
+		"Properties": {
+			"DerivedModelEntityInfo": "{\"entityDirectives\":{\"baseEntityReference\":{\"name\":\"PartyStatusType\",\"path\":\"PartyStatusType.cdm.json/PartyStatusType\"},\"description\":\"A status that may be applied to a party for a period of time.\\n\\nEx:\\n- Current Customer\\n- Prospective Customer\\n- Former Customer\\n- Customer Representative Party\\n- Other\",\"primaryKey\":[\"PartyStatusTypeId\"],\"projectionInfo\":{\"attributes\":[{\"type\":\"Existing\",\"name\":\"PartyStatusTypeId\",\"attributeReference\":{\"entity\":\"PartyStatusType.cdm.json/PartyStatusType\",\"name\":\"PartyStatusTypeId\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"PartyStatusTypeName\",\"attributeReference\":{\"entity\":\"PartyStatusType.cdm.json/PartyStatusType\",\"name\":\"PartyStatusTypeName\"},\"dataType\":\"string\",\"dataTypeLength\":128},{\"type\":\"Existing\",\"name\":\"PartyStatusTypeDescription\",\"attributeReference\":{\"entity\":\"PartyStatusType.cdm.json/PartyStatusType\",\"name\":\"PartyStatusTypeDescription\"},\"dataType\":\"string\",\"dataTypeLength\":512}]}}}",
+			"Description": "A status that may be applied to a party for a period of time.\n\nEx:\n- Current Customer\n- Prospective Customer\n- Former Customer\n- Customer Representative Party\n- Other",
+			"DisplayFolderInfo": "{\"name\":\"Party\",\"colorCode\":\"#0C614C\"}",
+			"PrimaryKeys": "PartyStatusTypeId",
+			"spark.sql.sources.provider": "csv"
+		},
+		"Retention": 0,
+		"Temporary": false,
+		"IsRewriteEnabled": false
+	},
+	"type": "TABLE"
+}

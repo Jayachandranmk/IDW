@@ -1,0 +1,26 @@
+{
+	"name": "relationship-ompzcinrqh",
+	"properties": {
+		"Namespace": {
+			"DatabaseName": "tcsSource"
+		},
+		"Name": "relationship-ompzcinrqh",
+		"EntityType": "RELATIONSHIP",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"FromTableName": "PartyStatusType",
+		"ToTableName": "PartyStatus",
+		"ColumnRelationshipInformations": [
+			{
+				"FromColumnName": "PartyStatusTypeId",
+				"ToColumnName": "PartyStatusTypeId"
+			}
+		],
+		"RelationshipType": 0,
+		"Properties": {
+			"DerivedModelRelationshipInfo": "{\"baseRelationship\":{\"fromEntity\":\"PartyStatusType.cdm.json/PartyStatusType\",\"toEntity\":\"PartyStatus.cdm.json/PartyStatus\",\"joinPairs\":[{\"fromAttribute\":\"PartyStatusTypeId\",\"toAttribute\":\"PartyStatusTypeId\"}]}}"
+		}
+	},
+	"type": "RELATIONSHIP"
+}

@@ -443,8 +443,8 @@
 					"Description": "Represents the status of the competitor store as open/closed etc",
 					"OriginDataTypeName": {
 						"TypeName": "string",
-						"IsNullable": true,
 						"IsComplexType": false,
+						"IsNullable": true,
 						"Length": 256,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
@@ -456,8 +456,8 @@
 					"Description": "Represents the radius for which the competitor data is available. Ex: 1-mile radius, 3-mile radius",
 					"OriginDataTypeName": {
 						"TypeName": "integer",
-						"IsNullable": true,
 						"IsComplexType": false,
+						"IsNullable": true,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -468,8 +468,8 @@
 					"Description": "A value between 1 - 10, 10 being extremely competitive",
 					"OriginDataTypeName": {
 						"TypeName": "integer",
-						"IsNullable": true,
 						"IsComplexType": false,
+						"IsNullable": true,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -480,8 +480,8 @@
 					"Description": "Distance between the corresponding store and competitor store",
 					"OriginDataTypeName": {
 						"TypeName": "float",
-						"IsNullable": true,
 						"IsComplexType": false,
+						"IsNullable": true,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
