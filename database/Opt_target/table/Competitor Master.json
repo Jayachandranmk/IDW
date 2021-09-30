@@ -17,8 +17,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -32,8 +30,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -47,8 +43,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -62,8 +56,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -77,8 +69,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -92,8 +82,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -107,8 +95,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -121,9 +107,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -137,8 +120,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -152,8 +133,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -167,8 +146,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -182,8 +159,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -196,9 +171,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -212,8 +184,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -227,8 +197,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -242,8 +210,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -257,8 +223,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -272,8 +236,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -287,8 +249,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -302,8 +262,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -317,8 +275,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -332,8 +288,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -347,8 +301,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -362,8 +314,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -377,8 +327,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -392,8 +340,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -407,8 +353,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -422,8 +366,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -437,8 +379,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -452,8 +392,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -469,6 +407,7 @@
 				"Properties": {
 					"path": "abfss://idwoptpoc@idwoptpoclake.dfs.core.windows.net/Opt_target/Competitor Master",
 					"delimiter": ",",
+					"multiLine": "false",
 					"firstRowAsHeader": "false",
 					"serialization.format": "1",
 					"escape": "\\",
@@ -486,7 +425,7 @@
 			},
 			"Properties": {
 				"textinputformat.record.delimiter": ",",
-				"compression": "",
+				"compression": "{\"type\":\"None\",\"level\":\"optimal\"}",
 				"derivedModelAttributeInfo": "{\"attributeReferences\":{}}"
 			},
 			"Compressed": false,
@@ -510,10 +449,10 @@
 		"Properties": {
 			"Description": "",
 			"DisplayFolderInfo": "{\"name\":\"Others\"}",
+			"PrimaryKeys": "Sales Organisation",
 			"spark.sql.sources.provider": "csv",
 			"spark.sql.sources.schema.numParts": "1",
-			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"Sales Organisation\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Distribution Channel\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Store ID\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Competitor Store ID\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Competitor Code\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Competitor Name\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Merch level ID\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Competitor Store Zipcode\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Competitor Store State\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Competitor Store City\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Competitor Store District\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Competitor Status\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Competitor Radius\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Competition Intensity\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Competitor Store Distance\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Parking size\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Cafe\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Kid zone\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Activity zone\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Store In Store\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Competitor characteristic 1\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Competitor characteristic 2\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Competitor characteristic 3\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Competitor characteristic 4\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Competitor characteristic 5\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Competitor characteristic 6\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Competitor characteristic 7\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Competitor characteristic 8\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Competitor characteristic 9\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Competitor characteristic 10\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}}]}",
-			"PrimaryKeys": ""
+			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"Sales Organisation\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Distribution Channel\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Store ID\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Competitor Store ID\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Competitor Code\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Competitor Name\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Merch level ID\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Competitor Store Zipcode\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Competitor Store State\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Competitor Store City\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Competitor Store District\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Competitor Status\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Competitor Radius\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Competition Intensity\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Competitor Store Distance\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Parking size\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Cafe\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Kid zone\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Activity zone\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Store In Store\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Competitor characteristic 1\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Competitor characteristic 2\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Competitor characteristic 3\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Competitor characteristic 4\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Competitor characteristic 5\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Competitor characteristic 6\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Competitor characteristic 7\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Competitor characteristic 8\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Competitor characteristic 9\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Competitor characteristic 10\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}}]}"
 		},
 		"ObjectVersion": 12,
 		"ObjectId": "973f243f-3c68-45d1-9620-58e33433e65c",
