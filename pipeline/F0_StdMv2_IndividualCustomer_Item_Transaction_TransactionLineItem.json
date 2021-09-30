@@ -1,0 +1,66 @@
+{
+	"name": "F0_StdMv2_IndividualCustomer_Item_Transaction_TransactionLineItem",
+	"properties": {
+		"activities": [
+			{
+				"name": "L0_StdMv2_IndividualCustomer_Item",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "L0_StdMv2_IndividualCustomer_Item",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true
+				}
+			},
+			{
+				"name": "L1_StdMv2_Transaction",
+				"type": "ExecutePipeline",
+				"dependsOn": [
+					{
+						"activity": "L0_StdMv2_IndividualCustomer_Item",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "L1_StdMv2_Transaction",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true
+				}
+			},
+			{
+				"name": "L2_StdMv2_TransactionLineItem",
+				"type": "ExecutePipeline",
+				"dependsOn": [
+					{
+						"activity": "L1_StdMv2_Transaction",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "L2_StdMv2_TransactionLineItem",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true
+				}
+			}
+		],
+		"folder": {
+			"name": "StdMv2"
+		},
+		"annotations": [],
+		"lastPublishTime": "2021-07-22T14:09:22Z"
+	},
+	"type": "Microsoft.Synapse/workspaces/pipelines"
+}

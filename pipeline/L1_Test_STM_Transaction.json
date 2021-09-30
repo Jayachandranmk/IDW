@@ -1,0 +1,119 @@
+{
+	"name": "L1_Test_STM_Transaction",
+	"properties": {
+		"activities": [
+			{
+				"name": "ReadWatermark_Transaction",
+				"type": "WebActivity",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "1.00:00:00",
+					"retry": 3,
+					"retryIntervalInSeconds": 60
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"url": "https://management.azure.com/subscriptions/768c4a33-7806-43d4-a3fe-147006e6d214/resourceGroups/IDW_Opt_PoC/providers/Microsoft.IndustryDataLifecycle/pipelineSets/203cbc14-13a0-40d8-ac7d-1e103ab4ab64/watermarks/203cbc14-13a0-40d8-ac7d-1e103ab4ab64_Transaction/compute?api-version=2021-01-01-preview",
+					"connectVia": {
+						"referenceName": "AutoResolveIntegrationRuntime",
+						"type": "IntegrationRuntimeReference"
+					},
+					"method": "POST",
+					"headers": {
+						"content-Type": "application/json"
+					},
+					"body": {
+						"value": "{\r\n  \"PipelineName\": \"@{pipeline().Pipeline}\",\r\n  \"EntityName\": \"Transaction\",\r\n  \"PipelineRunId\": \"@{pipeline().RunId}\"\r\n}",
+						"type": "Expression"
+					},
+					"authentication": {
+						"type": "MSI",
+						"resource": "https://management.azure.com/"
+					}
+				}
+			},
+			{
+				"name": "Test_STM_TransactionTransform",
+				"type": "ExecuteDataFlow",
+				"dependsOn": [
+					{
+						"activity": "ReadWatermark_Transaction",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "1.00:00:00",
+					"retry": 3,
+					"retryIntervalInSeconds": 60
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataflow": {
+						"referenceName": "Test_STM_Transaction_DataFlow",
+						"type": "DataFlowReference",
+						"parameters": {
+							"modifiedAfter": {
+								"value": "toTimestamp(\"@{activity('ReadWatermark_Transaction').output.properties.watermarkValue}\", \"yyyy-MM-dd HH:mm:ss.SSS\")",
+								"type": "Expression"
+							},
+							"modifiedBefore": {
+								"value": "toTimestamp(\"@{activity('ReadWatermark_Transaction').output.properties.intendedWatermarkValue}\", \"yyyy-MM-dd HH:mm:ss.SSS\")",
+								"type": "Expression"
+							}
+						}
+					},
+					"compute": {
+						"coreCount": 8,
+						"computeType": "General"
+					},
+					"traceLevel": "Fine"
+				}
+			},
+			{
+				"name": "UpdateWatermark_Transaction",
+				"type": "WebActivity",
+				"dependsOn": [
+					{
+						"activity": "Test_STM_TransactionTransform",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "1.00:00:00",
+					"retry": 3,
+					"retryIntervalInSeconds": 60
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"url": "https://management.azure.com/subscriptions/768c4a33-7806-43d4-a3fe-147006e6d214/resourceGroups/IDW_Opt_PoC/providers/Microsoft.IndustryDataLifecycle/pipelineSets/203cbc14-13a0-40d8-ac7d-1e103ab4ab64/watermarks/203cbc14-13a0-40d8-ac7d-1e103ab4ab64_Transaction/sync?api-version=2021-01-01-preview",
+					"connectVia": {
+						"referenceName": "AutoResolveIntegrationRuntime",
+						"type": "IntegrationRuntimeReference"
+					},
+					"method": "POST",
+					"headers": {
+						"content-Type": "application/json"
+					},
+					"body": {
+						"value": "{\r\n  \"PipelineName\": \"@{pipeline().Pipeline}\",\r\n  \"EntityName\": \"Transaction\",\r\n  \"PipelineRunId\": \"@{pipeline().RunId}\"\r\n}",
+						"type": "Expression"
+					},
+					"authentication": {
+						"type": "MSI",
+						"resource": "https://management.azure.com/"
+					}
+				}
+			}
+		],
+		"folder": {
+			"name": "Test_STM"
+		},
+		"annotations": [],
+		"lastPublishTime": "2021-07-27T07:08:04Z"
+	},
+	"type": "Microsoft.Synapse/workspaces/pipelines"
+}

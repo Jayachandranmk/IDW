@@ -1,0 +1,603 @@
+{
+	"name": "Item",
+	"properties": {
+		"TableType": "EXTERNAL",
+		"Namespace": {
+			"SchemaName": null,
+			"DatabaseName": "Opt_target"
+		},
+		"StorageDescriptor": {
+			"Distribution": null,
+			"Columns": [
+				{
+					"Name": "Sku Identifier",
+					"Description": "Unique Identifier to represent the SKU",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Sku Description",
+					"Description": "SKU description",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "SKU Long Description",
+					"Description": "SKU Long description",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Brand",
+					"Description": "Brand of the Item",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Depth",
+					"Description": "Depth of the Item",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "Height",
+					"Description": "Height of the Item",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "Width",
+					"Description": "Width of the Item",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "Sales Uom",
+					"Description": "Sales Unit of Measure(UOM) of the Item",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Volume",
+					"Description": "Volume of the Item",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "Private Label F",
+					"Description": "To indicate if item is a private label product",
+					"OriginDataTypeName": {
+						"TypeName": "boolean",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "boolean"
+						}
+					}
+				},
+				{
+					"Name": "Organic_Indicator",
+					"Description": "Indicates whether the SKU is categorized as \"Organic\"",
+					"OriginDataTypeName": {
+						"TypeName": "boolean",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "boolean"
+						}
+					}
+				},
+				{
+					"Name": "Active F",
+					"Description": "Indicates whether the SKU is active or inactive/discontinued",
+					"OriginDataTypeName": {
+						"TypeName": "boolean",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "boolean"
+						}
+					}
+				},
+				{
+					"Name": "Stackable Flag",
+					"Description": "Indicates whether the SKU can be stacked in the Fixture (one on top of other)",
+					"OriginDataTypeName": {
+						"TypeName": "boolean",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "boolean"
+						}
+					}
+				},
+				{
+					"Name": "Size",
+					"Description": "Size of the SKU",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "Size UOM",
+					"Description": "Size Unit of Measure of the Item ",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Sales Org Name",
+					"Description": "Name of the Sales Organization",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Sales Hierarchy Level 1",
+					"Description": "Identifier for Merchandising Hierarchy",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Sales Hierarchy Level 2",
+					"Description": "Identifier for Merchandising Hierarchy",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Sales Hierarchy Level 3",
+					"Description": "Identifier for Merchandising Hierarchy",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Sales Hierarchy Level 4",
+					"Description": "Identifier for Merchandising Hierarchy",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Sales Hierarchy Level 5",
+					"Description": "Identifier for Merchandising Hierarchy",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Sales Hierarchy Level 6",
+					"Description": "Identifier for Merchandising Hierarchy",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Sales Hierarchy Level 7",
+					"Description": "Identifier for Merchandising Hierarchy",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Sales Hierarchy Level 8",
+					"Description": "Identifier for Merchandising Hierarchy",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Sales Hierarchy Level 9",
+					"Description": "Identifier for Merchandising Hierarchy",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Manufacturer",
+					"Description": "Manufacturer of the Item",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Unit Selling Price",
+					"Description": "Unit Price/Current Price of the SKU if defined at Sales Org level",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "Unit Cost",
+					"Description": "Unit Cost of the item if defined at Sales Org level - (Current Unit cost)",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "Active From",
+					"Description": "Item Introduction date",
+					"OriginDataTypeName": {
+						"TypeName": "date",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"DateFormat": "YYYY-MM-DD",
+							"HIVE_TYPE_STRING": "date"
+						}
+					}
+				},
+				{
+					"Name": "Sku Publish Date",
+					"Description": "When the SKU is published (eg: music album launch date, Book launch date)",
+					"OriginDataTypeName": {
+						"TypeName": "date",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"DateFormat": "YYYY-MM-DD",
+							"HIVE_TYPE_STRING": "date"
+						}
+					}
+				},
+				{
+					"Name": "Sku Discontinue Date",
+					"Description": "The date on which SKU will be discontinued",
+					"OriginDataTypeName": {
+						"TypeName": "date",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"DateFormat": "YYYY-MM-DD",
+							"HIVE_TYPE_STRING": "date"
+						}
+					}
+				},
+				{
+					"Name": "Primary Fixture Type",
+					"Description": "Type of Fixture (Primary)",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "SKU_Hosting type",
+					"Description": "Whether the SKU is for Store, Online or Both",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Vendor Number",
+					"Description": "Vendor Number (primary)",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Vendor Name",
+					"Description": "Vendor Name (primary)",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				}
+			],
+			"ColumnSetEntityName": "9331228d-c186-401a-8872-166efd6f4a5f",
+			"Format": {
+				"InputFormat": "org.apache.hadoop.mapred.SequenceFileInputFormat",
+				"OutputFormat": "org.apache.hadoop.hive.ql.io.HiveSequenceFileOutputFormat",
+				"FormatType": "csv",
+				"SerializeLib": "org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe",
+				"Properties": {
+					"path": "abfss://idwoptpoc@idwoptpoclake.dfs.core.windows.net/Opt_target/Item1",
+					"delimiter": ",",
+					"firstRowAsHeader": "false",
+					"serialization.format": "1",
+					"escape": "\\",
+					"FormatTypeSetToDatabaseDefault": true,
+					"header": "false"
+				}
+			},
+			"Source": {
+				"Provider": "ADLS",
+				"Location": "abfss://idwoptpoc@idwoptpoclake.dfs.core.windows.net/Opt_target/Item1",
+				"Properties": {
+					"LinkedServiceName": "idwoptpocsynworks-WorkspaceDefaultStorage",
+					"LocationSetToDatabaseDefault": true
+				}
+			},
+			"Properties": {
+				"textinputformat.record.delimiter": ",",
+				"compression": "",
+				"derivedModelAttributeInfo": "{\"attributeReferences\":{}}"
+			},
+			"Compressed": false,
+			"SerDeInfo": null,
+			"IsStoredAsSubdirectories": false
+		},
+		"Owner": null,
+		"CreateTime": 0,
+		"LastAccessTime": 0,
+		"Retention": 0,
+		"Temporary": false,
+		"IsRewriteEnabled": false,
+		"ViewOriginalText": null,
+		"ViewExpandedText": null,
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"OriginObjectId": null,
+		"IsSharedEntity": false,
+		"PublishStatus": "PUBLISHED",
+		"Properties": {
+			"Description": "",
+			"DisplayFolderInfo": "{\"name\":\"Others\"}",
+			"spark.sql.sources.provider": "csv",
+			"spark.sql.sources.schema.numParts": "1",
+			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"Sku Identifier\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Sku Description\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"SKU Long Description\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Brand\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Depth\",\"type\":\"float\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Height\",\"type\":\"float\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Width\",\"type\":\"float\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Sales Uom\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Volume\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Private Label F\",\"type\":\"boolean\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Organic_Indicator\",\"type\":\"boolean\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Active F\",\"type\":\"boolean\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Stackable Flag\",\"type\":\"boolean\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Size\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Size UOM\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Sales Org Name\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Sales Hierarchy Level 1\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Sales Hierarchy Level 2\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Sales Hierarchy Level 3\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Sales Hierarchy Level 4\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Sales Hierarchy Level 5\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Sales Hierarchy Level 6\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Sales Hierarchy Level 7\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Sales Hierarchy Level 8\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Sales Hierarchy Level 9\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Manufacturer\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Unit Selling Price\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Unit Cost\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Active From\",\"type\":\"date\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Sku Publish Date\",\"type\":\"date\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Sku Discontinue Date\",\"type\":\"date\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Primary Fixture Type\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"SKU_Hosting type\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Vendor Number\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Vendor Name\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}}]}",
+			"PrimaryKeys": ""
+		},
+		"ObjectVersion": 3,
+		"ObjectId": "d13ce9a0-c418-4ed3-85df-a67b90ca78b7",
+		"Name": "Item",
+		"Description": "",
+		"EntityType": "TABLE"
+	},
+	"type": "TABLE"
+}

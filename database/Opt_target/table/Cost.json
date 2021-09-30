@@ -1,0 +1,152 @@
+{
+	"name": "Cost",
+	"properties": {
+		"TableType": "EXTERNAL",
+		"Namespace": {
+			"SchemaName": null,
+			"DatabaseName": "Opt_target"
+		},
+		"StorageDescriptor": {
+			"Distribution": null,
+			"Columns": [
+				{
+					"Name": "Sku Identifier",
+					"Description": "Unique Identifier to represent the SKU",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Location ID",
+					"Description": "Unique Identifier for Location (Can be Price zone, Store group or Store ID)",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Unit Cost",
+					"Description": "Unit Cost of the Item",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "Effective Start Date",
+					"Description": "Price Effective start date",
+					"OriginDataTypeName": {
+						"TypeName": "date",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"DateFormat": "YYYY-MM-DD",
+							"HIVE_TYPE_STRING": "date"
+						}
+					}
+				},
+				{
+					"Name": "Effective End Date",
+					"Description": "Price Effective end date",
+					"OriginDataTypeName": {
+						"TypeName": "date",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"DateFormat": "YYYY-MM-DD",
+							"HIVE_TYPE_STRING": "date"
+						}
+					}
+				}
+			],
+			"ColumnSetEntityName": "1bfda6ea-e782-4c3b-b596-6c1364ce99ef",
+			"Format": {
+				"InputFormat": "org.apache.hadoop.mapred.SequenceFileInputFormat",
+				"OutputFormat": "org.apache.hadoop.hive.ql.io.HiveSequenceFileOutputFormat",
+				"FormatType": "csv",
+				"SerializeLib": "org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe",
+				"Properties": {
+					"path": "abfss://idwoptpoc@idwoptpoclake.dfs.core.windows.net/Opt_target/2",
+					"delimiter": ",",
+					"firstRowAsHeader": "false",
+					"serialization.format": "1",
+					"escape": "\\",
+					"FormatTypeSetToDatabaseDefault": true,
+					"header": "false"
+				}
+			},
+			"Source": {
+				"Provider": "ADLS",
+				"Location": "abfss://idwoptpoc@idwoptpoclake.dfs.core.windows.net/Opt_target/2",
+				"Properties": {
+					"LinkedServiceName": "idwoptpocsynworks-WorkspaceDefaultStorage",
+					"LocationSetToDatabaseDefault": true
+				}
+			},
+			"Properties": {
+				"textinputformat.record.delimiter": ",",
+				"compression": "",
+				"derivedModelAttributeInfo": "{\"attributeReferences\":{}}"
+			},
+			"Compressed": false,
+			"SerDeInfo": null,
+			"IsStoredAsSubdirectories": false
+		},
+		"Owner": null,
+		"CreateTime": 0,
+		"LastAccessTime": 0,
+		"Retention": 0,
+		"Temporary": false,
+		"IsRewriteEnabled": false,
+		"ViewOriginalText": null,
+		"ViewExpandedText": null,
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"OriginObjectId": null,
+		"IsSharedEntity": false,
+		"PublishStatus": "PUBLISHED",
+		"Properties": {
+			"Description": "",
+			"DisplayFolderInfo": "{\"name\":\"Others\"}",
+			"spark.sql.sources.schema.numParts": "1",
+			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"Sku Identifier\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Location ID\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Unit Cost\",\"type\":\"float\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Effective Start Date\",\"type\":\"date\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Effective End Date\",\"type\":\"date\",\"nullable\":false,\"metadata\":{}}]}",
+			"spark.sql.sources.provider": "csv",
+			"PrimaryKeys": ""
+		},
+		"ObjectVersion": 4,
+		"ObjectId": "04afa161-7ab9-48db-abd4-a2fa4fb211a8",
+		"Name": "Cost",
+		"Description": "",
+		"EntityType": "TABLE"
+	},
+	"type": "TABLE"
+}

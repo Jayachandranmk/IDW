@@ -1,0 +1,316 @@
+{
+	"name": "Third party - Market Share",
+	"properties": {
+		"TableType": "EXTERNAL",
+		"Namespace": {
+			"SchemaName": null,
+			"DatabaseName": "Opt_target"
+		},
+		"StorageDescriptor": {
+			"Distribution": null,
+			"Columns": [
+				{
+					"Name": "Sales Organisation",
+					"Description": "Company or Unit Identifier/Description",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "SKU Identifier",
+					"Description": "Unique identifier of every stock keeping unit",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Third Party SKU Identifier",
+					"Description": "The third party Identifier provided for the SKU",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Market Area Identifier",
+					"Description": "Market Data provided by some cluster/ region",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Date",
+					"Description": "Date on which metrics is referred",
+					"OriginDataTypeName": {
+						"TypeName": "date",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"DateFormat": "YYYY-MM-DD",
+							"HIVE_TYPE_STRING": "date"
+						}
+					}
+				},
+				{
+					"Name": "Market Area description",
+					"Description": "Description of the market area or region",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Online Market Share",
+					"Description": "Market share of the SKU in the online channel",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "Store Market Share",
+					"Description": "Market share of the SKU in the regular (store) channel",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "Total Online Market Sales",
+					"Description": "Total market Sales in online channel for the SKU in the region/ online",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "Total Stores Market Sales",
+					"Description": "Total market Sales via stores for the SKU in the region/ online",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "Total Online Market Sales  Units",
+					"Description": "Total market Sales units in online channel for the SKU in the region/ online",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "Total Stores Market Sales Units",
+					"Description": "Total market Sales Units via stores for the SKU in the region/ online",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "Total Retailer Online Sales",
+					"Description": "Total market sales of Retailer for the SKU in online channel in the region/ online",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "Total Retailer Store Sales",
+					"Description": "Total market Sales of Retailer for the SKU in physical stores in the region/ online",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "Total Retailer Online Market Sales  Units",
+					"Description": "Total market Sales units of retailer for the SKU in the region/ online",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "Total Retailer Store Market Sales Units",
+					"Description": "Total market Sales units of retailer for the SKU in the region/ online",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				}
+			],
+			"ColumnSetEntityName": "11376efb-9ae8-4e17-a04f-8effa0ab55d1",
+			"Format": {
+				"InputFormat": "org.apache.hadoop.mapred.SequenceFileInputFormat",
+				"OutputFormat": "org.apache.hadoop.hive.ql.io.HiveSequenceFileOutputFormat",
+				"FormatType": "csv",
+				"SerializeLib": "org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe",
+				"Properties": {
+					"path": "abfss://idwoptpoc@idwoptpoclake.dfs.core.windows.net/Opt_target/Third party - Market Share",
+					"delimiter": ",",
+					"firstRowAsHeader": "false",
+					"serialization.format": "1",
+					"escape": "\\",
+					"FormatTypeSetToDatabaseDefault": true,
+					"header": "false"
+				}
+			},
+			"Source": {
+				"Provider": "ADLS",
+				"Location": "abfss://idwoptpoc@idwoptpoclake.dfs.core.windows.net/Opt_target/Third party - Market Share",
+				"Properties": {
+					"LinkedServiceName": "idwoptpocsynworks-WorkspaceDefaultStorage",
+					"LocationSetToDatabaseDefault": true
+				}
+			},
+			"Properties": {
+				"textinputformat.record.delimiter": ",",
+				"compression": "",
+				"derivedModelAttributeInfo": "{\"attributeReferences\":{}}"
+			},
+			"Compressed": false,
+			"SerDeInfo": null,
+			"IsStoredAsSubdirectories": false
+		},
+		"Owner": null,
+		"CreateTime": 0,
+		"LastAccessTime": 0,
+		"Retention": 0,
+		"Temporary": false,
+		"IsRewriteEnabled": false,
+		"ViewOriginalText": null,
+		"ViewExpandedText": null,
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"OriginObjectId": null,
+		"IsSharedEntity": false,
+		"PublishStatus": "PUBLISHED",
+		"Properties": {
+			"Description": "",
+			"DisplayFolderInfo": "{\"name\":\"Others\"}",
+			"spark.sql.sources.provider": "csv",
+			"spark.sql.sources.schema.numParts": "1",
+			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"Sales Organisation\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"SKU Identifier\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Third Party SKU Identifier\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Market Area Identifier\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Date\",\"type\":\"date\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Market Area description\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Online Market Share\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Store Market Share\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Total Online Market Sales\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Total Stores Market Sales\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Total Online Market Sales  Units\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Total Stores Market Sales Units\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Total Retailer Online Sales\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Total Retailer Store Sales\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Total Retailer Online Market Sales  Units\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Total Retailer Store Market Sales Units\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}}]}",
+			"PrimaryKeys": ""
+		},
+		"ObjectVersion": 8,
+		"ObjectId": "b0b93b0f-218b-4411-86bb-649a19846dec",
+		"Name": "Third party - Market Share",
+		"Description": "",
+		"EntityType": "TABLE"
+	},
+	"type": "TABLE"
+}

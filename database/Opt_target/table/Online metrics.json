@@ -1,0 +1,529 @@
+{
+	"name": "Online metrics",
+	"properties": {
+		"TableType": "EXTERNAL",
+		"Namespace": {
+			"SchemaName": null,
+			"DatabaseName": "Opt_target"
+		},
+		"StorageDescriptor": {
+			"Distribution": null,
+			"Columns": [
+				{
+					"Name": "Sales Organisation",
+					"Description": "Company or Unit Identifier/Description",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "SKU Identifier",
+					"Description": "Unique identifier of every stock keeping unit",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Date",
+					"Description": "Date on which performance parameters are measured",
+					"OriginDataTypeName": {
+						"TypeName": "date",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"DateFormat": "YYYY-MM-DD",
+							"HIVE_TYPE_STRING": "date"
+						}
+					}
+				},
+				{
+					"Name": "Online Price",
+					"Description": "Price of the SKU on dot com, on that particular date",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "Page View",
+					"Description": "Number of page views",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "Reviews",
+					"Description": "Number of reviews",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "Positive reviews",
+					"Description": "Number of positive reviews",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "Negative reviews",
+					"Description": "Number of negative reviews",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "Ratings",
+					"Description": "Number of ratings",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "Average Rating",
+					"Description": "The average rating for the period",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "Time spent on the product",
+					"Description": "Time spent on the product before purchase",
+					"OriginDataTypeName": {
+						"TypeName": "timestamp",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff",
+							"HIVE_TYPE_STRING": "timestamp"
+						}
+					}
+				},
+				{
+					"Name": "Click to Cart percentage",
+					"Description": "% Conversion at first stage",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "Cart to Buy percentage",
+					"Description": "% Conversion at second stage",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "Checkouts",
+					"Description": "Number of checkouts",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "Mobile View",
+					"Description": "Number of views on mobile",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "Time spent on the product -Mobile",
+					"Description": "Time spent on the product before purchase (Mobile)",
+					"OriginDataTypeName": {
+						"TypeName": "timestamp",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff",
+							"HIVE_TYPE_STRING": "timestamp"
+						}
+					}
+				},
+				{
+					"Name": "Click to Cart percentage - mobile",
+					"Description": "% Conversion at first stage (Mobile)",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "Cart to Buy percentage - Mobile",
+					"Description": "% Conversion at second stage (Mobile)",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "Checkouts - Mobile",
+					"Description": "Number of checkouts (Mobile)",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "Other devices View",
+					"Description": "Number of views on other devices",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "Time spent on the product - other devices",
+					"Description": "Time spent on the product before purchase (Other devices)",
+					"OriginDataTypeName": {
+						"TypeName": "timestamp",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff",
+							"HIVE_TYPE_STRING": "timestamp"
+						}
+					}
+				},
+				{
+					"Name": "Click to Cart percentage - Other devices",
+					"Description": "% Conversion at first stage (other devices)",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "Cart to Buy percentage - Other devices",
+					"Description": "% Conversion at second stage (other devices)",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "Checkouts - Other devices",
+					"Description": "Number of checkouts (other devices)",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "Visibility in search engine",
+					"Description": "The rank at which the SKU is listed on search engine for most keywords",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "Number of members views",
+					"Description": "Number of members viewing the product",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "Number of non-members views",
+					"Description": "Number of non-members viewing the product",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "Number of members purchase",
+					"Description": "Number of members purchasing the product",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "Number of non-members purchase",
+					"Description": "Number of non-members puchasing the product",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "Additional Metrics",
+					"Description": "Any additional metrics",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				}
+			],
+			"ColumnSetEntityName": "b397e4af-2ba4-4b26-96a1-b11efe73b8d2",
+			"Format": {
+				"InputFormat": "org.apache.hadoop.mapred.SequenceFileInputFormat",
+				"OutputFormat": "org.apache.hadoop.hive.ql.io.HiveSequenceFileOutputFormat",
+				"FormatType": "csv",
+				"SerializeLib": "org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe",
+				"Properties": {
+					"path": "abfss://idwoptpoc@idwoptpoclake.dfs.core.windows.net/Opt_target/1",
+					"delimiter": ",",
+					"firstRowAsHeader": "false",
+					"serialization.format": "1",
+					"escape": "\\",
+					"FormatTypeSetToDatabaseDefault": true,
+					"header": "false"
+				}
+			},
+			"Source": {
+				"Provider": "ADLS",
+				"Location": "abfss://idwoptpoc@idwoptpoclake.dfs.core.windows.net/Opt_target/1",
+				"Properties": {
+					"LinkedServiceName": "idwoptpocsynworks-WorkspaceDefaultStorage",
+					"LocationSetToDatabaseDefault": true
+				}
+			},
+			"Properties": {
+				"textinputformat.record.delimiter": ",",
+				"compression": "",
+				"derivedModelAttributeInfo": "{\"attributeReferences\":{}}"
+			},
+			"Compressed": false,
+			"SerDeInfo": null,
+			"IsStoredAsSubdirectories": false
+		},
+		"Owner": null,
+		"CreateTime": 0,
+		"LastAccessTime": 0,
+		"Retention": 0,
+		"Temporary": false,
+		"IsRewriteEnabled": false,
+		"ViewOriginalText": null,
+		"ViewExpandedText": null,
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"OriginObjectId": null,
+		"IsSharedEntity": false,
+		"PublishStatus": "PUBLISHED",
+		"Properties": {
+			"Description": "",
+			"DisplayFolderInfo": "{\"name\":\"Others\"}",
+			"spark.sql.sources.schema.numParts": "1",
+			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"Sales Organisation\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"SKU Identifier\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Date\",\"type\":\"date\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Online Price\",\"type\":\"float\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Page View\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Reviews\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Positive reviews\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Negative reviews\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Ratings\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Average Rating\",\"type\":\"float\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Time spent on the product\",\"type\":\"timestamp\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Click to Cart percentage\",\"type\":\"float\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Cart to Buy percentage\",\"type\":\"float\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Checkouts\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Mobile View\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Time spent on the product -Mobile\",\"type\":\"timestamp\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Click to Cart percentage - mobile\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Cart to Buy percentage - Mobile\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Checkouts - Mobile\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Other devices View\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Time spent on the product - other devices\",\"type\":\"timestamp\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Click to Cart percentage - Other devices\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Cart to Buy percentage - Other devices\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Checkouts - Other devices\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Visibility in search engine\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Number of members views\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Number of non-members views\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Number of members purchase\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Number of non-members purchase\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Additional Metrics\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}}]}",
+			"spark.sql.sources.provider": "csv",
+			"PrimaryKeys": ""
+		},
+		"ObjectVersion": 10,
+		"ObjectId": "d3a9b231-1f46-4807-90dd-f4faaeda9adb",
+		"Name": "Online metrics",
+		"Description": "",
+		"EntityType": "TABLE"
+	},
+	"type": "TABLE"
+}

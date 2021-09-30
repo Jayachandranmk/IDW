@@ -1,0 +1,1043 @@
+{
+	"name": "Store",
+	"properties": {
+		"TableType": "EXTERNAL",
+		"Namespace": {
+			"SchemaName": null,
+			"DatabaseName": "Opt_target"
+		},
+		"Partitioning": {
+			"PartitionFunctionType": null,
+			"Keys": null
+		},
+		"StorageDescriptor": {
+			"Distribution": null,
+			"Columns": [
+				{
+					"Name": "Sales Organisation",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Distribution Channel",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "StoreId",
+					"Description": "The unique identifier of a Store.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "StoreName",
+					"Description": "The business name of the store.",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Store Zipcode",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Store State",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Store City",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Store District",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "StoreOpenDate",
+					"Description": "The date that the store was first opened.",
+					"OriginDataTypeName": {
+						"TypeName": "date",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"DateFormat": "YYYY-MM-DD",
+							"HIVE_TYPE_STRING": "date"
+						}
+					}
+				},
+				{
+					"Name": "StoreCloseDate",
+					"Description": "The date that the store was permanently closed.",
+					"OriginDataTypeName": {
+						"TypeName": "date",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"DateFormat": "YYYY-MM-DD",
+							"HIVE_TYPE_STRING": "date"
+						}
+					}
+				},
+				{
+					"Name": "Store Format",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Last Store remodel date",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Cafe",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Kid zone",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Activity zone",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Tourist store",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Beach Store",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Store In Store",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Parking size",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "No of Parking slots",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Checkout",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Location Type",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "AIR FORCE",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ARMY",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "COAST GUARD",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "MARINE",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "NAVY",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "BOOT CAMP",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "NATIONAL GUARD",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "LAKE",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "RIVER",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "SALTWATER BEACH",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "FRESHWATER BEACH",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "COASTAL",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "NATIONAL_STATE PARK",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "SUMMER RESORT",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "WINTER_SKI RESORT",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "DESERT",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "GOLF COURSE",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "AMUSEMENT PARK",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "AIRPORT",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "SHIPPING PORT_CRUISE TERMINAL",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "SPORTS STADIUM MOTOR SPEEDWAY RACE TRACK",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "PRISON",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "CASINO",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Ethnic group 1",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Ethnic group 2",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Ethic group 3",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Gas station",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Store Address 1",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Store Address 2",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "BANNER ID",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Banner Description",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Store Size Linear",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Store Size Square",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Store Display Size Linear",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Store Display Size Square",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Store Lease Size Linear",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Store Lease Size Square",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Store Warehouse Size Linear",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Store Warehouse Size Square",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Prototype",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Hub Fulfillment Store",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Store Group",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				}
+			],
+			"ColumnSetEntityName": "8f0486a5-c440-475e-8d27-09dbc463ef25",
+			"Format": {
+				"InputFormat": "org.apache.hadoop.mapred.SequenceFileInputFormat",
+				"OutputFormat": "org.apache.hadoop.hive.ql.io.HiveSequenceFileOutputFormat",
+				"FormatType": "csv",
+				"SerializeLib": "org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe",
+				"Properties": {
+					"path": "abfss://idwoptpoc@idwoptpoclake.dfs.core.windows.net/Opt_target/Store",
+					"delimiter": ",",
+					"firstRowAsHeader": "false",
+					"serialization.format": "1",
+					"escape": "\\",
+					"FormatTypeSetToDatabaseDefault": true,
+					"header": "false"
+				}
+			},
+			"Source": {
+				"Provider": "ADLS",
+				"Location": "abfss://idwoptpoc@idwoptpoclake.dfs.core.windows.net/Opt_target/Store",
+				"Properties": {
+					"LinkedServiceName": "idwoptpocsynworks-WorkspaceDefaultStorage",
+					"LocationSetToDatabaseDefault": true
+				}
+			},
+			"Properties": {
+				"textinputformat.record.delimiter": ",",
+				"compression": "",
+				"derivedModelAttributeInfo": "{\"attributeReferences\":{}}"
+			},
+			"Compressed": false,
+			"SerDeInfo": null,
+			"IsStoredAsSubdirectories": false
+		},
+		"Owner": null,
+		"CreateTime": 0,
+		"LastAccessTime": 0,
+		"Retention": 0,
+		"Temporary": false,
+		"IsRewriteEnabled": false,
+		"ViewOriginalText": null,
+		"ViewExpandedText": null,
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"OriginObjectId": null,
+		"IsSharedEntity": false,
+		"PublishStatus": "PUBLISHED",
+		"Properties": {
+			"DerivedModelEntityInfo": "{\"entityDirectives\":{\"name\":\"Store\",\"description\":\"A retail/channel location where products, goods and services are sold to consumers.\",\"baseEntityReference\":{\"name\":\"Store\",\"path\":\"Store.cdm.json/Store\"},\"primaryKey\":[\"StoreId\"],\"projectionInfo\":{\"attributes\":[{\"name\":\"Sales Organisation\",\"type\":\"New\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"Distribution Channel\",\"type\":\"New\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"StoreId\",\"type\":\"New\",\"description\":\"The unique identifier of a Store.\",\"dataType\":\"integer\",\"isNullable\":false},{\"name\":\"StoreName\",\"type\":\"New\",\"description\":\"The business name of the store.\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"Store Zipcode\",\"type\":\"New\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"Store State\",\"type\":\"New\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"Store City\",\"type\":\"New\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"Store District\",\"type\":\"New\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"StoreOpenDate\",\"type\":\"New\",\"description\":\"The date that the store was first opened.\",\"dataType\":\"date\",\"isNullable\":true,\"dateFormat\":\"YYYY-MM-DD\"},{\"name\":\"StoreCloseDate\",\"type\":\"New\",\"description\":\"The date that the store was permanently closed.\",\"dataType\":\"date\",\"isNullable\":true,\"dateFormat\":\"YYYY-MM-DD\"},{\"name\":\"Store Format\",\"type\":\"New\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"Last Store remodel date\",\"type\":\"New\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"Cafe\",\"type\":\"New\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"Kid zone\",\"type\":\"New\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"Activity zone\",\"type\":\"New\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"Tourist store\",\"type\":\"New\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"Beach Store\",\"type\":\"New\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"Store In Store\",\"type\":\"New\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"Parking size\",\"type\":\"New\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"No of Parking slots\",\"type\":\"New\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"Checkout\",\"type\":\"New\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"Location Type\",\"type\":\"New\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"AIR FORCE\",\"type\":\"New\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"ARMY\",\"type\":\"New\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"COAST GUARD\",\"type\":\"New\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"MARINE\",\"type\":\"New\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"NAVY\",\"type\":\"New\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"BOOT CAMP\",\"type\":\"New\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"NATIONAL GUARD\",\"type\":\"New\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"LAKE\",\"type\":\"New\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"RIVER\",\"type\":\"New\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"SALTWATER BEACH\",\"type\":\"New\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"FRESHWATER BEACH\",\"type\":\"New\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"COASTAL\",\"type\":\"New\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"NATIONAL_STATE PARK\",\"type\":\"New\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"SUMMER RESORT\",\"type\":\"New\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"WINTER_SKI RESORT\",\"type\":\"New\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"DESERT\",\"type\":\"New\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"GOLF COURSE\",\"type\":\"New\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"AMUSEMENT PARK\",\"type\":\"New\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"AIRPORT\",\"type\":\"New\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"SHIPPING PORT_CRUISE TERMINAL\",\"type\":\"New\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"SPORTS STADIUM MOTOR SPEEDWAY RACE TRACK\",\"type\":\"Existing\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256,\"attributeReference\":{\"name\":\"SPORTS STADIUM MOTOR SPEEDWAY RACE TRACK\",\"entity\":\"Store.cdm.json/Store\"}},{\"name\":\"PRISON\",\"type\":\"Existing\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256,\"attributeReference\":{\"name\":\"PRISON\",\"entity\":\"Store.cdm.json/Store\"}},{\"name\":\"CASINO\",\"type\":\"Existing\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256,\"attributeReference\":{\"name\":\"CASINO\",\"entity\":\"Store.cdm.json/Store\"}},{\"name\":\"Ethnic group 1\",\"type\":\"Existing\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256,\"attributeReference\":{\"name\":\"Ethnic group 1\",\"entity\":\"Store.cdm.json/Store\"}},{\"name\":\"Ethnic group 2\",\"type\":\"Existing\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256,\"attributeReference\":{\"name\":\"Ethnic group 2\",\"entity\":\"Store.cdm.json/Store\"}},{\"name\":\"Ethic group 3\",\"type\":\"Existing\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256,\"attributeReference\":{\"name\":\"Ethic group 3\",\"entity\":\"Store.cdm.json/Store\"}},{\"name\":\"Gas station\",\"type\":\"Existing\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256,\"attributeReference\":{\"name\":\"Gas station\",\"entity\":\"Store.cdm.json/Store\"}},{\"name\":\"Store Address 1\",\"type\":\"Existing\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256,\"attributeReference\":{\"name\":\"Store Address 1\",\"entity\":\"Store.cdm.json/Store\"}},{\"name\":\"Store Address 2\",\"type\":\"Existing\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256,\"attributeReference\":{\"name\":\"Store Address 2\",\"entity\":\"Store.cdm.json/Store\"}},{\"name\":\"BANNER ID\",\"type\":\"Existing\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256,\"attributeReference\":{\"name\":\"BANNER ID\",\"entity\":\"Store.cdm.json/Store\"}},{\"name\":\"Banner Description\",\"type\":\"Existing\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256,\"attributeReference\":{\"name\":\"Banner Description\",\"entity\":\"Store.cdm.json/Store\"}},{\"name\":\"Store Size Linear\",\"type\":\"Existing\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256,\"attributeReference\":{\"name\":\"Store Size Linear\",\"entity\":\"Store.cdm.json/Store\"}},{\"name\":\"Store Size Square\",\"type\":\"Existing\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256,\"attributeReference\":{\"name\":\"Store Size Square\",\"entity\":\"Store.cdm.json/Store\"}},{\"name\":\"Store Display Size Linear\",\"type\":\"Existing\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256,\"attributeReference\":{\"name\":\"Store Display Size Linear\",\"entity\":\"Store.cdm.json/Store\"}},{\"name\":\"Store Display Size Square\",\"type\":\"Existing\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256,\"attributeReference\":{\"name\":\"Store Display Size Square\",\"entity\":\"Store.cdm.json/Store\"}},{\"name\":\"Store Lease Size Linear\",\"type\":\"Existing\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256,\"attributeReference\":{\"name\":\"Store Lease Size Linear\",\"entity\":\"Store.cdm.json/Store\"}},{\"name\":\"Store Lease Size Square\",\"type\":\"Existing\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256,\"attributeReference\":{\"name\":\"Store Lease Size Square\",\"entity\":\"Store.cdm.json/Store\"}},{\"name\":\"Store Warehouse Size Linear\",\"type\":\"Existing\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256,\"attributeReference\":{\"name\":\"Store Warehouse Size Linear\",\"entity\":\"Store.cdm.json/Store\"}},{\"name\":\"Store Warehouse Size Square\",\"type\":\"Existing\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256,\"attributeReference\":{\"name\":\"Store Warehouse Size Square\",\"entity\":\"Store.cdm.json/Store\"}},{\"name\":\"Prototype\",\"type\":\"Existing\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256,\"attributeReference\":{\"name\":\"Prototype\",\"entity\":\"Store.cdm.json/Store\"}},{\"name\":\"Hub Fulfillment Store\",\"type\":\"Existing\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256,\"attributeReference\":{\"name\":\"Hub Fulfillment Store\",\"entity\":\"Store.cdm.json/Store\"}},{\"name\":\"Store Group\",\"type\":\"Existing\",\"description\":\"\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256,\"attributeReference\":{\"name\":\"Store Group\",\"entity\":\"Store.cdm.json/Store\"}}]}}}",
+			"Description": "A retail/channel location where products, goods and services are sold to consumers.",
+			"DisplayFolderInfo": "{\"name\":\"Channel\"}",
+			"spark.sql.sources.provider": "csv",
+			"spark.sql.sources.schema.numParts": "2",
+			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"Sales Organisation\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Distribution Channel\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"StoreId\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"StoreName\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Store Zipcode\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Store State\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Store City\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Store District\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"StoreOpenDate\",\"type\":\"date\",\"nullable\":true,\"metadata\":{}},{\"name\":\"StoreCloseDate\",\"type\":\"date\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Store Format\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Last Store remodel date\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Cafe\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Kid zone\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Activity zone\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Tourist store\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Beach Store\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Store In Store\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Parking size\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"No of Parking slots\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Checkout\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Location Type\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"AIR FORCE\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"ARMY\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"COAST GUARD\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"MARINE\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"NAVY\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"BOOT CAMP\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"NATIONAL GUARD\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"LAKE\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"RIVER\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"SALTWATER BEACH\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"FRESHWATER BEACH\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"COASTAL\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"NATIONAL_STATE PARK\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"SUMMER RESORT\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"WINTER_SKI RESORT\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"DESERT\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"GOLF COURSE\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"AMUSEMENT PARK\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"AIRPORT\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"SHIPPING PORT_CRUISE TERMINAL\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"SPORTS STADIUM MOTOR SPEEDWAY RACE TRACK\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"PRISON\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"CASINO\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Ethnic group 1\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Ethnic group 2\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Ethic group 3\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Gas station\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Store Address 1\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Store Address 2\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"BANNER ID\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Banner Description\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Store Size Linear\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Store Size Square\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Store Display Size Linear\",\"ty",
+			"spark.sql.sources.schema.part.1": "pe\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Store Display Size Square\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Store Lease Size Linear\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Store Lease Size Square\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Store Warehouse Size Linear\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Store Warehouse Size Square\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Prototype\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Hub Fulfillment Store\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Store Group\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}}]}",
+			"PrimaryKeys": "StoreId"
+		},
+		"ObjectVersion": 9,
+		"ObjectId": "d2466665-896c-4e2e-8589-791e89d34d47",
+		"Name": "Store",
+		"Description": "A retail/channel location where products, goods and services are sold to consumers.",
+		"EntityType": "TABLE"
+	},
+	"type": "TABLE"
+}

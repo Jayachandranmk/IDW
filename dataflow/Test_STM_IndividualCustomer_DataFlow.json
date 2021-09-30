@@ -1,0 +1,46 @@
+{
+	"name": "Test_STM_IndividualCustomer_DataFlow",
+	"properties": {
+		"folder": {
+			"name": "Test_STM"
+		},
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"linkedService": {
+						"referenceName": "Test_Linked_service",
+						"type": "LinkedServiceReference"
+					},
+					"schemaLinkedService": {
+						"referenceName": "Test_Linked_service",
+						"type": "LinkedServiceReference"
+					},
+					"name": "CustomersDeltaSource"
+				}
+			],
+			"sinks": [
+				{
+					"linkedService": {
+						"referenceName": "Test_Linked_service",
+						"type": "LinkedServiceReference"
+					},
+					"schemaLinkedService": {
+						"referenceName": "Test_Linked_service",
+						"type": "LinkedServiceReference"
+					},
+					"name": "IndividualCustomerSink"
+				}
+			],
+			"transformations": [
+				{
+					"name": "Deduplicated1CustomersDeltaSource"
+				},
+				{
+					"name": "IndividualCustomer"
+				}
+			],
+			"script": "parameters{\n\tmodifiedAfter as timestamp,\n\tmodifiedBefore as timestamp\n}\nsource(output(\n\t\tCustomerId as integer,\n\t\tFullName as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: true,\n\tmodifiedAfter: ($modifiedAfter),\n\tmodifiedBefore: ($modifiedBefore),\n\tentity: 'Customers.cdm.json/Customers',\n\tformat: 'cdm',\n\tmanifestType: 'manifest',\n\tmanifestName: 'Customers',\n\tcorpusPath: 'Test_Logical/sm-corpus',\n\tcorpusStore: 'adlsgen2',\n\tadlsgen2_fileSystem: 'idwsource',\n\tfolderPath: 'Test_Physical/sm-exported/Customers',\n\tfileSystem: 'idwsource',\n\tdateFormats: ['MM/dd/yyyy','MM-dd-yyyy','MM.dd.yyyy','yyyy/MM/dd','yyyy-MM-dd','yyyy.MM.dd'],\n\ttimestampFormats: ['yyyy/MM/dd hh:mm:ss a','yyyy-MM-dd hh:mm:ss a','yyyy.MM.dd hh:mm:ss a','yyyy/MM/dd HH:mm:ss','yyyy-MM-dd HH:mm:ss','yyyy.MM.dd HH:mm:ss','MM-dd-yyyy hh:mm:ss a','MM/dd/yyyy hh:mm:ss a','MM.dd.yyyy hh:mm:ss a','MM/dd/yyyy HH:mm:ss','MM-dd-yyyy HH:mm:ss','MM.dd.yyyy HH:mm:ss','MM/dd/yyyy','MM-dd-yyyy','MM.dd.yyyy','yyyy/MM/dd','yyyy-MM-dd','yyyy.MM.dd']) ~> CustomersDeltaSource\nCustomersDeltaSource aggregate(groupBy(CustomerId),\n\tFullName = last(FullName)) ~> Deduplicated1CustomersDeltaSource\nDeduplicated1CustomersDeltaSource select(mapColumn(\n\t\tIndividualCustomerName = FullName,\n\t\tCustomerId\n\t),\n\tskipDuplicateMapInputs: false,\n\tskipDuplicateMapOutputs: false) ~> IndividualCustomer\nIndividualCustomer sink(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tentity: 'IndividualCustomer.cdm.json/IndividualCustomer',\n\tformat: 'cdm',\n\tmanifestType: 'manifest',\n\tmanifestName: 'IndividualCustomer',\n\tfolderPath: 'Test_Physical/stdm-exported/IndividualCustomer',\n\tfileSystem: 'idwsource',\n\tcolumnNamesAsHeader: true,\n\tcolumnDelimiter: ',',\n\tquoteChar: '\\\"',\n\tescapeChar: '\\\\',\n\tcorpusPath: 'Test_Logical/stdm-corpus',\n\tcorpusStore: 'adlsgen2',\n\tadlsgen2_fileSystem: 'idwsource',\n\ttruncate: false,\n\tumask: 0022,\n\tpreCommands: [],\n\tpostCommands: [],\n\tpartitionBy('hash', 1)) ~> IndividualCustomerSink"
+		}
+	}
+}

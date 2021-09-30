@@ -1,0 +1,27 @@
+{
+	"name": "Opt_target",
+	"properties": {
+		"Description": "",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"Properties": {
+			"DerivedModelDBInfo": "{\"ModelDirectives\":{\"BaseModel\":{\"Name\":\"Retail\",\"Version\":\"0.1.0\"}}}",
+			"IsSyMSCDMDatabase": true
+		},
+		"Source": {
+			"Provider": "ADLS",
+			"Location": "abfss://idwoptpoc@idwoptpoclake.dfs.core.windows.net/Opt_target",
+			"Properties": {
+				"FormatType": "csv",
+				"LinkedServiceName": "idwoptpocsynworks-WorkspaceDefaultStorage"
+			}
+		},
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 130,
+		"ObjectId": "20709b66-558d-4e26-bb28-7bc704f097b4",
+		"Name": "Opt_target",
+		"EntityType": "DATABASE"
+	},
+	"type": "DATABASE"
+}

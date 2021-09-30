@@ -1,0 +1,1188 @@
+{
+	"name": "Weather",
+	"properties": {
+		"TableType": "EXTERNAL",
+		"Namespace": {
+			"SchemaName": null,
+			"DatabaseName": "Opt_target"
+		},
+		"StorageDescriptor": {
+			"Distribution": null,
+			"Columns": [
+				{
+					"Name": "STORE ID",
+					"Description": "Unique Identifier for Store",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "DATE",
+					"Description": "Date on which the Weather related metrics are captured",
+					"OriginDataTypeName": {
+						"TypeName": "date",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"DateFormat": "YYYY-MM-DD",
+							"HIVE_TYPE_STRING": "date"
+						}
+					}
+				},
+				{
+					"Name": "High temperature",
+					"Description": "High temperature for the day",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Low Temperature",
+					"Description": "Low temperature for the day",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "UV Description",
+					"Description": "Index level {Low, Moderate,High, Extreme} for the day",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Wind Speed",
+					"Description": "Wind Speed for the day",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Humidity Level",
+					"Description": "Humidity Recorded for the day",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Dew Point Level",
+					"Description": "Dew Point recorded for the day",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Rain Fall Amt",
+					"Description": "Rainfall recorded for the day",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Snow Fall Amt",
+					"Description": "Snowfall recorded for the day",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Air Quality Index",
+					"Description": "Air quality index recorded for the day",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "AVERAGE RAIN IN JANUARY",
+					"Description": "Average Rain In January",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "AVERAGE RAIN IN FEBRUARY",
+					"Description": "Average Rain In February",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "AVERAGE RAIN IN MARCH",
+					"Description": "Average Rain In March",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "AVERAGE RAIN IN APRIL",
+					"Description": "Average Rain In April",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "AVERAGE RAIN IN MAY",
+					"Description": "Average Rain In May",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "AVERAGE RAIN IN JUNE",
+					"Description": "Average Rain In June",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "AVERAGE RAIN IN JULY",
+					"Description": "Average Rain In July",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "AVERAGE RAIN IN AUGUST",
+					"Description": "Average Rain In August",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "AVERAGE RAIN IN SEPTEMBER",
+					"Description": "Average Rain In September",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "AVERAGE RAIN IN OCTOBER",
+					"Description": "Average Rain In October",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "AVERAGE RAIN IN NOVEMBER",
+					"Description": "Average Rain In November",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "AVERAGE RAIN IN DECEMBER",
+					"Description": "Average Rain In December",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "AVERAGE HUMIDITY IN JANUARY",
+					"Description": "Average Humidity In January",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "AVERAGE HUMIDITY IN FEBRUARY",
+					"Description": "Average Humidity In February",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "AVERAGE HUMIDITY IN MARCH",
+					"Description": "Average Humidity In March",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "AVERAGE HUMIDITY IN APRIL",
+					"Description": "Average Humidity In April",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "AVERAGE HUMIDITY IN MAY",
+					"Description": "Average Humidity In May",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "AVERAGE HUMIDITY IN JUNE",
+					"Description": "Average Humidity In June",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "AVERAGE HUMIDITY IN JULY",
+					"Description": "Average Humidity In July",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "AVERAGE HUMIDITY IN AUGUST",
+					"Description": "Average Humidity In August",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "AVERAGE HUMIDITY IN SEPTEMBER",
+					"Description": "Average Humidity In September",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "AVERAGE HUMIDITY IN OCTOBER",
+					"Description": "Average Humidity In October",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "AVERAGE HUMIDITY IN NOVEMBER",
+					"Description": "Average Humidity In November",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "AVERAGE HUMIDITY IN DECEMBER",
+					"Description": "Average Humidity In December",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "AVERAGE TEMPERATURE IN JANUARY",
+					"Description": "Average Temperature In January",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "AVERAGE TEMPERATURE IN FEBRUARY",
+					"Description": "Average Temperature In February",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "AVERAGE TEMPERATURE IN MARCH",
+					"Description": "Average Temperature In March",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "AVERAGE TEMPERATURE IN APRIL",
+					"Description": "Average Temperature In April",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "AVERAGE TEMPERATURE IN MAY",
+					"Description": "Average Temperature In May",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "AVERAGE TEMPERATURE IN JUNE",
+					"Description": "Average Temperature In June",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "AVERAGE TEMPERATURE IN JULY",
+					"Description": "Average Temperature In July",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "AVERAGE TEMPERATURE IN AUGUST",
+					"Description": "Average Temperature In August",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "AVERAGE TEMPERATURE IN SEPTEMBER",
+					"Description": "Average Temperature In September",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "AVERAGE TEMPERATURE IN OCTOBER",
+					"Description": "Average Temperature In October",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "AVERAGE TEMPERATURE IN NOVEMBER",
+					"Description": "Average Temperature In November",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "AVERAGE TEMPERATURE IN DECEMBER",
+					"Description": "Average Temperature In December",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "AVERAGE SNOW IN JANUARY",
+					"Description": "Average Snow In January",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "AVERAGE SNOW IN FEBRUARY",
+					"Description": "Average Snow In February",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "AVERAGE SNOW IN MARCH",
+					"Description": "Average Snow In March",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "AVERAGE SNOW IN APRIL",
+					"Description": "Average Snow In April",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "AVERAGE SNOW IN MAY",
+					"Description": "Average Snow In May",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "AVERAGE SNOW IN JUNE",
+					"Description": "Average Snow In June",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "AVERAGE SNOW IN JULY",
+					"Description": "Average Snow In July",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "AVERAGE SNOW IN AUGUST",
+					"Description": "Average Snow In August",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "AVERAGE SNOW IN SEPTEMBER",
+					"Description": "Average Snow In September",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "AVERAGE SNOW IN OCTOBER",
+					"Description": "Average Snow In October",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "AVERAGE SNOW IN NOVEMBER",
+					"Description": "Average Snow In November",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "AVERAGE SNOW IN DECEMBER",
+					"Description": "Average Snow In December",
+					"OriginDataTypeName": {
+						"TypeName": "float",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "float"
+						}
+					}
+				},
+				{
+					"Name": "extreme weather event IN JANUARY",
+					"Description": "Number of days with weather events such as Tornado that could potentially impact sales",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "extreme weather event IN FEBRUARY",
+					"Description": "Number of days with weather events such as Tornado that could potentially impact sales",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "extreme weather event IN APRIL",
+					"Description": "Number of days with weather events such as Tornado that could potentially impact sales",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "extreme weather event IN MARCH",
+					"Description": "Number of days with weather events such as Tornado that could potentially impact sales",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "extreme weather event IN MAY",
+					"Description": "Number of days with weather events such as Tornado that could potentially impact sales",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "extreme weather event IN JUNE",
+					"Description": "Number of days with weather events such as Tornado that could potentially impact sales",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "extreme weather event IN JULY",
+					"Description": "Number of days with weather events such as Tornado that could potentially impact sales",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "extreme weather event IN AUGUST",
+					"Description": "Number of days with weather events such as Tornado that could potentially impact sales",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "extreme weather event IN SEPTEMBER",
+					"Description": "Number of days with weather events such as Tornado that could potentially impact sales",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "extreme weather event IN OCTOBER",
+					"Description": "Number of days with weather events such as Tornado that could potentially impact sales",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "extreme weather event IN NOVEMBER",
+					"Description": "Number of days with weather events such as Tornado that could potentially impact sales",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "extreme weather event IN DECEMBER",
+					"Description": "Number of days with weather events such as Tornado that could potentially impact sales",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "Attribute 1",
+					"Description": "Any other attributes recorded for the day/month level by location id",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Attribute 2",
+					"Description": "Any other attributes recorded for the day/month level by location id",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Attribute 3",
+					"Description": "Any other attributes recorded for the day/month level by location id",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				}
+			],
+			"ColumnSetEntityName": "448f5557-0d46-4ddf-82c7-fee53b79aec1",
+			"Format": {
+				"InputFormat": "org.apache.hadoop.mapred.SequenceFileInputFormat",
+				"OutputFormat": "org.apache.hadoop.hive.ql.io.HiveSequenceFileOutputFormat",
+				"FormatType": "csv",
+				"SerializeLib": "org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe",
+				"Properties": {
+					"path": "abfss://idwoptpoc@idwoptpoclake.dfs.core.windows.net/Opt_target/1",
+					"delimiter": ",",
+					"firstRowAsHeader": "false",
+					"serialization.format": "1",
+					"escape": "\\",
+					"FormatTypeSetToDatabaseDefault": true,
+					"header": "false"
+				}
+			},
+			"Source": {
+				"Provider": "ADLS",
+				"Location": "abfss://idwoptpoc@idwoptpoclake.dfs.core.windows.net/Opt_target/1",
+				"Properties": {
+					"LinkedServiceName": "idwoptpocsynworks-WorkspaceDefaultStorage",
+					"LocationSetToDatabaseDefault": true
+				}
+			},
+			"Properties": {
+				"textinputformat.record.delimiter": ",",
+				"compression": "",
+				"derivedModelAttributeInfo": "{\"attributeReferences\":{}}"
+			},
+			"Compressed": false,
+			"SerDeInfo": null,
+			"IsStoredAsSubdirectories": false
+		},
+		"Owner": null,
+		"CreateTime": 0,
+		"LastAccessTime": 0,
+		"Retention": 0,
+		"Temporary": false,
+		"IsRewriteEnabled": false,
+		"ViewOriginalText": null,
+		"ViewExpandedText": null,
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"OriginObjectId": null,
+		"IsSharedEntity": false,
+		"PublishStatus": "PUBLISHED",
+		"Properties": {
+			"Description": "",
+			"DisplayFolderInfo": "{\"name\":\"Others\"}",
+			"spark.sql.sources.schema.numParts": "2",
+			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"STORE ID\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"DATE\",\"type\":\"date\",\"nullable\":true,\"metadata\":{}},{\"name\":\"High temperature\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Low Temperature\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"UV Description\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Wind Speed\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Humidity Level\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Dew Point Level\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Rain Fall Amt\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Snow Fall Amt\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Air Quality Index\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE RAIN IN JANUARY\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE RAIN IN FEBRUARY\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE RAIN IN MARCH\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE RAIN IN APRIL\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE RAIN IN MAY\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE RAIN IN JUNE\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE RAIN IN JULY\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE RAIN IN AUGUST\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE RAIN IN SEPTEMBER\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE RAIN IN OCTOBER\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE RAIN IN NOVEMBER\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE RAIN IN DECEMBER\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE HUMIDITY IN JANUARY\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE HUMIDITY IN FEBRUARY\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE HUMIDITY IN MARCH\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE HUMIDITY IN APRIL\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE HUMIDITY IN MAY\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE HUMIDITY IN JUNE\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE HUMIDITY IN JULY\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE HUMIDITY IN AUGUST\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE HUMIDITY IN SEPTEMBER\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE HUMIDITY IN OCTOBER\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE HUMIDITY IN NOVEMBER\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE HUMIDITY IN DECEMBER\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE TEMPERATURE IN JANUARY\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE TEMPERATURE IN FEBRUARY\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE TEMPERATURE IN MARCH\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE TEMPERATURE IN APRIL\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE TEMPERATURE IN MAY\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE TEMPERATURE IN JUNE\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE TEMPERATURE IN JULY\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE TEMPERATURE IN AUGUST\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE TEMPERATURE IN SEPTEMBER\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE TEMPERATURE IN OCTOBER\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE TEMPERATURE IN NOVEMBER\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE TEMPERATURE IN DECEMBER\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE SNOW IN JANUARY\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE SNOW IN FEBRUARY\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE SNOW IN MARCH\",\"type\":\"float\",\"nullab",
+			"spark.sql.sources.provider": "csv",
+			"spark.sql.sources.schema.part.1": "le\":true,\"metadata\":{}},{\"name\":\"AVERAGE SNOW IN APRIL\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE SNOW IN MAY\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE SNOW IN JUNE\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE SNOW IN JULY\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE SNOW IN AUGUST\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE SNOW IN SEPTEMBER\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE SNOW IN OCTOBER\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE SNOW IN NOVEMBER\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE SNOW IN DECEMBER\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"extreme weather event IN JANUARY\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"extreme weather event IN FEBRUARY\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"extreme weather event IN APRIL\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"extreme weather event IN MARCH\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"extreme weather event IN MAY\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"extreme weather event IN JUNE\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"extreme weather event IN JULY\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"extreme weather event IN AUGUST\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"extreme weather event IN SEPTEMBER\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"extreme weather event IN OCTOBER\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"extreme weather event IN NOVEMBER\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"extreme weather event IN DECEMBER\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Attribute 1\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Attribute 2\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Attribute 3\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}}]}",
+			"spark.sql.sources.schema.part.2": "\"name\":\"Column_45\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_46\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_47\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_48\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_49\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_50\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_51\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_52\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_53\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_54\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_55\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_56\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_57\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_58\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_59\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_60\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_61\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_62\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}}]}",
+			"PrimaryKeys": ""
+		},
+		"ObjectVersion": 26,
+		"ObjectId": "22f5df67-f0ef-4d8f-ada4-184ac21fa791",
+		"Name": "Weather",
+		"Description": "",
+		"EntityType": "TABLE"
+	},
+	"type": "TABLE"
+}

@@ -1,0 +1,121 @@
+{
+	"name": "StoreGroup",
+	"properties": {
+		"TableType": "EXTERNAL",
+		"Namespace": {
+			"SchemaName": null,
+			"DatabaseName": "Opt_target"
+		},
+		"StorageDescriptor": {
+			"Distribution": null,
+			"Columns": [
+				{
+					"Name": "Sales Org Name",
+					"Description": "Name of the sales organization",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "StoreGroupName",
+					"Description": "Store group name",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 128,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "StoreGroupDescription_1",
+					"Description": "Store group Description",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 512,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				}
+			],
+			"ColumnSetEntityName": "01a05cb2-e4cd-43a5-a058-1f2182ee3185",
+			"Format": {
+				"InputFormat": "org.apache.hadoop.mapred.SequenceFileInputFormat",
+				"OutputFormat": "org.apache.hadoop.hive.ql.io.HiveSequenceFileOutputFormat",
+				"FormatType": "csv",
+				"SerializeLib": "org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe",
+				"Properties": {
+					"path": "abfss://idwoptpoc@idwoptpoclake.dfs.core.windows.net/Opt_target/StoreGroup",
+					"delimiter": ",",
+					"firstRowAsHeader": "false",
+					"serialization.format": "1",
+					"escape": "\\",
+					"FormatTypeSetToDatabaseDefault": true,
+					"header": "false"
+				}
+			},
+			"Source": {
+				"Provider": "ADLS",
+				"Location": "abfss://idwoptpoc@idwoptpoclake.dfs.core.windows.net/Opt_target/StoreGroup",
+				"Properties": {
+					"LinkedServiceName": "idwoptpocsynworks-WorkspaceDefaultStorage",
+					"LocationSetToDatabaseDefault": true
+				}
+			},
+			"Properties": {
+				"textinputformat.record.delimiter": ",",
+				"compression": "",
+				"derivedModelAttributeInfo": "{\"attributeReferences\":{}}"
+			},
+			"Compressed": false,
+			"SerDeInfo": null,
+			"IsStoredAsSubdirectories": false
+		},
+		"Owner": null,
+		"CreateTime": 0,
+		"LastAccessTime": 0,
+		"Retention": 0,
+		"Temporary": false,
+		"IsRewriteEnabled": false,
+		"ViewOriginalText": null,
+		"ViewExpandedText": null,
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"OriginObjectId": null,
+		"IsSharedEntity": false,
+		"PublishStatus": "PUBLISHED",
+		"Properties": {
+			"DerivedModelEntityInfo": "{\"entityDirectives\":{\"name\":\"StoreGroup\",\"description\":\"An arbitrary grouping of Stores.\\n\\nEx:\\n- Size\\n- Format\\n- Location\\n- Ownership\",\"baseEntityReference\":{\"name\":\"StoreGroup\",\"path\":\"StoreGroup.cdm.json/StoreGroup\"},\"primaryKey\":[\"Sales Org Name\",\"StoreGroupName\"],\"projectionInfo\":{\"attributes\":[{\"name\":\"Sales Org Name\",\"type\":\"New\",\"description\":\"Name of the sales organization\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"StoreGroupName\",\"type\":\"New\",\"description\":\"Store group name\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":128},{\"name\":\"StoreGroupDescription_1\",\"type\":\"New\",\"description\":\"Store group Description\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":512}]}}}",
+			"Description": "An arbitrary grouping of Stores.\n\nEx:\n- Size\n- Format\n- Location\n- Ownership",
+			"DisplayFolderInfo": "{\"name\":\"Product\"}",
+			"spark.sql.sources.provider": "csv",
+			"spark.sql.sources.schema.numParts": "1",
+			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"Sales Org Name\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"StoreGroupName\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"StoreGroupDescription_1\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}}]}",
+			"PrimaryKeys": "Sales Org Name,StoreGroupName"
+		},
+		"ObjectVersion": 5,
+		"ObjectId": "ffe9ec57-7c88-4c03-bd97-680ded3770ce",
+		"Name": "StoreGroup",
+		"Description": "An arbitrary grouping of Stores.\n\nEx:\n- Size\n- Format\n- Location\n- Ownership",
+		"EntityType": "TABLE"
+	},
+	"type": "TABLE"
+}

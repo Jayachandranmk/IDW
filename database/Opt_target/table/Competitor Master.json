@@ -1,0 +1,525 @@
+{
+	"name": "Competitor Master",
+	"properties": {
+		"TableType": "EXTERNAL",
+		"Namespace": {
+			"SchemaName": null,
+			"DatabaseName": "Opt_target"
+		},
+		"StorageDescriptor": {
+			"Distribution": null,
+			"Columns": [
+				{
+					"Name": "Sales Organisation",
+					"Description": "Company or Unit Identifier/Description",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Distribution Channel",
+					"Description": "Distribution channel in terms of the sales organization - Digital or stores",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Store ID",
+					"Description": "Unique Store ID",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Competitor Store ID",
+					"Description": "Unique Store ID for the Competitor Store",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Competitor Code",
+					"Description": "Unique Competitior Identifier",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Competitor Name",
+					"Description": "Name of the Competitor ",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Merch level ID",
+					"Description": "Merch Level Identifier",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Competitor Store Zipcode",
+					"Description": "Zip code of the competitor store",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "Competitor Store State",
+					"Description": "State in which the competitor store",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Competitor Store City",
+					"Description": "City of the competitor store ",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Competitor Store District",
+					"Description": "District of the competitor store",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Competitor Status",
+					"Description": "Represents the status of the competitor store as open/closed etc",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Competitor Radius",
+					"Description": "Represents the radius for which the competitor data is available. Ex: 1-mile radius, 3-mile radius",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "Competition Intensity",
+					"Description": "A value between 1 - 10, 10 being extremely competitive",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Competitor Store Distance",
+					"Description": "Distance between the corresponding store and competitor store",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Parking size",
+					"Description": "The size of the parking space in the store denotes as big, medium and small {Competitor Store}",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Cafe",
+					"Description": "Y/N to denote if the store has a café {Competitor Store}",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Kid zone",
+					"Description": "Y/N to denote availability of kid zone in the store {Competitor Store}",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Activity zone",
+					"Description": "Y/N to denote availability of activity area in the store {Competitor Store}",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Store In Store",
+					"Description": "Y/N to denote if there is store within the store {Competitor Store}",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Competitor characteristic 1",
+					"Description": "If additional information is available, these fields can be used to store that info",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Competitor characteristic 2",
+					"Description": "If additional information is available, these fields can be used to store that info",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Competitor characteristic 3",
+					"Description": "If additional information is available, these fields can be used to store that info",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Competitor characteristic 4",
+					"Description": "If additional information is available, these fields can be used to store that info",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Competitor characteristic 5",
+					"Description": "If additional information is available, these fields can be used to store that info",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Competitor characteristic 6",
+					"Description": "If additional information is available, these fields can be used to store that info",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Competitor characteristic 7",
+					"Description": "If additional information is available, these fields can be used to store that info",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Competitor characteristic 8",
+					"Description": "If additional information is available, these fields can be used to store that info",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Competitor characteristic 9",
+					"Description": "If additional information is available, these fields can be used to store that info",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Competitor characteristic 10",
+					"Description": "If additional information is available, these fields can be used to store that info",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				}
+			],
+			"ColumnSetEntityName": "2e0f8e5f-41f9-4774-97cf-ea86330ddf3e",
+			"Format": {
+				"InputFormat": "org.apache.hadoop.mapred.SequenceFileInputFormat",
+				"OutputFormat": "org.apache.hadoop.hive.ql.io.HiveSequenceFileOutputFormat",
+				"FormatType": "csv",
+				"SerializeLib": "org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe",
+				"Properties": {
+					"path": "abfss://idwoptpoc@idwoptpoclake.dfs.core.windows.net/Opt_target/Competitor Master",
+					"delimiter": ",",
+					"firstRowAsHeader": "false",
+					"serialization.format": "1",
+					"escape": "\\",
+					"FormatTypeSetToDatabaseDefault": true,
+					"header": "false"
+				}
+			},
+			"Source": {
+				"Provider": "ADLS",
+				"Location": "abfss://idwoptpoc@idwoptpoclake.dfs.core.windows.net/Opt_target/Competitor Master",
+				"Properties": {
+					"LinkedServiceName": "idwoptpocsynworks-WorkspaceDefaultStorage",
+					"LocationSetToDatabaseDefault": true
+				}
+			},
+			"Properties": {
+				"textinputformat.record.delimiter": ",",
+				"compression": "",
+				"derivedModelAttributeInfo": "{\"attributeReferences\":{}}"
+			},
+			"Compressed": false,
+			"SerDeInfo": null,
+			"IsStoredAsSubdirectories": false
+		},
+		"Owner": null,
+		"CreateTime": 0,
+		"LastAccessTime": 0,
+		"Retention": 0,
+		"Temporary": false,
+		"IsRewriteEnabled": false,
+		"ViewOriginalText": null,
+		"ViewExpandedText": null,
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"OriginObjectId": null,
+		"IsSharedEntity": false,
+		"PublishStatus": "PUBLISHED",
+		"Properties": {
+			"Description": "",
+			"DisplayFolderInfo": "{\"name\":\"Others\"}",
+			"spark.sql.sources.provider": "csv",
+			"spark.sql.sources.schema.numParts": "1",
+			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"Sales Organisation\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Distribution Channel\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Store ID\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Competitor Store ID\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Competitor Code\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Competitor Name\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Merch level ID\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Competitor Store Zipcode\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Competitor Store State\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Competitor Store City\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Competitor Store District\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Competitor Status\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Competitor Radius\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Competition Intensity\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Competitor Store Distance\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Parking size\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Cafe\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Kid zone\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Activity zone\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Store In Store\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Competitor characteristic 1\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Competitor characteristic 2\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Competitor characteristic 3\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Competitor characteristic 4\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Competitor characteristic 5\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Competitor characteristic 6\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Competitor characteristic 7\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Competitor characteristic 8\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Competitor characteristic 9\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Competitor characteristic 10\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}}]}",
+			"PrimaryKeys": ""
+		},
+		"ObjectVersion": 12,
+		"ObjectId": "973f243f-3c68-45d1-9620-58e33433e65c",
+		"Name": "Competitor Master",
+		"Description": "",
+		"EntityType": "TABLE"
+	},
+	"type": "TABLE"
+}
