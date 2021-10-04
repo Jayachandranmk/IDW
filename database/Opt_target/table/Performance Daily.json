@@ -17,8 +17,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -32,8 +30,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -47,8 +43,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -61,9 +55,6 @@
 						"TypeName": "date",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"DateFormat": "YYYY-MM-DD",
 							"HIVE_TYPE_STRING": "date"
@@ -77,9 +68,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -92,9 +80,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -107,9 +92,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -122,9 +104,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -137,9 +116,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -152,9 +128,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -167,9 +140,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -182,9 +152,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -197,9 +164,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -212,9 +176,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -227,9 +188,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -242,9 +200,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -257,9 +212,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -272,9 +224,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -287,9 +236,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -302,9 +248,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -318,8 +261,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -333,8 +274,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -348,8 +287,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -365,6 +302,7 @@
 				"Properties": {
 					"path": "abfss://idwoptpoc@idwoptpoclake.dfs.core.windows.net/Opt_target/Performance Daily",
 					"delimiter": ",",
+					"multiLine": "false",
 					"firstRowAsHeader": "false",
 					"serialization.format": "1",
 					"escape": "\\",
@@ -382,7 +320,7 @@
 			},
 			"Properties": {
 				"textinputformat.record.delimiter": ",",
-				"compression": "",
+				"compression": "{\"type\":\"None\",\"level\":\"optimal\"}",
 				"derivedModelAttributeInfo": "{\"attributeReferences\":{}}"
 			},
 			"Compressed": false,
@@ -406,10 +344,10 @@
 		"Properties": {
 			"Description": "",
 			"DisplayFolderInfo": "{\"name\":\"Others\"}",
+			"PrimaryKeys": "Sku Identifier,Store Id,Date",
 			"spark.sql.sources.provider": "csv",
 			"spark.sql.sources.schema.numParts": "1",
-			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"Distribution Channel\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Sku Identifier\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Store Id\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Date\",\"type\":\"date\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Retail Price\",\"type\":\"float\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Total Sales\",\"type\":\"float\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Regular sales\",\"type\":\"float\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Promo Sales\",\"type\":\"float\",\"nullable\":false,\"metadata\":{}},{\"name\":\"ColumClearance Salesn_1\",\"type\":\"float\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Total sales units\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Regular sales units\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Promo sales units\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Clearance Units\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Total gross margin\",\"type\":\"float\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Regular gross margin\",\"type\":\"float\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Promo gross margin\",\"type\":\"float\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Clearance Margin\",\"type\":\"float\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Gross margin percentage\",\"type\":\"float\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Net margin\",\"type\":\"float\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Net margin percentage\",\"type\":\"float\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Performance Factor1\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Performance Factor2\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Performance Factor3\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}}]}",
-			"PrimaryKeys": ""
+			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"Distribution Channel\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Sku Identifier\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Store Id\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Date\",\"type\":\"date\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Retail Price\",\"type\":\"float\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Total Sales\",\"type\":\"float\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Regular sales\",\"type\":\"float\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Promo Sales\",\"type\":\"float\",\"nullable\":false,\"metadata\":{}},{\"name\":\"ColumClearance Salesn_1\",\"type\":\"float\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Total sales units\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Regular sales units\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Promo sales units\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Clearance Units\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Total gross margin\",\"type\":\"float\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Regular gross margin\",\"type\":\"float\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Promo gross margin\",\"type\":\"float\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Clearance Margin\",\"type\":\"float\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Gross margin percentage\",\"type\":\"float\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Net margin\",\"type\":\"float\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Net margin percentage\",\"type\":\"float\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Performance Factor1\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Performance Factor2\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Performance Factor3\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}}]}"
 		},
 		"ObjectVersion": 10,
 		"ObjectId": "29f3a1e2-2837-41ea-92d1-12dd1c3d2eeb",

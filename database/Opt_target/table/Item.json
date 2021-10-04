@@ -17,8 +17,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -32,8 +30,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -47,8 +43,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -62,8 +56,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -76,9 +68,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -91,9 +80,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -106,9 +92,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -122,8 +105,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -136,9 +117,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -151,9 +129,6 @@
 						"TypeName": "boolean",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "boolean"
 						}
@@ -166,9 +141,6 @@
 						"TypeName": "boolean",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "boolean"
 						}
@@ -181,9 +153,6 @@
 						"TypeName": "boolean",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "boolean"
 						}
@@ -196,9 +165,6 @@
 						"TypeName": "boolean",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "boolean"
 						}
@@ -211,9 +177,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -227,8 +190,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -242,8 +203,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -257,8 +216,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -272,8 +229,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -287,8 +242,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -302,8 +255,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -317,8 +268,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -332,8 +281,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -347,8 +294,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -362,8 +307,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -377,8 +320,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -392,8 +333,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -406,9 +345,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -421,9 +357,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -436,9 +369,6 @@
 						"TypeName": "date",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"DateFormat": "YYYY-MM-DD",
 							"HIVE_TYPE_STRING": "date"
@@ -452,9 +382,6 @@
 						"TypeName": "date",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"DateFormat": "YYYY-MM-DD",
 							"HIVE_TYPE_STRING": "date"
@@ -468,9 +395,6 @@
 						"TypeName": "date",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"DateFormat": "YYYY-MM-DD",
 							"HIVE_TYPE_STRING": "date"
@@ -485,8 +409,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -500,8 +422,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -515,8 +435,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -530,8 +448,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -547,6 +463,7 @@
 				"Properties": {
 					"path": "abfss://idwoptpoc@idwoptpoclake.dfs.core.windows.net/Opt_target/Item1",
 					"delimiter": ",",
+					"multiLine": "false",
 					"firstRowAsHeader": "false",
 					"serialization.format": "1",
 					"escape": "\\",
@@ -564,7 +481,7 @@
 			},
 			"Properties": {
 				"textinputformat.record.delimiter": ",",
-				"compression": "",
+				"compression": "{\"type\":\"None\",\"level\":\"optimal\"}",
 				"derivedModelAttributeInfo": "{\"attributeReferences\":{}}"
 			},
 			"Compressed": false,
@@ -588,10 +505,10 @@
 		"Properties": {
 			"Description": "",
 			"DisplayFolderInfo": "{\"name\":\"Others\"}",
+			"PrimaryKeys": "Sku Identifier,Sales Org Name",
 			"spark.sql.sources.provider": "csv",
 			"spark.sql.sources.schema.numParts": "1",
-			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"Sku Identifier\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Sku Description\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"SKU Long Description\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Brand\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Depth\",\"type\":\"float\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Height\",\"type\":\"float\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Width\",\"type\":\"float\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Sales Uom\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Volume\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Private Label F\",\"type\":\"boolean\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Organic_Indicator\",\"type\":\"boolean\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Active F\",\"type\":\"boolean\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Stackable Flag\",\"type\":\"boolean\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Size\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Size UOM\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Sales Org Name\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Sales Hierarchy Level 1\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Sales Hierarchy Level 2\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Sales Hierarchy Level 3\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Sales Hierarchy Level 4\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Sales Hierarchy Level 5\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Sales Hierarchy Level 6\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Sales Hierarchy Level 7\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Sales Hierarchy Level 8\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Sales Hierarchy Level 9\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Manufacturer\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Unit Selling Price\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Unit Cost\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Active From\",\"type\":\"date\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Sku Publish Date\",\"type\":\"date\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Sku Discontinue Date\",\"type\":\"date\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Primary Fixture Type\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"SKU_Hosting type\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Vendor Number\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Vendor Name\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}}]}",
-			"PrimaryKeys": ""
+			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"Sku Identifier\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Sku Description\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"SKU Long Description\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Brand\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Depth\",\"type\":\"float\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Height\",\"type\":\"float\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Width\",\"type\":\"float\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Sales Uom\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Volume\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Private Label F\",\"type\":\"boolean\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Organic_Indicator\",\"type\":\"boolean\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Active F\",\"type\":\"boolean\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Stackable Flag\",\"type\":\"boolean\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Size\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Size UOM\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Sales Org Name\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Sales Hierarchy Level 1\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Sales Hierarchy Level 2\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Sales Hierarchy Level 3\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Sales Hierarchy Level 4\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Sales Hierarchy Level 5\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Sales Hierarchy Level 6\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Sales Hierarchy Level 7\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Sales Hierarchy Level 8\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Sales Hierarchy Level 9\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Manufacturer\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Unit Selling Price\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Unit Cost\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Active From\",\"type\":\"date\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Sku Publish Date\",\"type\":\"date\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Sku Discontinue Date\",\"type\":\"date\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Primary Fixture Type\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"SKU_Hosting type\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Vendor Number\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Vendor Name\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}}]}"
 		},
 		"ObjectVersion": 3,
 		"ObjectId": "d13ce9a0-c418-4ed3-85df-a67b90ca78b7",

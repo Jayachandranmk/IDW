@@ -17,8 +17,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -32,8 +30,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -47,8 +43,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -62,8 +56,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -77,8 +69,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -92,8 +82,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -107,8 +95,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -122,8 +108,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -137,8 +121,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -152,8 +134,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -167,8 +147,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -184,6 +162,7 @@
 				"Properties": {
 					"path": "abfss://idwoptpoc@idwoptpoclake.dfs.core.windows.net/Opt_target/1",
 					"delimiter": ",",
+					"multiLine": "false",
 					"firstRowAsHeader": "false",
 					"serialization.format": "1",
 					"escape": "\\",
@@ -201,7 +180,7 @@
 			},
 			"Properties": {
 				"textinputformat.record.delimiter": ",",
-				"compression": "",
+				"compression": "{\"type\":\"None\",\"level\":\"optimal\"}",
 				"derivedModelAttributeInfo": "{\"attributeReferences\":{}}"
 			},
 			"Compressed": false,
@@ -225,10 +204,10 @@
 		"Properties": {
 			"Description": "",
 			"DisplayFolderInfo": "{\"name\":\"Others\"}",
+			"PrimaryKeys": "Sales Organisation ID,Division ID or Code,Department ID,Category ID,Sub-Category ID",
 			"spark.sql.sources.schema.numParts": "1",
 			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"Sales Organisation ID\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Division ID or Code\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Division Description\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Department ID\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Department Description\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Category ID\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Category Description\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Sub-Category ID\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Sub-Category Description\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Additional levels ID\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Additional levels Description\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}}]}",
-			"spark.sql.sources.provider": "csv",
-			"PrimaryKeys": ""
+			"spark.sql.sources.provider": "csv"
 		},
 		"ObjectVersion": 4,
 		"ObjectId": "d5862746-8184-4214-b41c-5e9a993647ff",
