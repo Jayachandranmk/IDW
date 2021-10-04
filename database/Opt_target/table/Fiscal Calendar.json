@@ -10,347 +10,265 @@
 			"Distribution": null,
 			"Columns": [
 				{
-					"Name": "Column_1",
-					"Description": null,
+					"Name": "Date",
+					"Description": "Fiscal Date",
 					"OriginDataTypeName": {
-						"TypeName": "string",
+						"TypeName": "date",
+						"IsNullable": false,
 						"IsComplexType": false,
+						"Properties": {
+							"DateFormat": "YYYY-MM-DD",
+							"HIVE_TYPE_STRING": "date"
+						}
+					}
+				},
+				{
+					"Name": "Day",
+					"Description": "Calendar Day of the Year ",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
+						"IsComplexType": false,
 						"Properties": {
-							"HIVE_TYPE_STRING": "string"
+							"HIVE_TYPE_STRING": "integer"
 						}
 					}
 				},
 				{
-					"Name": "Column_2",
-					"Description": "",
+					"Name": "Week",
+					"Description": "Calendar week of the year",
 					"OriginDataTypeName": {
-						"TypeName": "string",
+						"TypeName": "integer",
+						"IsNullable": true,
 						"IsComplexType": false,
-						"IsNullable": false,
-						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
-							"HIVE_TYPE_STRING": "string"
+							"HIVE_TYPE_STRING": "integer"
 						}
 					}
 				},
 				{
-					"Name": "Column_3",
-					"Description": "",
+					"Name": "Month",
+					"Description": "Calendar Month of the year",
 					"OriginDataTypeName": {
-						"TypeName": "string",
+						"TypeName": "integer",
+						"IsNullable": true,
 						"IsComplexType": false,
-						"IsNullable": false,
-						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
-							"HIVE_TYPE_STRING": "string"
+							"HIVE_TYPE_STRING": "integer"
 						}
 					}
 				},
 				{
-					"Name": "Column_4",
-					"Description": "",
+					"Name": "Year",
+					"Description": "Calendar Year",
 					"OriginDataTypeName": {
-						"TypeName": "string",
+						"TypeName": "integer",
+						"IsNullable": true,
 						"IsComplexType": false,
-						"IsNullable": false,
-						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
-							"HIVE_TYPE_STRING": "string"
+							"HIVE_TYPE_STRING": "integer"
 						}
 					}
 				},
 				{
-					"Name": "Column_5",
-					"Description": "",
+					"Name": "Fiscal Day",
+					"Description": "Fiscal day of the year",
 					"OriginDataTypeName": {
-						"TypeName": "string",
-						"IsComplexType": false,
+						"TypeName": "integer",
 						"IsNullable": false,
-						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
+						"IsComplexType": false,
 						"Properties": {
-							"HIVE_TYPE_STRING": "string"
+							"HIVE_TYPE_STRING": "integer"
 						}
 					}
 				},
 				{
-					"Name": "Column_6",
-					"Description": "",
+					"Name": "Fiscal Week",
+					"Description": "Fiscal week of the year",
 					"OriginDataTypeName": {
-						"TypeName": "string",
-						"IsComplexType": false,
+						"TypeName": "integer",
 						"IsNullable": false,
-						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
+						"IsComplexType": false,
 						"Properties": {
-							"HIVE_TYPE_STRING": "string"
+							"HIVE_TYPE_STRING": "integer"
 						}
 					}
 				},
 				{
-					"Name": "Column_7",
-					"Description": "",
+					"Name": "Fiscal Month",
+					"Description": "Fiscal Month of the year",
 					"OriginDataTypeName": {
-						"TypeName": "string",
-						"IsComplexType": false,
+						"TypeName": "integer",
 						"IsNullable": false,
-						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
+						"IsComplexType": false,
 						"Properties": {
-							"HIVE_TYPE_STRING": "string"
+							"HIVE_TYPE_STRING": "integer"
 						}
 					}
 				},
 				{
-					"Name": "Column_8",
-					"Description": "",
+					"Name": "Fiscal Period",
+					"Description": "Fiscal Period of the year",
 					"OriginDataTypeName": {
-						"TypeName": "string",
+						"TypeName": "integer",
+						"IsNullable": true,
 						"IsComplexType": false,
-						"IsNullable": false,
-						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
-							"HIVE_TYPE_STRING": "string"
+							"HIVE_TYPE_STRING": "integer"
 						}
 					}
 				},
 				{
-					"Name": "Column_9",
-					"Description": "",
+					"Name": "Fiscal Quarter",
+					"Description": "Fiscal quarter of the year",
 					"OriginDataTypeName": {
-						"TypeName": "string",
+						"TypeName": "integer",
+						"IsNullable": true,
 						"IsComplexType": false,
-						"IsNullable": false,
-						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
-							"HIVE_TYPE_STRING": "string"
+							"HIVE_TYPE_STRING": "integer"
 						}
 					}
 				},
 				{
-					"Name": "Column_10",
-					"Description": "",
+					"Name": "Fiscal year",
+					"Description": "Fiscal Year",
 					"OriginDataTypeName": {
-						"TypeName": "string",
-						"IsComplexType": false,
+						"TypeName": "integer",
 						"IsNullable": false,
-						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
+						"IsComplexType": false,
 						"Properties": {
-							"HIVE_TYPE_STRING": "string"
+							"HIVE_TYPE_STRING": "integer"
 						}
 					}
 				},
 				{
-					"Name": "Column_11",
-					"Description": "",
+					"Name": "Week Begin Date",
+					"Description": "Start date of the selected week (Fiscal)",
 					"OriginDataTypeName": {
-						"TypeName": "string",
-						"IsComplexType": false,
+						"TypeName": "date",
 						"IsNullable": false,
-						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
+						"IsComplexType": false,
 						"Properties": {
-							"HIVE_TYPE_STRING": "string"
+							"DateFormat": "YYYY-MM-DD",
+							"HIVE_TYPE_STRING": "date"
 						}
 					}
 				},
 				{
-					"Name": "Column_12",
-					"Description": "",
+					"Name": "Week End Date",
+					"Description": "End date of the selected week (Fiscal)",
 					"OriginDataTypeName": {
-						"TypeName": "string",
-						"IsComplexType": false,
+						"TypeName": "date",
 						"IsNullable": false,
-						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
+						"IsComplexType": false,
 						"Properties": {
-							"HIVE_TYPE_STRING": "string"
+							"DateFormat": "YYYY-MM-DD",
+							"HIVE_TYPE_STRING": "date"
 						}
 					}
 				},
 				{
-					"Name": "Column_13",
-					"Description": "",
+					"Name": "Month Start Date",
+					"Description": "Start date of the month (Fiscal)",
 					"OriginDataTypeName": {
-						"TypeName": "string",
-						"IsComplexType": false,
+						"TypeName": "date",
 						"IsNullable": false,
-						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
+						"IsComplexType": false,
 						"Properties": {
-							"HIVE_TYPE_STRING": "string"
+							"DateFormat": "YYYY-MM-DD",
+							"HIVE_TYPE_STRING": "date"
 						}
 					}
 				},
 				{
-					"Name": "Column_14",
-					"Description": "",
+					"Name": "Month End Date",
+					"Description": "End date of the month (Fiscal)",
 					"OriginDataTypeName": {
-						"TypeName": "string",
-						"IsComplexType": false,
+						"TypeName": "date",
 						"IsNullable": false,
-						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
+						"IsComplexType": false,
 						"Properties": {
-							"HIVE_TYPE_STRING": "string"
+							"DateFormat": "YYYY-MM-DD",
+							"HIVE_TYPE_STRING": "date"
 						}
 					}
 				},
 				{
-					"Name": "Column_15",
-					"Description": "",
+					"Name": "Quarter Start Date",
+					"Description": "Start date of the quarter (Fiscal)",
 					"OriginDataTypeName": {
-						"TypeName": "string",
+						"TypeName": "date",
+						"IsNullable": true,
 						"IsComplexType": false,
-						"IsNullable": false,
-						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
-							"HIVE_TYPE_STRING": "string"
+							"DateFormat": "YYYY-MM-DD",
+							"HIVE_TYPE_STRING": "date"
 						}
 					}
 				},
 				{
-					"Name": "Column_16",
-					"Description": "",
+					"Name": "Quarter End Date",
+					"Description": "End date of the quarter (Fiscal)",
 					"OriginDataTypeName": {
-						"TypeName": "string",
+						"TypeName": "date",
+						"IsNullable": true,
 						"IsComplexType": false,
-						"IsNullable": false,
-						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
-							"HIVE_TYPE_STRING": "string"
+							"DateFormat": "YYYY-MM-DD",
+							"HIVE_TYPE_STRING": "date"
 						}
 					}
 				},
 				{
-					"Name": "Column_17",
-					"Description": "",
+					"Name": "Period Start Date",
+					"Description": "Start date of the Period (Fiscal)",
 					"OriginDataTypeName": {
-						"TypeName": "string",
+						"TypeName": "date",
+						"IsNullable": true,
 						"IsComplexType": false,
-						"IsNullable": false,
-						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
-							"HIVE_TYPE_STRING": "string"
+							"DateFormat": "YYYY-MM-DD",
+							"HIVE_TYPE_STRING": "date"
 						}
 					}
 				},
 				{
-					"Name": "Column_18",
-					"Description": "",
+					"Name": "Period End Date",
+					"Description": "End date of the Period (Fiscal)",
 					"OriginDataTypeName": {
-						"TypeName": "string",
+						"TypeName": "date",
+						"IsNullable": true,
 						"IsComplexType": false,
-						"IsNullable": false,
-						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
-							"HIVE_TYPE_STRING": "string"
+							"DateFormat": "YYYY-MM-DD",
+							"HIVE_TYPE_STRING": "date"
 						}
 					}
 				},
 				{
-					"Name": "Column_19",
-					"Description": "",
+					"Name": "Year Start Date",
+					"Description": "Start date of the Year (Fiscal)",
 					"OriginDataTypeName": {
-						"TypeName": "string",
-						"IsComplexType": false,
+						"TypeName": "date",
 						"IsNullable": false,
-						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
+						"IsComplexType": false,
 						"Properties": {
-							"HIVE_TYPE_STRING": "string"
+							"DateFormat": "YYYY-MM-DD",
+							"HIVE_TYPE_STRING": "date"
 						}
 					}
 				},
 				{
-					"Name": "Column_20",
-					"Description": "",
+					"Name": "Year End Date",
+					"Description": "End date of the Year (Fiscal)",
 					"OriginDataTypeName": {
-						"TypeName": "string",
-						"IsComplexType": false,
+						"TypeName": "date",
 						"IsNullable": false,
-						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
-						"Properties": {
-							"HIVE_TYPE_STRING": "string"
-						}
-					}
-				},
-				{
-					"Name": "Column_21",
-					"Description": "",
-					"OriginDataTypeName": {
-						"TypeName": "string",
 						"IsComplexType": false,
-						"IsNullable": false,
-						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
-							"HIVE_TYPE_STRING": "string"
-						}
-					}
-				},
-				{
-					"Name": "Column_22",
-					"Description": "",
-					"OriginDataTypeName": {
-						"TypeName": "string",
-						"IsComplexType": false,
-						"IsNullable": false,
-						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
-						"Properties": {
-							"HIVE_TYPE_STRING": "string"
-						}
-					}
-				},
-				{
-					"Name": "Column_23",
-					"Description": "",
-					"OriginDataTypeName": {
-						"TypeName": "string",
-						"IsComplexType": false,
-						"IsNullable": false,
-						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
-						"Properties": {
-							"HIVE_TYPE_STRING": "string"
+							"DateFormat": "YYYY-MM-DD",
+							"HIVE_TYPE_STRING": "date"
 						}
 					}
 				}
@@ -364,6 +282,7 @@
 				"Properties": {
 					"path": "abfss://idwoptpoc@idwoptpoclake.dfs.core.windows.net/Opt_target/Fiscal Calendar",
 					"delimiter": ",",
+					"multiLine": "false",
 					"firstRowAsHeader": "false",
 					"serialization.format": "1",
 					"escape": "\\",
@@ -405,10 +324,10 @@
 		"Properties": {
 			"Description": "",
 			"DisplayFolderInfo": "{\"name\":\"Others\",\"colorCode\":\"\"}",
+			"PrimaryKeys": "Date",
 			"spark.sql.sources.provider": "csv",
 			"spark.sql.sources.schema.numParts": "1",
-			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"Column_1\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Column_2\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_3\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_4\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_5\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_6\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_7\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_8\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_9\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_10\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_11\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_12\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_13\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_14\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_15\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_16\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_17\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_18\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_19\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_20\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_21\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_22\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_23\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}}]}",
-			"PrimaryKeys": ""
+			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"Column_1\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Column_2\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_3\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_4\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_5\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_6\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_7\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_8\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_9\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_10\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_11\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_12\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_13\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_14\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_15\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_16\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_17\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_18\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_19\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_20\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_21\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_22\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_23\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}}]}"
 		},
 		"ObjectVersion": 1,
 		"ObjectId": "81f5d9fd-614c-4f01-88a7-d133d8d87819",

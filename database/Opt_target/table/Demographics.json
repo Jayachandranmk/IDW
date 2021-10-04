@@ -17,8 +17,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -31,9 +29,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -46,9 +41,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -61,9 +53,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -76,9 +65,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -91,9 +77,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -106,9 +89,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -121,9 +101,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -136,9 +113,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -151,9 +125,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -166,9 +137,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -181,9 +149,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -196,9 +161,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -211,9 +173,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -226,9 +185,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -241,9 +197,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -256,9 +209,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -271,9 +221,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -286,9 +233,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -301,9 +245,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -316,9 +257,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -331,9 +269,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -346,9 +281,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -361,9 +293,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -376,9 +305,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -391,9 +317,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -406,9 +329,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -421,9 +341,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -436,9 +353,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -451,9 +365,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -466,9 +377,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -481,9 +389,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -496,9 +401,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -511,9 +413,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -526,9 +425,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -541,9 +437,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -556,9 +449,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -571,9 +461,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -586,9 +473,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -601,9 +485,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -616,9 +497,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -631,9 +509,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -646,9 +521,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -661,9 +533,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -676,9 +545,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -691,9 +557,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -706,9 +569,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -721,9 +581,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -736,9 +593,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -751,9 +605,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -766,9 +617,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -781,9 +629,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -796,9 +641,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -811,9 +653,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -826,9 +665,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -841,9 +677,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -856,9 +689,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -871,9 +701,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -886,9 +713,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -901,9 +725,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -916,9 +737,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -931,9 +749,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -946,9 +761,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -961,9 +773,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -976,9 +785,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -991,9 +797,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1006,9 +809,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1021,9 +821,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1036,9 +833,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1051,9 +845,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1066,9 +857,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1081,9 +869,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1096,9 +881,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1111,9 +893,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1126,9 +905,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1141,9 +917,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1156,9 +929,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1171,9 +941,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1186,9 +953,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1201,9 +965,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1216,9 +977,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1231,9 +989,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1246,9 +1001,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1261,9 +1013,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1276,9 +1025,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1291,9 +1037,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1306,9 +1049,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1321,9 +1061,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1336,9 +1073,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1351,9 +1085,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1366,9 +1097,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1381,9 +1109,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1396,9 +1121,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1411,9 +1133,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1426,9 +1145,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1441,9 +1157,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1456,9 +1169,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1471,9 +1181,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1486,9 +1193,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1501,9 +1205,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1516,9 +1217,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1531,9 +1229,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1546,9 +1241,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1561,9 +1253,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1576,9 +1265,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1591,9 +1277,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1609,6 +1292,7 @@
 				"Properties": {
 					"path": "abfss://idwoptpoc@idwoptpoclake.dfs.core.windows.net/Opt_target/Demographics",
 					"delimiter": ",",
+					"multiLine": "false",
 					"firstRowAsHeader": "false",
 					"serialization.format": "1",
 					"escape": "\\",
@@ -1626,7 +1310,7 @@
 			},
 			"Properties": {
 				"textinputformat.record.delimiter": ",",
-				"compression": "",
+				"compression": "{\"type\":\"None\",\"level\":\"optimal\"}",
 				"derivedModelAttributeInfo": "{\"attributeReferences\":{}}"
 			},
 			"Compressed": false,
@@ -1650,11 +1334,11 @@
 		"Properties": {
 			"Description": "",
 			"DisplayFolderInfo": "{\"name\":\"Others\"}",
+			"PrimaryKeys": "Store ID",
 			"spark.sql.sources.provider": "csv",
 			"spark.sql.sources.schema.numParts": "2",
 			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"Store ID\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Radius\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Total Population\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Male Population\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Female Population\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Median or Average HH Income\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Asian\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Black\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Hispanic\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Other\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"White\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"No of HH\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"No of HH with kids under 17\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Female less than 5\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Female 5to14\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Female 14to18\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Female 18to22\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Female 22to25\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Female 25to30\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Female 30to35\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Female 35to40\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Female 40to45\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Female 45to50\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Female 50to55\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Female 55to60\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Female 60to65\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Female 65to70\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Female 70to75\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Female 75to80\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Female 80to85\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Female greater than 85\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Male less than 5\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Male 5to13\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Male 14to17\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Male 18to21\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Male 22to24\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Male 25to29\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Male 30to34\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Male 35to39\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Male 40to44\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Male 45to49\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Male 50to54\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Male 55to59\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Male 60to64\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Male 65to69\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Male 70to74\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Male 75to79\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Male 80to84\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Male greater than 85\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Average HH Size\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Chinese\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Japanese\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Korean\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"OtherAsian\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"SouthCentralAsian\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{",
-			"spark.sql.sources.schema.part.1": "\"name\":\"SouthEastAsian\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"British\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Dutch\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"French\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"German\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Italian\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"OtherEuropean\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Polish\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Scandinavian\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Scotch_Irish\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"CentralAmerican\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Cuban\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Dominican\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Mexican\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"OtherHispanic\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"PuertoRican\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"SouthAmerican\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"American\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Hawaiian\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"MiddleEastern\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"NativeAmerican\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Others\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Unclassified\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"HH Income less than 10000\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"HH Income 10000to14999\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"HH Income 15000to19999\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"HH Income 20000to24999\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"HH Income 25000to29999\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"HH Income 30000to34999\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"HH Income 35000to39999\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"HH Income 40000to44999\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"HH Income 45000to49999\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"HH Income 50000to54999\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"HH Income 55000to59999\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"HH Income 60000to64999\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"HH Income 65000to69999\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"HH Income 70000to74999\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"HH Income 75000to79999\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"HH Income 80000to84999\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"HH Income 85000to89999\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"HH Income 90000to94999\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"HH Income 95000to99999\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"HH Income 100000to124999\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"HH Income 125000to149999\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"HH Income 150000to174999\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"HH Income 175000to199999\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"HH Income 200000to249999\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"HH Income 250000to499999\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"HH Income greater than 500000\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Per Capita Income\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Population Density\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}}]}",
-			"PrimaryKeys": ""
+			"spark.sql.sources.schema.part.1": "\"name\":\"SouthEastAsian\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"British\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Dutch\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"French\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"German\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Italian\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"OtherEuropean\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Polish\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Scandinavian\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Scotch_Irish\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"CentralAmerican\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Cuban\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Dominican\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Mexican\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"OtherHispanic\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"PuertoRican\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"SouthAmerican\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"American\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Hawaiian\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"MiddleEastern\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"NativeAmerican\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Others\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Unclassified\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"HH Income less than 10000\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"HH Income 10000to14999\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"HH Income 15000to19999\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"HH Income 20000to24999\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"HH Income 25000to29999\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"HH Income 30000to34999\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"HH Income 35000to39999\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"HH Income 40000to44999\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"HH Income 45000to49999\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"HH Income 50000to54999\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"HH Income 55000to59999\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"HH Income 60000to64999\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"HH Income 65000to69999\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"HH Income 70000to74999\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"HH Income 75000to79999\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"HH Income 80000to84999\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"HH Income 85000to89999\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"HH Income 90000to94999\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"HH Income 95000to99999\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"HH Income 100000to124999\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"HH Income 125000to149999\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"HH Income 150000to174999\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"HH Income 175000to199999\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"HH Income 200000to249999\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"HH Income 250000to499999\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"HH Income greater than 500000\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Per Capita Income\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Population Density\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}}]}"
 		},
 		"ObjectVersion": 11,
 		"ObjectId": "d428a8e7-f6b9-4834-ba35-ad0db978a31f",
