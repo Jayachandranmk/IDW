@@ -17,8 +17,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -32,8 +30,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -47,8 +43,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -62,8 +56,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -77,8 +69,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -92,8 +82,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -107,8 +95,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -121,9 +107,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -137,8 +120,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -152,8 +133,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -167,8 +146,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -182,8 +159,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -197,8 +172,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -212,8 +185,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -221,14 +192,11 @@
 				},
 				{
 					"Name": "Date",
-					"Description": "vDate & timestamp of measurement of competitor price",
+					"Description": "Date & timestamp of measurement of competitor price",
 					"OriginDataTypeName": {
 						"TypeName": "date",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"DateFormat": "YYYY-MM-DD",
 							"HIVE_TYPE_STRING": "date"
@@ -245,6 +213,7 @@
 				"Properties": {
 					"path": "abfss://idwoptpoc@idwoptpoclake.dfs.core.windows.net/Opt_target/Competitor Price",
 					"delimiter": ",",
+					"multiLine": "false",
 					"firstRowAsHeader": "false",
 					"serialization.format": "1",
 					"escape": "\\",
@@ -262,7 +231,7 @@
 			},
 			"Properties": {
 				"textinputformat.record.delimiter": ",",
-				"compression": "",
+				"compression": "{\"type\":\"None\",\"level\":\"optimal\"}",
 				"derivedModelAttributeInfo": "{\"attributeReferences\":{}}"
 			},
 			"Compressed": false,
@@ -286,10 +255,10 @@
 		"Properties": {
 			"Description": "",
 			"DisplayFolderInfo": "{\"name\":\"Others\"}",
+			"PrimaryKeys": "Sales Organisation,Store ID,Competitor Store ID,SKU Identifier,Channel,Date",
 			"spark.sql.sources.provider": "csv",
 			"spark.sql.sources.schema.numParts": "1",
-			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"Sales Organisation\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Store ID\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Competitor Store ID\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Competitor Code\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"SKU Identifier\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Channel\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Competitor Price\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Competitor Price Factor\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Comptitor Promotion Flag\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Comptitor Event Flag\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Competitor Availability\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Competitor Metric1\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Competitor Metric2\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Competitor Metric3\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Date\",\"type\":\"date\",\"nullable\":false,\"metadata\":{}}]}",
-			"PrimaryKeys": ""
+			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"Sales Organisation\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Store ID\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Competitor Store ID\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Competitor Code\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"SKU Identifier\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Channel\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Competitor Price\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Competitor Price Factor\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Comptitor Promotion Flag\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Comptitor Event Flag\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Competitor Availability\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Competitor Metric1\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Competitor Metric2\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Competitor Metric3\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Date\",\"type\":\"date\",\"nullable\":false,\"metadata\":{}}]}"
 		},
 		"ObjectVersion": 3,
 		"ObjectId": "f0643cb1-84ca-46bc-a646-e980b682c3db",
