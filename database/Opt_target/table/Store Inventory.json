@@ -17,8 +17,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -32,8 +30,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -46,9 +42,6 @@
 						"TypeName": "date",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"DateFormat": "YYYY-MM-DD",
 							"HIVE_TYPE_STRING": "date"
@@ -62,9 +55,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -80,6 +70,7 @@
 				"Properties": {
 					"path": "abfss://idwoptpoc@idwoptpoclake.dfs.core.windows.net/Opt_target/1",
 					"delimiter": ",",
+					"multiLine": "false",
 					"firstRowAsHeader": "false",
 					"serialization.format": "1",
 					"escape": "\\",
@@ -97,7 +88,7 @@
 			},
 			"Properties": {
 				"textinputformat.record.delimiter": ",",
-				"compression": "",
+				"compression": "{\"type\":\"None\",\"level\":\"optimal\"}",
 				"derivedModelAttributeInfo": "{\"attributeReferences\":{}}"
 			},
 			"Compressed": false,
@@ -121,10 +112,10 @@
 		"Properties": {
 			"Description": "",
 			"DisplayFolderInfo": "{\"name\":\"Others\"}",
+			"PrimaryKeys": "Store ID,SKU Identifier,Date",
 			"spark.sql.sources.schema.numParts": "1",
 			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"Store ID\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"SKU Identifier\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Date\",\"type\":\"date\",\"nullable\":false,\"metadata\":{}},{\"name\":\"On_Hand_Qty\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}}]}",
-			"spark.sql.sources.provider": "csv",
-			"PrimaryKeys": ""
+			"spark.sql.sources.provider": "csv"
 		},
 		"ObjectVersion": 5,
 		"ObjectId": "e4429e11-b2ad-4fcc-b724-50d1cc47a436",

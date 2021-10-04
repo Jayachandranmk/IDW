@@ -17,8 +17,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -30,10 +28,7 @@
 					"OriginDataTypeName": {
 						"TypeName": "date",
 						"IsComplexType": false,
-						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
+						"IsNullable": false,
 						"Properties": {
 							"DateFormat": "YYYY-MM-DD",
 							"HIVE_TYPE_STRING": "date"
@@ -48,8 +43,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -63,8 +56,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -78,8 +69,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -93,8 +82,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -108,8 +95,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -123,8 +108,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -138,8 +121,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -153,8 +134,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -168,8 +147,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -182,9 +159,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -197,9 +171,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -212,9 +183,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -227,9 +195,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -242,9 +207,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -257,9 +219,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -272,9 +231,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -287,9 +243,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -302,9 +255,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -317,9 +267,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -332,9 +279,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -347,9 +291,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -362,9 +303,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -377,9 +315,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -392,9 +327,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -407,9 +339,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -422,9 +351,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -437,9 +363,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -452,9 +375,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -467,9 +387,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -482,9 +399,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -497,9 +411,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -512,9 +423,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -527,9 +435,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -542,9 +447,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -557,9 +459,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -572,9 +471,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -587,9 +483,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -602,9 +495,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -617,9 +507,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -632,9 +519,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -647,9 +531,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -662,9 +543,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -677,9 +555,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -692,9 +567,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -707,9 +579,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -722,9 +591,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -737,9 +603,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -752,9 +615,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -767,9 +627,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -782,9 +639,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -797,9 +651,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -812,9 +663,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -827,9 +675,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -842,9 +687,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -857,9 +699,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -872,9 +711,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -887,9 +723,6 @@
 						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "float"
 						}
@@ -902,9 +735,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -917,9 +747,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -932,9 +759,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -947,9 +771,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -962,9 +783,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -977,9 +795,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -992,9 +807,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1007,9 +819,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1022,9 +831,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1037,9 +843,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1052,9 +855,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1067,9 +867,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1083,8 +880,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -1098,8 +893,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -1113,8 +906,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -1130,6 +921,7 @@
 				"Properties": {
 					"path": "abfss://idwoptpoc@idwoptpoclake.dfs.core.windows.net/Opt_target/1",
 					"delimiter": ",",
+					"multiLine": "false",
 					"firstRowAsHeader": "false",
 					"serialization.format": "1",
 					"escape": "\\",
@@ -1147,7 +939,7 @@
 			},
 			"Properties": {
 				"textinputformat.record.delimiter": ",",
-				"compression": "",
+				"compression": "{\"type\":\"None\",\"level\":\"optimal\"}",
 				"derivedModelAttributeInfo": "{\"attributeReferences\":{}}"
 			},
 			"Compressed": false,
@@ -1171,12 +963,12 @@
 		"Properties": {
 			"Description": "",
 			"DisplayFolderInfo": "{\"name\":\"Others\"}",
+			"PrimaryKeys": "STORE ID,DATE",
 			"spark.sql.sources.schema.numParts": "2",
 			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"STORE ID\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"DATE\",\"type\":\"date\",\"nullable\":true,\"metadata\":{}},{\"name\":\"High temperature\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Low Temperature\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"UV Description\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Wind Speed\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Humidity Level\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Dew Point Level\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Rain Fall Amt\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Snow Fall Amt\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Air Quality Index\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE RAIN IN JANUARY\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE RAIN IN FEBRUARY\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE RAIN IN MARCH\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE RAIN IN APRIL\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE RAIN IN MAY\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE RAIN IN JUNE\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE RAIN IN JULY\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE RAIN IN AUGUST\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE RAIN IN SEPTEMBER\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE RAIN IN OCTOBER\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE RAIN IN NOVEMBER\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE RAIN IN DECEMBER\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE HUMIDITY IN JANUARY\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE HUMIDITY IN FEBRUARY\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE HUMIDITY IN MARCH\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE HUMIDITY IN APRIL\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE HUMIDITY IN MAY\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE HUMIDITY IN JUNE\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE HUMIDITY IN JULY\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE HUMIDITY IN AUGUST\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE HUMIDITY IN SEPTEMBER\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE HUMIDITY IN OCTOBER\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE HUMIDITY IN NOVEMBER\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE HUMIDITY IN DECEMBER\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE TEMPERATURE IN JANUARY\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE TEMPERATURE IN FEBRUARY\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE TEMPERATURE IN MARCH\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE TEMPERATURE IN APRIL\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE TEMPERATURE IN MAY\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE TEMPERATURE IN JUNE\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE TEMPERATURE IN JULY\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE TEMPERATURE IN AUGUST\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE TEMPERATURE IN SEPTEMBER\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE TEMPERATURE IN OCTOBER\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE TEMPERATURE IN NOVEMBER\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE TEMPERATURE IN DECEMBER\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE SNOW IN JANUARY\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE SNOW IN FEBRUARY\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE SNOW IN MARCH\",\"type\":\"float\",\"nullab",
 			"spark.sql.sources.provider": "csv",
 			"spark.sql.sources.schema.part.1": "le\":true,\"metadata\":{}},{\"name\":\"AVERAGE SNOW IN APRIL\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE SNOW IN MAY\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE SNOW IN JUNE\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE SNOW IN JULY\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE SNOW IN AUGUST\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE SNOW IN SEPTEMBER\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE SNOW IN OCTOBER\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE SNOW IN NOVEMBER\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AVERAGE SNOW IN DECEMBER\",\"type\":\"float\",\"nullable\":true,\"metadata\":{}},{\"name\":\"extreme weather event IN JANUARY\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"extreme weather event IN FEBRUARY\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"extreme weather event IN APRIL\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"extreme weather event IN MARCH\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"extreme weather event IN MAY\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"extreme weather event IN JUNE\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"extreme weather event IN JULY\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"extreme weather event IN AUGUST\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"extreme weather event IN SEPTEMBER\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"extreme weather event IN OCTOBER\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"extreme weather event IN NOVEMBER\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"extreme weather event IN DECEMBER\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Attribute 1\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Attribute 2\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Attribute 3\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}}]}",
-			"spark.sql.sources.schema.part.2": "\"name\":\"Column_45\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_46\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_47\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_48\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_49\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_50\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_51\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_52\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_53\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_54\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_55\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_56\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_57\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_58\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_59\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_60\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_61\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_62\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}}]}",
-			"PrimaryKeys": ""
+			"spark.sql.sources.schema.part.2": "\"name\":\"Column_45\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_46\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_47\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_48\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_49\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_50\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_51\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_52\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_53\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_54\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_55\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_56\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_57\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_58\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_59\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_60\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_61\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Column_62\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}}]}"
 		},
 		"ObjectVersion": 26,
 		"ObjectId": "22f5df67-f0ef-4d8f-ada4-184ac21fa791",

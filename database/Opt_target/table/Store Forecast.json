@@ -17,8 +17,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -32,8 +30,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -46,9 +42,6 @@
 						"TypeName": "date",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"DateFormat": "YYYY-MM-DD",
 							"HIVE_TYPE_STRING": "date"
@@ -62,9 +55,6 @@
 						"TypeName": "date",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"DateFormat": "YYYY-MM-DD",
 							"HIVE_TYPE_STRING": "date"
@@ -78,9 +68,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -93,9 +80,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -108,9 +92,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -126,6 +107,7 @@
 				"Properties": {
 					"path": "abfss://idwoptpoc@idwoptpoclake.dfs.core.windows.net/Opt_target/Store Forecast",
 					"delimiter": ",",
+					"multiLine": "false",
 					"firstRowAsHeader": "false",
 					"serialization.format": "1",
 					"escape": "\\",
@@ -143,7 +125,7 @@
 			},
 			"Properties": {
 				"textinputformat.record.delimiter": ",",
-				"compression": "",
+				"compression": "{\"type\":\"None\",\"level\":\"optimal\"}",
 				"derivedModelAttributeInfo": "{\"attributeReferences\":{}}"
 			},
 			"Compressed": false,
@@ -167,10 +149,10 @@
 		"Properties": {
 			"Description": "",
 			"DisplayFolderInfo": "{\"name\":\"Others\"}",
+			"PrimaryKeys": "SKU Identifier,Store ID,Forecast_Start_Date,Forecast_End_Date",
 			"spark.sql.sources.provider": "csv",
 			"spark.sql.sources.schema.numParts": "1",
-			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"SKU Identifier\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Store ID\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Forecast_Start_Date\",\"type\":\"date\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Forecast_End_Date\",\"type\":\"date\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Regular_Qty\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Promo_Forecast_Qty\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Base_Forecast_Qty\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}}]}",
-			"PrimaryKeys": ""
+			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"SKU Identifier\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Store ID\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Forecast_Start_Date\",\"type\":\"date\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Forecast_End_Date\",\"type\":\"date\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Regular_Qty\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Promo_Forecast_Qty\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Base_Forecast_Qty\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}}]}"
 		},
 		"ObjectVersion": 3,
 		"ObjectId": "0778cf51-f60a-44ba-9e78-38212d8c1049",
