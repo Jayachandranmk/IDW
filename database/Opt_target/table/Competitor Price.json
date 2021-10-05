@@ -91,12 +91,11 @@
 					"Name": "Competitor Price",
 					"Description": "Price at the Competitor",
 					"OriginDataTypeName": {
-						"TypeName": "string",
+						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 256,
 						"Properties": {
-							"HIVE_TYPE_STRING": "string"
+							"HIVE_TYPE_STRING": "float"
 						}
 					}
 				},
