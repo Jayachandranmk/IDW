@@ -818,7 +818,7 @@
 					"OriginDataTypeName": {
 						"TypeName": "integer",
 						"IsComplexType": false,
-						"IsNullable": false,
+						"IsNullable": true,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -830,7 +830,7 @@
 					"OriginDataTypeName": {
 						"TypeName": "integer",
 						"IsComplexType": false,
-						"IsNullable": false,
+						"IsNullable": true,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -842,7 +842,7 @@
 					"OriginDataTypeName": {
 						"TypeName": "integer",
 						"IsComplexType": false,
-						"IsNullable": false,
+						"IsNullable": true,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
