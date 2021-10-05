@@ -175,7 +175,7 @@
 					"OriginDataTypeName": {
 						"TypeName": "integer",
 						"IsComplexType": false,
-						"IsNullable": true,
+						"IsNullable": false,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
