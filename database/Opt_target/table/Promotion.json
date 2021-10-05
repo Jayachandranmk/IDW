@@ -16,9 +16,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -32,8 +29,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -47,8 +42,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -62,8 +55,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -77,8 +68,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -91,9 +80,6 @@
 						"TypeName": "date",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"DateFormat": "YYYY-MM-DD",
 							"HIVE_TYPE_STRING": "date"
@@ -107,9 +93,6 @@
 						"TypeName": "date",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"DateFormat": "YYYY-MM-DD",
 							"HIVE_TYPE_STRING": "date"
@@ -124,8 +107,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -139,8 +120,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -154,8 +133,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -169,8 +146,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -184,8 +159,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -199,8 +172,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -214,8 +185,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -229,8 +198,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -244,8 +211,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -259,8 +224,6 @@
 						"IsComplexType": false,
 						"IsNullable": false,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -270,14 +233,11 @@
 					"Name": "Promo price",
 					"Description": "Promo price of the SKU",
 					"OriginDataTypeName": {
-						"TypeName": "string",
+						"TypeName": "float",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
-							"HIVE_TYPE_STRING": "string"
+							"HIVE_TYPE_STRING": "float"
 						}
 					}
 				},
@@ -289,8 +249,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -304,8 +262,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -319,8 +275,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 256,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -336,6 +290,7 @@
 				"Properties": {
 					"path": "abfss://idwoptpoc@idwoptpoclake.dfs.core.windows.net/Opt_target/Promotion",
 					"delimiter": ",",
+					"multiLine": "false",
 					"firstRowAsHeader": "false",
 					"serialization.format": "1",
 					"escape": "\\",
@@ -353,7 +308,7 @@
 			},
 			"Properties": {
 				"textinputformat.record.delimiter": ",",
-				"compression": "",
+				"compression": "{\"type\":\"None\",\"level\":\"optimal\"}",
 				"derivedModelAttributeInfo": "{\"attributeReferences\":{}}"
 			},
 			"Compressed": false,
@@ -375,13 +330,13 @@
 		"IsSharedEntity": false,
 		"PublishStatus": "PUBLISHED",
 		"Properties": {
-			"DerivedModelEntityInfo": "{\"entityDirectives\":{\"name\":\"Promotion\",\"description\":\"A planned activity or marketing activity to raise the visibility or increase sales of a product, service or concept.\",\"baseEntityReference\":{\"name\":\"Promotion\",\"path\":\"Promotion.cdm.json/Promotion\"},\"primaryKey\":[\"PromotionId\"],\"projectionInfo\":{\"attributes\":[{\"name\":\"PromotionId\",\"type\":\"Existing\",\"description\":\"The unique identifier of a Promotion.\",\"dataType\":\"integer\",\"isNullable\":false,\"attributeReference\":{\"name\":\"PromotionId\",\"entity\":\"Promotion.cdm.json/Promotion\"}},{\"name\":\"Sales Organisation\",\"type\":\"New\",\"description\":\"Company or Unit Identifier/Description\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"Distribution Channel\",\"type\":\"New\",\"description\":\"Distribution channel in terms of the sales organization - Digital or stores\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"Location ID\",\"type\":\"New\",\"description\":\"Location ID at which the Promotion is active {Store ID, Store group ID, Price zone ID, Sales Org id}\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"SKU Identifier\",\"type\":\"New\",\"description\":\"Unique identifier of every stock keeping unit\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"Promo Start Date\",\"type\":\"New\",\"description\":\"Date on which the promotion was started\",\"dataType\":\"date\",\"isNullable\":false,\"dateFormat\":\"YYYY-MM-DD\"},{\"name\":\"Promo End Date\",\"type\":\"New\",\"description\":\"Date on which the promotion ended\",\"dataType\":\"date\",\"isNullable\":false,\"dateFormat\":\"YYYY-MM-DD\"},{\"name\":\"Promo Campaign\",\"type\":\"New\",\"description\":\"Campaign associated with the promotional SKU\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"Promo Event\",\"type\":\"New\",\"description\":\"Event of the campaign, associated with the promotional SKU\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"Promo Type\",\"type\":\"New\",\"description\":\"The promotion type of the SKU\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"Promo Parameter 1\",\"type\":\"New\",\"description\":\"Promotion Parameter 1. For example, B2G3\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"Promo Parameter 2\",\"type\":\"New\",\"description\":\"Promotion Parameter 2. For example, Minimum Order Quantity of 2\",\"dataType\":\"string\",\"isNullable\":true,\"dataTypeLength\":256},{\"name\":\"Promo Parameter 3\",\"type\":\"New\",\"description\":\"Promotion Parameter 3 if any\",\"dataType\":\"string\",\"isNullable\":true,\"dataTypeLength\":256},{\"name\":\"Promo display\",\"type\":\"New\",\"description\":\"Y/N to indicate if the SKU is positioned in a promotion display\",\"dataType\":\"string\",\"isNullable\":true,\"dataTypeLength\":256},{\"name\":\"Promotional flyer\",\"type\":\"New\",\"description\":\"Y/N to indicate if the SKU is advertised in a promotion flyer\",\"dataType\":\"string\",\"isNullable\":true,\"dataTypeLength\":256},{\"name\":\"Promotional mailer\",\"type\":\"New\",\"description\":\"Y/N to indicate if the SKU was in the promotion mailer\",\"dataType\":\"string\",\"isNullable\":true,\"dataTypeLength\":256},{\"name\":\"Clearance flag\",\"type\":\"New\",\"description\":\"ampaign associated with the promotional SKU\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"Promo price\",\"type\":\"New\",\"description\":\"Promo price of the SKU\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"Performance Factor1\",\"type\":\"New\",\"description\":\"If additional information is available, these fields can be used to store that info\",\"dataType\":\"string\",\"isNullable\":true,\"dataTypeLength\":256},{\"name\":\"Performance Factor2\",\"type\":\"New\",\"description\":\"If additional information is available, these fields can be used to store that info\",\"dataType\":\"string\",\"isNullable\":true,\"dataTypeLength\":256},{\"name\":\"Performance Factor3\",\"type\":\"New\",\"description\":\"If additional information is available, these fields can be used to store that info\",\"dataType\":\"string\",\"isNullable\":true,\"dataTypeLength\":256}]}}}",
+			"DerivedModelEntityInfo": "{\"entityDirectives\":{\"name\":\"Promotion\",\"description\":\"A planned activity or marketing activity to raise the visibility or increase sales of a product, service or concept.\",\"baseEntityReference\":{\"name\":\"Promotion\",\"path\":\"Promotion.cdm.json/Promotion\"},\"primaryKey\":[\"PromotionId\",\"Sales Organisation\",\"Distribution Channel\",\"Location ID\",\"SKU Identifier\",\"Promo Start Date\"],\"projectionInfo\":{\"attributes\":[{\"name\":\"PromotionId\",\"type\":\"Existing\",\"description\":\"The unique identifier of a Promotion.\",\"dataType\":\"integer\",\"isNullable\":false,\"attributeReference\":{\"name\":\"PromotionId\",\"entity\":\"Promotion.cdm.json/Promotion\"}},{\"name\":\"Sales Organisation\",\"type\":\"New\",\"description\":\"Company or Unit Identifier/Description\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"Distribution Channel\",\"type\":\"New\",\"description\":\"Distribution channel in terms of the sales organization - Digital or stores\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"Location ID\",\"type\":\"New\",\"description\":\"Location ID at which the Promotion is active {Store ID, Store group ID, Price zone ID, Sales Org id}\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"SKU Identifier\",\"type\":\"New\",\"description\":\"Unique identifier of every stock keeping unit\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"Promo Start Date\",\"type\":\"New\",\"description\":\"Date on which the promotion was started\",\"dataType\":\"date\",\"isNullable\":false,\"dateFormat\":\"YYYY-MM-DD\"},{\"name\":\"Promo End Date\",\"type\":\"New\",\"description\":\"Date on which the promotion ended\",\"dataType\":\"date\",\"isNullable\":false,\"dateFormat\":\"YYYY-MM-DD\"},{\"name\":\"Promo Campaign\",\"type\":\"New\",\"description\":\"Campaign associated with the promotional SKU\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"Promo Event\",\"type\":\"New\",\"description\":\"Event of the campaign, associated with the promotional SKU\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"Promo Type\",\"type\":\"New\",\"description\":\"The promotion type of the SKU\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"Promo Parameter 1\",\"type\":\"New\",\"description\":\"Promotion Parameter 1. For example, B2G3\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"Promo Parameter 2\",\"type\":\"New\",\"description\":\"Promotion Parameter 2. For example, Minimum Order Quantity of 2\",\"dataType\":\"string\",\"isNullable\":true,\"dataTypeLength\":256},{\"name\":\"Promo Parameter 3\",\"type\":\"New\",\"description\":\"Promotion Parameter 3 if any\",\"dataType\":\"string\",\"isNullable\":true,\"dataTypeLength\":256},{\"name\":\"Promo display\",\"type\":\"New\",\"description\":\"Y/N to indicate if the SKU is positioned in a promotion display\",\"dataType\":\"string\",\"isNullable\":true,\"dataTypeLength\":256},{\"name\":\"Promotional flyer\",\"type\":\"New\",\"description\":\"Y/N to indicate if the SKU is advertised in a promotion flyer\",\"dataType\":\"string\",\"isNullable\":true,\"dataTypeLength\":256},{\"name\":\"Promotional mailer\",\"type\":\"New\",\"description\":\"Y/N to indicate if the SKU was in the promotion mailer\",\"dataType\":\"string\",\"isNullable\":true,\"dataTypeLength\":256},{\"name\":\"Clearance flag\",\"type\":\"New\",\"description\":\"ampaign associated with the promotional SKU\",\"dataType\":\"string\",\"isNullable\":false,\"dataTypeLength\":256},{\"name\":\"Promo price\",\"type\":\"New\",\"description\":\"Promo price of the SKU\",\"dataType\":\"float\",\"isNullable\":false},{\"name\":\"Performance Factor1\",\"type\":\"New\",\"description\":\"If additional information is available, these fields can be used to store that info\",\"dataType\":\"string\",\"isNullable\":true,\"dataTypeLength\":256},{\"name\":\"Performance Factor2\",\"type\":\"New\",\"description\":\"If additional information is available, these fields can be used to store that info\",\"dataType\":\"string\",\"isNullable\":true,\"dataTypeLength\":256},{\"name\":\"Performance Factor3\",\"type\":\"New\",\"description\":\"If additional information is available, these fields can be used to store that info\",\"dataType\":\"string\",\"isNullable\":true,\"dataTypeLength\":256}]}}}",
 			"Description": "A planned activity or marketing activity to raise the visibility or increase sales of a product, service or concept.",
 			"DisplayFolderInfo": "{\"name\":\"Marketing & Advertising\"}",
+			"PrimaryKeys": "PromotionId,Sales Organisation,Distribution Channel,Location ID,SKU Identifier,Promo Start Date",
 			"spark.sql.sources.provider": "csv",
 			"spark.sql.sources.schema.numParts": "1",
-			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"PromotionId\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Sales Organisation\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Distribution Channel\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Location ID\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"SKU Identifier\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Promo Start Date\",\"type\":\"date\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Promo End Date\",\"type\":\"date\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Promo Campaign\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Promo Event\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Promo Type\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Promo Parameter 1\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Promo Parameter 2\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Promo Parameter 3\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Promo display\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Promotional flyer\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Promotional mailer\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Clearance flag\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Promo price\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Performance Factor1\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Performance Factor2\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Performance Factor3\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}}]}",
-			"PrimaryKeys": "PromotionId"
+			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"PromotionId\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Sales Organisation\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Distribution Channel\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Location ID\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"SKU Identifier\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Promo Start Date\",\"type\":\"date\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Promo End Date\",\"type\":\"date\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Promo Campaign\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Promo Event\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Promo Type\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Promo Parameter 1\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Promo Parameter 2\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Promo Parameter 3\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Promo display\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Promotional flyer\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Promotional mailer\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Clearance flag\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Promo price\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"Performance Factor1\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Performance Factor2\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Performance Factor3\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}}]}"
 		},
 		"ObjectVersion": 6,
 		"ObjectId": "1ab12d76-cd11-427a-a325-159903def4b1",
